@@ -1,0 +1,10 @@
+.top__bar--phones li a {
+  @apply flex items-center gap-1 hover:text-[#0A6EBD] focus:text-[#0A6EBD] duration-200 ease-in; }
+  .top__bar--phones li a img {
+    @apply w-[24px] h-[18px]; }
+.top__bar--social li a {
+  @apply hover:text-[#0A6EBD] focus:text-[#0A6EBD] duration-200 ease-in; }
+  .top__bar--social li a i {
+    @apply text-2xl; }
+
+/*# sourceMappingURL=home.css.map */

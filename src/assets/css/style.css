@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 100%; }
+
+.nav .hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative; }
+.nav .hamburger-top,
+.nav .hamburger-middle,
+.nav .hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s; }
+.nav .hamburger-middle {
+  transform: translateY(7px); }
+.nav .hamburger-bottom {
+  transform: translateY(14px); }
+.nav .open {
+  transform: rotate(90deg);
+  transform: translateY(0px); }
+  .nav .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px); }
+  .nav .open .hamburger-middle {
+    display: none; }
+  .nav .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px); }
+.nav__content--links ul li {
+  @apply text-linksColor py-3 px-0 flex items-center; }
+  .nav__content--links ul li:nth-child(1), .nav__content--links ul li:nth-child(2), .nav__content--links ul li:nth-child(3) {
+    @apply border-b-[1px] border-[#dddddd] lg:border-0; }
+  .nav__content--links ul li:last-child {
+    @apply border-b-[1px] border-[#dddddd] lg:border-0; }
+  .nav__content--links ul li a {
+    @apply flex items-center justify-between w-full duration-500 ease-in-out relative lg:gap-3; }
+    .nav__content--links ul li a i {
+      @apply text-xs; }
+      .nav__content--links ul li a i:last-child {
+        @apply text-base; }
+    @media (min-width: 992px) {
+      .nav__content--links ul li a::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background: linear-gradient(to right, #8f98c5, #8f98c5, #ffffff);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.6s ease-in-out; }
+      .nav__content--links ul li a:hover::after, .nav__content--links ul li a:focus::after {
+        width: 100%; } }
+.nav__content--dropdown {
+  box-shadow: 0 -3px 3px 0px #0001 inset;
+  transition: all 0.3s ease-in;
+  transform: translateY(-60px);
+  opacity: 0;
+  visibility: hidden; }
+  .nav__content--dropdown.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible; }
+  .nav__content--dropdown .links ul li a {
+    @apply flex items-center gap-5 font-semibold; }
+    .nav__content--dropdown .links ul li a img {
+      @apply w-[40px]; }
+.nav__content--social .phones ul li a {
+  @apply flex items-center gap-3; }
+  .nav__content--social .phones ul li a img {
+    @apply w-6 h-6; }
+.nav__content--social .social-links ul li a i {
+  @apply border-2 text-[#8f98c5] p-4 rounded-full duration-200 ease-in-out w-10 h-10 flex items-center justify-center; }
+  .nav__content--social .social-links ul li a i:hover,
+  .nav__content--social .social-links ul li a i :active {
+    color: #fff;
+    background-color: #8f98c5; }
+.nav__content.opened {
+  @apply block absolute top-0 left-0 w-full h-full bg-white; }
+
+/*# sourceMappingURL=style.css.map */
