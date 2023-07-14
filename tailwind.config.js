@@ -10,6 +10,8 @@ export default {
             white: "#fff",
             dropdown: "0px 7px 10px -7px rgba(0,0,0, 0.6)",
             background: "rgba(0,0,0,0.5)",
+            crimson: "crimson",
+            black: "black",
         },
         screens: {
             sm: "576px",

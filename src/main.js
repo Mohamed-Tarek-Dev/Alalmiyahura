@@ -1,28 +1,93 @@
 import "./assets/css/style.css";
 
-const dropdown = document.querySelector("#dropdown");
-const links = document.querySelectorAll(".nav__content--links ul li a");
+// Get all the dropdown links and menus
+const dropdownLinks = document.querySelectorAll(".nav__content--link");
+const dropdownMenus = document.querySelectorAll(".nav__content--dropdown");
 
-console.log(links);
+// Add click event listener to each dropdown link
+dropdownLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+        event.preventDefault();
+        const anchor = this.querySelector("a");
+        const dropdownId = anchor ? anchor.id : null;
+        const dropdownMenu = dropdownId
+            ? document.querySelector(`[data-dropdown="${dropdownId}"]`)
+            : null;
 
-links.forEach((link) => {
-    link.addEventListener("click", (e) => {
-        const linkText = e.target.textContent.trim();
-        const shouldToggleClass = [
-            "Solutions",
-            "Services",
-            "Portfolio",
-        ].includes(linkText);
-
-        if (shouldToggleClass) {
-            e.preventDefault();
-            dropdown.classList.toggle("active");
+        if (this.classList.contains("active")) {
+            // Link is already active, so close the dropdown menu
+            this.classList.remove("active");
+            if (dropdownMenu) {
+                dropdownMenu.classList.remove("active");
+            }
+        } else {
+            // Add 'active' class to the clicked link and its related dropdown menu
+            dropdownLinks.forEach((otherLink) => {
+                if (otherLink !== this) {
+                    otherLink.classList.remove("active");
+                    const otherAnchor = otherLink.querySelector("a");
+                    const otherDropdownId = otherAnchor ? otherAnchor.id : null;
+                    const otherDropdownMenu = otherDropdownId
+                        ? document.querySelector(
+                              `[data-dropdown="${otherDropdownId}"]`,
+                          )
+                        : null;
+                    if (otherDropdownMenu) {
+                        otherDropdownMenu.classList.remove("active");
+                    }
+                }
+            });
+            this.classList.add("active");
+            if (dropdownMenu) {
+                dropdownMenu.classList.add("active");
+            }
         }
     });
 });
 
+// Close dropdown menu when clicking outside
+window.addEventListener("click", function (event) {
+    if (
+        !event.target.closest(".nav__content--link") &&
+        !event.target.closest(".nav__content--dropdown")
+    ) {
+        dropdownLinks.forEach((link) => {
+            link.classList.remove("active");
+        });
+        dropdownMenus.forEach((menu) => {
+            menu.classList.remove("active");
+        });
+    }
+});
+
+// Close dropdown menu when scrolling
+window.addEventListener("scroll", function () {
+    dropdownLinks.forEach((link) => {
+        link.classList.remove("active");
+    });
+    dropdownMenus.forEach((menu) => {
+        menu.classList.remove("active");
+    });
+});
+
 const hamburger = document.getElementById("menu-btn");
+const navbar = document.querySelector(".nav__content");
 
 hamburger.addEventListener("click", (e) => {
     hamburger.classList.toggle("open");
+    navbar.classList.toggle("opened");
 });
+
+// Change Navbar with scroll
+function handleScroll() {
+    const nav = document.querySelector("nav");
+    const offset = 80; // Adjust this value as needed
+
+    if (window.scrollY > offset) {
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+}
+
+window.addEventListener("scroll", handleScroll);

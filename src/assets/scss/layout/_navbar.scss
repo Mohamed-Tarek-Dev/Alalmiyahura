@@ -1,107 +1,161 @@
 .nav {
-    .hamburger {
+    &__top {
+        &--phones {
+            li {
+                a {
+                    @apply flex items-center gap-1 hover:text-[#0A6EBD] focus:text-[#0A6EBD] duration-200 ease-in;
+
+                    img {
+                        @apply w-[24px] h-[18px];
+                    }
+                }
+            }
+        }
+
+        &--social {
+            li {
+                a {
+                    @apply hover:text-[#0A6EBD] focus:text-[#0A6EBD] duration-200 ease-in;
+                    i {
+                        @apply text-2xl;
+                    }
+                }
+            }
+        }
+    }
+
+    &__logo {
+    }
+
+    &__hamburger {
         cursor: pointer;
         width: 24px;
         height: 24px;
         transition: all 0.25s;
         position: relative;
-    }
 
-    .hamburger-top,
-    .hamburger-middle,
-    .hamburger-bottom {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 26px;
-        height: 2px;
-        background: #000;
-        transform: rotate(0);
-        transition: all 0.5s;
-    }
-
-    .hamburger-middle {
-        transform: translateY(7px);
-    }
-
-    .hamburger-bottom {
-        transform: translateY(14px);
-    }
-
-    .open {
-        transform: rotate(90deg);
-        transform: translateY(0px);
-        .hamburger-top {
-            transform: rotate(45deg) translateY(6px) translate(6px);
+        &--top,
+        &--middle,
+        &--bottom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 26px;
+            height: 2px;
+            background: #000;
+            transform: rotate(0);
+            transition: all 0.5s;
         }
-        .hamburger-middle {
-            display: none;
+
+        &--middle {
+            transform: translateY(7px);
         }
-        .hamburger-bottom {
-            transform: rotate(-45deg) translateY(6px) translate(-6px);
+
+        &--bottom {
+            transform: translateY(14px);
+        }
+
+        &.open {
+            @apply absolute z-20 top-[10px];
+
+            span {
+                @apply h-[3px] bg-primary;
+
+                &:first-child {
+                    transform: rotate(45deg) translateY(6px) translate(6px);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:last-child {
+                    transform: rotate(-45deg) translateY(6px) translate(-6px);
+                }
+            }
+
+            &:hover,
+            &:active {
+                span {
+                    background-color: crimson;
+                }
+            }
         }
     }
 
     &__content {
-        &--links {
-            ul {
-                li {
-                    @apply text-linksColor py-3 px-0 flex items-center;
-                    &:nth-child(1),
-                    &:nth-child(2),
-                    &:nth-child(3) {
-                        @apply border-b-[1px] border-[#dddddd] lg:border-0;
-                    }
+        @media (max-width: 992px) {
+            transition: all 0.3s ease-in-out;
+            @apply translate-x-[-100%];
+        }
+        a {
+            @apply cursor-pointer;
+        }
+        &--link {
+            @apply text-black py-3 px-0 lg:flex lg:items-center;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                @apply border-b-[1px] border-[#dddddd] lg:border-0;
+            }
+            &:last-child {
+                @apply border-b-[1px] border-[#dddddd] lg:border-0;
+            }
+            .hover {
+                @apply flex items-center w-full duration-500 ease-in-out relative lg:gap-3;
+                i {
+                    @apply text-xs;
                     &:last-child {
-                        @apply border-b-[1px] border-[#dddddd] lg:border-0;
+                        @apply text-base;
                     }
-                    a {
-                        @apply flex items-center justify-between w-full duration-500 ease-in-out relative lg:gap-3;
-                        i {
-                            @apply text-xs;
-                            &:last-child {
-                                @apply text-base;
-                            }
+                }
+                @media (min-width: 992px) {
+                    &::after {
+                        content: "";
+                        background: linear-gradient(
+                            to right,
+                            #2a398c,
+                            #35428d,
+                            #fff
+                        );
+                        transition: all 0.6s ease-in-out;
+                        @apply block w-0 h-[2px] absolute bottom-0 left-0;
+                    }
+                    &:hover,
+                    &:focus {
+                        &::after {
+                            @apply w-full;
                         }
-                        @media (min-width: 992px) {
-                            &::after {
-                                content: "";
-                                display: block;
-                                width: 0%;
-                                height: 2px;
-                                background: linear-gradient(
-                                    to right,
-                                    #8f98c5,
-                                    #8f98c5,
-                                    #ffffff
-                                );
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                transition: all 0.6s ease-in-out;
-                            }
-                            &:hover,
-                            &:focus {
-                                &::after {
-                                    width: 100%;
-                                }
-                            }
-                        }
+                    }
+                }
+            }
+            &.active {
+                a {
+                    &::after {
+                        @apply w-full;
                     }
                 }
             }
         }
 
         &--dropdown {
-            box-shadow: 0 -3px 3px 0px #0001 inset;
-            transition: all 0.3s ease-in;
-            transform: translateY(-60px);
-            opacity: 0;
-            visibility: hidden;
+            @apply transition-all duration-300 ease-in opacity-0 invisible lg:shadow-[0_-3px_3px_0px_#0001_inset] lg:translate-y-[-60px];
             &.active {
-                transform: translateY(0);
-                opacity: 1;
-                visibility: visible;
+                @media (min-width: 992px) {
+                    @apply translate-y-0 opacity-100 visible;
+                }
+                @media (max-width: 992px) {
+                    @apply flex opacity-100 visible relative  mt-5 h-[500px] max-h-[100%] translate-y-0;
+                    .services-1 {
+                        .links {
+                            // @apply;
+                        }
+                    }
+                    .services-2 {
+                        .links {
+                            .col {
+                            }
+                        }
+                    }
+                }
             }
             .links {
                 ul {
@@ -122,7 +176,7 @@
                 ul {
                     li {
                         a {
-                            @apply flex items-center gap-3;
+                            @apply flex items-center gap-3 hover:text-[#0A6EBD] focus:text-[#0A6EBD] duration-200 ease-in;
                             img {
                                 @apply w-6 h-6;
                             }
@@ -139,8 +193,7 @@
                                 @apply border-2 text-[#8f98c5] p-4 rounded-full duration-200 ease-in-out w-10 h-10 flex items-center justify-center;
                                 &:hover,
                                 :active {
-                                    color: #fff;
-                                    background-color: #8f98c5;
+                                    @apply text-white bg-linksColor;
                                 }
                             }
                         }
@@ -149,16 +202,24 @@
             }
         }
 
-        &.opened {
-            @apply block absolute top-0 left-0 w-full h-full bg-white;
-            .nav__content--links {
+        @media (max-width: 992px) {
+            &.opened {
+                @apply absolute translate-x-0 top-0 left-0 w-full h-full z-10 bg-white opacity-100 visible;
             }
+        }
+    }
 
-            .nav__content--dropdown {
-                &.opened {
-                    // @apply flex opacity-100 visible;
-                }
-            }
+    &.scrolled {
+        @apply fixed top-0 left-0 right-0 w-full;
+        background-color: rgba(238, 238, 238, 0.5);
+        a {
+            // color: #fff;
+        }
+        .nav__content--dropdown {
+            background-color: rgba(238, 238, 238, 0.5);
+        }
+        .nav__top {
+            @apply hidden;
         }
     }
 }

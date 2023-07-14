@@ -13,16 +13,16 @@
             <nav class="nav p-5 relative">
                 <div class="container">
                     <!--============== Top section ================-->
-                    <div class="top__bar hidden mb-10 lg:block">
+                    <div class="nav__top hidden mb-10 lg:block">
                         <div class="flex justify-between">
-                            <div class="top__bar--phones">
+                            <div class="nav__top--phones">
                                 <ul class="flex gap-7">
                                     <li><a href="tel:+1234567890"><img src="./src/assets/images/icons/egypt.svg" alt="Egpyt"> +20 1018930559</a></li>
                                     <li><a href="tel:+1234567890"><img src="./src/assets/images/icons/emirates.svg" alt="Emirates"> +20 1018930559</a></li>
                                     <li><a href="tel:+1234567890"><img src="./src/assets/images/icons/saudi.svg" alt="Saudi"> +20 1018930559</a></li>
                                 </ul>
                             </div>
-                            <div class="top__bar--social">
+                            <div class="nav__top--social">
                                 <ul class="flex gap-6">
                                     <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
@@ -37,110 +37,167 @@
 
                     <!--================== Navbar Section ===================-->
                     <div class="flex justify-between items-center">
-                        <div class="nav--logo">
+                        <div class="nav__logo">
                             <a href="./index.html"><img src="./src/assets/images/logo-EN.svg" alt="Logo"></a>
                         </div>
 
-                        <button id="menu-btn" class="block hamburger mt-2 lg:mt-0 lg:hidden focus:outline-none">
-                            <span class="hamburger-top"></span>
-                            <span class="hamburger-middle"></span>
-                            <span class="hamburger-bottom"></span>
-                        </button>
+                        <div class="flex justify-start">
+                            <button id="menu-btn" class="block nav__hamburger mt-2 lg:mt-0 lg:hidden focus:outline-none">
+                                <span class="nav__hamburger--top"></span>
+                                <span class="nav__hamburger--middle"></span>
+                                <span class="nav__hamburger--bottom"></span>
+                            </button>
+                        </div>
                         
-                        <div class="nav__content hidden lg:block">
-                            <div class="flex justify-end p-4 lg:hidden">
-                                <button><i class="fa-regular fa-xmark text-3xl"></i></button>
-                            </div>
+                        <div class="nav__content absolute top-0 opacity-0 invisible lg:static lg:opacity-100 lg:visible">
                             <!--============ Navbar links for both phone and desktop =============-->
-                            <div class="nav__content--links flex flex-col lg:flex-row lg:items-center lg:gap-5 xl:gap-10">
-                                <ul class="flex flex-col gap-0 p-4 lg:gap-3 lg:flex-row lg:p-0 xl:gap-5">
-                                    <li><a href="#">Solutions<i class="fa-regular fa-chevron-down"></i></a></li>
-                                    <li><a href="#">Services<i class="fa-regular fa-chevron-down"></i></a></li>
-                                    <li><a href="#">Portfolio<i class="fa-regular fa-chevron-down"></i></a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><button><i class="fa-regular fa-globe"></i></button></li>
-                                </ul>
-                                <div class="nav--button mt-10 mx-auto p-4 lg:mx-0 lg:mt-0 lg:p-0">
-                                    <a href="#" class="bg-primary text-white rounded-md py-2 px-3 hover:bg-primaryLight focus:bg-primaryLight duration-200 ease-in xl:py-2 xl:px-6">
-                                        Get a Quote
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!--================= Social and Contacts in the phone Menu ==================-->
-                            <div class="nav__content--social block mt-10 mb-10 p-4 lg:hidden">
-                                <div class="container">
-                                    <div class="flex flex-col justify-between items-center gap-5">
-                                        <div class="phones">
-                                            <ul class="flex gap-7">
-                                                <li><a href="tel:+1234567890"><img src="./src/assets/images/icons/egypt.svg" alt="Egpyt"> +20 1018930559</a></li>
-                                                <li><a href="tel:+1234567890"><img src="./src/assets/images/icons/emirates.svg" alt="Emirates"> +20 1018930559</a></li>
-                                                <li><a href="tel:+1234567890"><img src="./src/assets/images/icons/saudi.svg" alt="Saudi"> +20 1018930559</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="social-links">
-                                            <ul class="flex gap-6">
-                                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
-                                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                            </ul>
-                                            </ul>
-                                        </div>
+                            <div class="container">
+                                <div class="flex flex-col mt-12 lg:flex-row lg:items-center lg:gap-5 xl:gap-10 lg:mt-0">
+                                    <ul class="flex flex-col gap-0 p-4 lg:gap-3 lg:flex-row lg:p-0 xl:gap-5">
+                                        <!--============== Solutions Dropdown Menu ===============-->
+                                        <li class="nav__content--link">
+                                            <a id="solutions" class="justify-between hover">Solutions<i class="fa-regular fa-chevron-down"></i></a>
+                                            <div class="nav__content--dropdown p-0 w-full left-0 top-full overflow-y-scroll h-0 lg:absolute lg:h-auto lg:px-10 lg:py-4 lg:overflow-y-hidden" data-dropdown="solutions">
+                                                <div class="container">
+                                                    <div class="services-1 mb-5 lg:mb-10">
+                                                        <h3 class="text-xl font-semibold mb-5 lg:mb-5">Marketing</h3>
+                                                        <div class="links">
+                                                            <ul class="grid gird-cols-1 gap-5 lg:grid-cols-4 lg:gap-7">
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="services-2">
+                                                        <h3 class="text-xl font-semibold mb-5 lg:mb-5">Development</h3>
+                                                        <div class="links">
+                                                            <ul class="grid gird-cols-1 gap-5 lg:grid-cols-4 lg:gap-7">
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--============== Services Dropdown Menu ===============-->
+                                        <li class="nav__content--link">
+                                            <a id="services" class="justify-between hover">Services<i class="fa-regular fa-chevron-down"></i></a>
+                                            <div class="nav__content--dropdown p-0 w-full left-0 top-full overflow-y-scroll h-0 lg:absolute lg:h-auto lg:px-10 lg:py-4 lg:overflow-y-hidden" data-dropdown="services">
+                                                <div class="container">
+                                                    <div class="services-1 mb-5 lg:mb-10">
+                                                        <h3 class="text-xl font-semibold mb-5 lg:mb-5">E-commerce</h3>
+                                                        <div class="links">
+                                                            <ul class="grid gird-cols-1 gap-5 lg:grid-cols-4 lg:gap-7">
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="services-2">
+                                                        <h3 class="text-xl font-semibold mb-5 lg:mb-5">IOS</h3>
+                                                        <div class="links">
+                                                            <ul class="grid gird-cols-1 gap-5 lg:grid-cols-4 lg:gap-7">
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--============== Portfolio Dropdown Menu ===============-->
+                                        <li class="nav__content--link">
+                                            <a id="portfolio" class="justify-between hover">Portfolio<i class="fa-regular fa-chevron-down"></i></a>
+                                            <div class="nav__content--dropdown p-0 w-full left-0 top-full overflow-y-scroll h-0 lg:absolute lg:h-auto lg:px-10 lg:py-4 lg:overflow-y-hidden" data-dropdown="portfolio">
+                                                <div class="container">
+                                                    <div class="services-1 mb-5 lg:mb-10">
+                                                        <h3 class="text-xl font-semibold mb-5 lg:mb-5">Mobile Design</h3>
+                                                        <div class="links">
+                                                            <ul class="grid gird-cols-1 gap-5 lg:grid-cols-4 lg:gap-7">
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="services-2">
+                                                        <h3 class="text-xl font-semibold mb-5 lg:mb-5">UI & UX</h3>
+                                                        <div class="links">
+                                                            <ul class="grid gird-cols-1 gap-5 lg:grid-cols-4 lg:gap-7">
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
+                                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav__content--link"><a class="justify-between hover"  href="#">Blog</a></li>
+                                        <li class="nav__content--link"><a class="justify-between hover" href="#">Contact</a></li>
+                                        <li class="nav__content--link"><a class="justify-between hover" href="#">About</a></li>
+                                        <li class="nav__content--link"><button class=""><i class="fa-regular fa-globe"></i></button></li>
+                                    </ul>
+                                    <div class="nav--button mt-10 mx-auto p-4 lg:mx-0 lg:mt-0 lg:p-0">
+                                        <a href="#" class="bg-primary text-white rounded-md py-2 px-3 hover:bg-primaryLight focus:bg-primaryLight duration-200 ease-in xl:py-2 xl:px-6">
+                                            Get a Quote
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <!--============== Dropdown Menu ===============-->
-                            <div class="nav__content--dropdown p-10 absolute w-full left-0 top-full opened overflow-y-scroll" id="dropdown">
-                                <div class="container">
-                                    <div class="marketing mb-20">
-                                        <h2 class="text-4xl mb-10">Marketing</h2>
-                                        <div class="links">
-                                            <ul class="flex justify-between">
-                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
-                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
-                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
-                                                <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="development">
-                                        <h2 class="text-4xl mb-10">Development</h2>
-                                        <div class="links flex justify-between">
-                                            <div class="col">
-                                                <ul class="flex flex-col gap-7">
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                 <!--================= Social and Contacts in the phone Menu ==================-->
+                                <div class="nav__content--social block mt-10 mb-10 p-4 lg:hidden">
+                                    <div class="container">
+                                        <div class="flex flex-col justify-between items-center gap-5">
+                                            <div class="phones">
+                                                <ul class="flex justify-center flex-wrap gap-7">
+                                                    <li><a href="tel:+1234567890"><img src="./src/assets/images/icons/egypt.svg" alt="Egpyt"> +20 1018930559</a></li>
+                                                    <li><a href="tel:+1234567890"><img src="./src/assets/images/icons/emirates.svg" alt="Emirates"> +20 1018930559</a></li>
+                                                    <li><a href="tel:+1234567890"><img src="./src/assets/images/icons/saudi.svg" alt="Saudi"> +20 1018930559</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col">
-                                                <ul class="flex flex-col gap-7">
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
+                                            <div class="social-links">
+                                                <ul class="flex justify-center flex-wrap gap-6">
+                                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                                                 </ul>
-                                            </div>
-                                            <div class="col">
-                                                <ul class="flex flex-col gap-7">
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col">
-                                                <ul class="flex flex-col gap-7">
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Branding Identity</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Social Media</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Graphic Design</a></li>
-                                                    <li><a href="#"><img src="./src/assets/images/icons/navbar/1.svg" alt="Service Icon">Motion Graphic</a></li>
                                                 </ul>
                                             </div>
                                         </div>
