@@ -30,7 +30,8 @@ export default {
             // => @media (min-width: 1536px) { ... }
         },
         fontFamily: {
-            poppins: "Poppins', sans-serif",
+            poppins: "Poppins, sans-serif",
+            inter: "Inter, sans-serif;",
         },
         container: {
             center: true,

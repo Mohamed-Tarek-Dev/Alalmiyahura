@@ -45,6 +45,12 @@ dropdownLinks.forEach((link) => {
     });
 });
 
+dropdownMenus.forEach((menu) => {
+    menu.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+});
+
 // Close dropdown menu when clicking outside
 window.addEventListener("click", function (event) {
     if (
@@ -61,14 +67,14 @@ window.addEventListener("click", function (event) {
 });
 
 // Close dropdown menu when scrolling
-window.addEventListener("scroll", function () {
-    dropdownLinks.forEach((link) => {
-        link.classList.remove("active");
-    });
-    dropdownMenus.forEach((menu) => {
-        menu.classList.remove("active");
-    });
-});
+// window.addEventListener("scroll", function () {
+//     dropdownLinks.forEach((link) => {
+//         link.classList.remove("active");
+//     });
+//     dropdownMenus.forEach((menu) => {
+//         menu.classList.remove("active");
+//     });
+// });
 
 const hamburger = document.getElementById("menu-btn");
 const navbar = document.querySelector(".nav__content");
@@ -79,15 +85,30 @@ hamburger.addEventListener("click", (e) => {
 });
 
 // Change Navbar with scroll
-function handleScroll() {
-    const nav = document.querySelector("nav");
-    const offset = 80; // Adjust this value as needed
+// function handleScroll() {
+//     const nav = document.querySelector("nav");
+//     const offset = 80; // Adjust this value as needed
 
-    if (window.scrollY > offset) {
-        nav.classList.add("scrolled");
-    } else {
-        nav.classList.remove("scrolled");
-    }
-}
+//     if (window.scrollY > offset) {
+//         nav.classList.add("scrolled");
+//     } else {
+//         nav.classList.remove("scrolled");
+//     }
+// }
 
-window.addEventListener("scroll", handleScroll);
+// window.addEventListener("scroll", handleScroll);
+
+$(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1,
+            margin: 50,
+        },
+        1400: {
+            items: 2,
+        },
+    },
+});

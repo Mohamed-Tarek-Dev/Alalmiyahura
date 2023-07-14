@@ -1,0 +1,17 @@
+header {
+    &::before {
+        position: absolute;
+        content: "";
+        background: url("./src/assets/images/header/background.webp");
+        background-clip: border-box;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 48%;
+        width: 73%;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        animation: floatUp 2.5s ease-in-out infinite;
+        z-index: -1;
+    }
+}
