@@ -5,10 +5,41 @@
             @apply w-[200px] h-[200px] max-w-full max-h-full;
         }
     }
+    .owl-nav,
+    .owl-nav.disabled {
+        @apply hidden gap-3 absolute top-[-30%] right-0 sm:flex;
+        .owl-prev,
+        .owl-next {
+            @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
+            span {
+                @apply hidden;
+            }
+            &::after {
+                @apply text-2xl;
+                display: block;
+                font-family: "Font Awesome 6 Pro";
+                font-weight: 400;
+            }
+            &:hover {
+                @apply bg-primary text-white;
+            }
+        }
+        .owl-prev {
+            &::after {
+                content: "\f060";
+            }
+        }
+        .owl-next {
+            &::after {
+                content: "\f061";
+            }
+        }
+    }
 }
 
 #projects {
     .project-item {
+        @apply flex flex-wrap items-center justify-center gap-7 mt-16 lg:flex-nowrap lg:gap-0;
         .details {
             p {
                 img {

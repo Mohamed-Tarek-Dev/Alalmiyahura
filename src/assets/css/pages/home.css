@@ -2,12 +2,46 @@
   @apply flex justify-center items-center border-[1px] border-borderColor border-solid p-8; }
   #certificates .item img {
     @apply w-[200px] h-[200px] max-w-full max-h-full; }
+#certificates .owl-nav,
+#certificates .owl-nav.disabled {
+  @apply hidden gap-3 absolute top-[-30%] right-0 sm:flex; }
+  #certificates .owl-nav .owl-prev,
+  #certificates .owl-nav .owl-next,
+  #certificates .owl-nav.disabled .owl-prev,
+  #certificates .owl-nav.disabled .owl-next {
+    @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out; }
+    #certificates .owl-nav .owl-prev span,
+    #certificates .owl-nav .owl-next span,
+    #certificates .owl-nav.disabled .owl-prev span,
+    #certificates .owl-nav.disabled .owl-next span {
+      @apply hidden; }
+    #certificates .owl-nav .owl-prev::after,
+    #certificates .owl-nav .owl-next::after,
+    #certificates .owl-nav.disabled .owl-prev::after,
+    #certificates .owl-nav.disabled .owl-next::after {
+      @apply text-2xl;
+      display: block;
+      font-family: "Font Awesome 6 Pro";
+      font-weight: 400; }
+    #certificates .owl-nav .owl-prev:hover,
+    #certificates .owl-nav .owl-next:hover,
+    #certificates .owl-nav.disabled .owl-prev:hover,
+    #certificates .owl-nav.disabled .owl-next:hover {
+      @apply bg-primary text-white; }
+  #certificates .owl-nav .owl-prev::after,
+  #certificates .owl-nav.disabled .owl-prev::after {
+    content: "\f060"; }
+  #certificates .owl-nav .owl-next::after,
+  #certificates .owl-nav.disabled .owl-next::after {
+    content: "\f061"; }
 
-#projects .project-item .details p img {
-  @apply w-[20px] h-[15px]; }
-#projects .project-item .projects-btn a i {
-  @apply transition-all duration-300 ease-in-out; }
-#projects .project-item .projects-btn a:hover i {
-  @apply translate-x-[10px]; }
+#projects .project-item {
+  @apply flex flex-wrap items-center justify-center gap-7 mt-16 lg:flex-nowrap lg:gap-0; }
+  #projects .project-item .details p img {
+    @apply w-[20px] h-[15px]; }
+  #projects .project-item .projects-btn a i {
+    @apply transition-all duration-300 ease-in-out; }
+  #projects .project-item .projects-btn a:hover i {
+    @apply translate-x-[10px]; }
 
 /*# sourceMappingURL=home.css.map */

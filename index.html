@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./src/assets/css/pages/home.css" />
         <link rel="stylesheet" href="./src/plugins/all.css" />
         <link rel="stylesheet" href="./src/plugins/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./src/plugins/slick-theme.css" />
         <title>Alalmiyahura</title>
     </head>
     <body>
@@ -252,7 +253,6 @@
                             <img src="./src/assets/images/home/about-pic.png" class="max-w-[550px]" alt="About">
                         </div>
                         <div class="about__content flex flex-col items-start gap-7 w-full lg:w-1/2">
-                            <h5 class="text-primary font-bold">About Us</h5>
                             <h2 class="text-3xl font-extrabold">Best IT Solution For Your Business Theme</h2>
                             <p>
                                 Business solution company sit our any how site used the our company any site
@@ -273,7 +273,6 @@
 
             <section id="certificates" class="mt-16 lg:mt-32">
                 <div class="container">
-                    <h5 class="text-primary font-bold mb-3">Certificates</h5>
                     <h2 class="text-3xl font-extrabold">We're <br> Certificated In</h2>
                     <div id="certificates-carousel" class="owl-carousel owl-theme mt-16">
                         <div class="item">
@@ -295,87 +294,171 @@
 
             <section id="projects" class="mt-16 lg:mt-32">
                 <div class="container">
-                    <h5 class="text-primary font-bold mb-3">Featured Projects</h5>
                     <h2 class="text-3xl font-extrabold">Latest Projects</h2>
-                    <div class="project-item flex flex-wrap items-center justify-center gap-7 mt-16 lg:flex-nowrap lg:gap-0">
-                        <div class="img z-10"><img src="./src/assets/images/home/phones.svg" alt="Phones"></div>
-                        <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
-                            <div class="intro w-10/12">
-                                <h3 class="text-xl font-bold mb-5 sm:text-4xl">Outfit - Fashion E-Commerce App</h3>
-                                <p>
-                                    A Kuwait-Based On Demand Pickup And Delivery Service That Allows Its
-                                    Users To Schedule Their Pickup Anytime And Anywhere.
-                                </p>
-                            </div>
-                            <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
-                                <p>
-                                    Downloads
-                                    <br>
-                                    <span>3000+</span>
-                                </p>
-                                <p>
-                                    Region
-                                    <br>
-                                    <span class="flex items-center gap-2">
-                                        <img src="./src/assets/images/home/country.svg" alt="Country">
-                                        Egypt
-                                    </span>
-                                </p>
-                                <p>
-                                    Platforms
-                                    <br>
-                                    <span>Ios, Android</span>
-                                </p>
-                                <p>
-                                    Technology
-                                    <br>
-                                    <span>Swift, Kotlin, Angular, Node. Mongodb</span>
-                                </p>
-                            </div>
-                            <div class="projects-btn mt-10 w-10/12 mx-auto">
-                                <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">Read More<i class="fa-regular fa-arrow-right relative top-[2px] mx-5"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item flex flex-row-reverse flex-wrap items-center justify-center gap-7 mt-16 lg:flex-nowrap lg:gap-0">
-                        <div class="img z-10"><img src="./src/assets/images/home/phones-2.svg" alt="Phones"></div>
-                        <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative right-0 lg:w-9/12 lg:right-[-60px]">
-                            <div class="intro w-10/12">
-                                <h3 class="text-xl font-bold mb-5 sm:text-4xl">Outfit - Fashion E-Commerce App</h3>
-                                <p>
-                                    A Kuwait-Based On Demand Pickup And Delivery Service That Allows Its
-                                    Users To Schedule Their Pickup Anytime And Anywhere.
-                                </p>
-                            </div>
-                            <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
-                                <p>
-                                    Downloads
-                                    <br>
-                                    <span>3000+</span>
-                                </p>
-                                <p>
-                                    Region
-                                    <br>
-                                    <span class="flex items-center gap-2">
-                                        <img src="./src/assets/images/home/country.svg" alt="Country">
-                                        Egypt
-                                    </span>
-                                </p>
-                                <p>
-                                    Platforms
-                                    <br>
-                                    <span>Ios, Android</span>
-                                </p>
-                                <p>
-                                    Technology
-                                    <br>
-                                    <span>Swift, Kotlin, Angular, Node. Mongodb</span>
-                                </p>
-                            </div>
-                            <div class="projects-btn mt-10 w-10/12 mx-auto">
-                                <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">Read More<i class="fa-regular fa-arrow-right relative top-[2px] mx-5"></i></a>
+
+                    <div class="slider">
+                        <div class="project-item">
+                            <div class="img z-10"><img src="./src/assets/images/home/phones.svg" alt="Phones"></div>
+                            <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
+                                <div class="intro w-10/12">
+                                    <h3 class="text-xl font-bold mb-5 sm:text-4xl">Outfit - Fashion E-Commerce App</h3>
+                                    <p>
+                                        A Kuwait-Based On Demand Pickup And Delivery Service That Allows Its
+                                        Users To Schedule Their Pickup Anytime And Anywhere.
+                                    </p>
+                                </div>
+                                <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
+                                    <p>
+                                        Downloads
+                                        <br>
+                                        <span>3000+</span>
+                                    </p>
+                                    <p>
+                                        Region
+                                        <br>
+                                        <span class="flex items-center gap-2">
+                                            <img src="./src/assets/images/home/country.svg" alt="Country">
+                                            Egypt
+                                        </span>
+                                    </p>
+                                    <p>
+                                        Platforms
+                                        <br>
+                                        <span>Ios, Android</span>
+                                    </p>
+                                    <p>
+                                        Technology
+                                        <br>
+                                        <span>Swift, Kotlin, Angular, Node. Mongodb</span>
+                                    </p>
+                                </div>
+                                <div class="projects-btn mt-10 w-10/12 mx-auto">
+                                    <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">Read More<i class="fa-regular fa-arrow-right relative top-[2px] mx-5"></i></a>
+                                </div>
                             </div>
                         </div>
+                        <div class="project-item flex-row-reverse">
+                            <div class="img z-10"><img src="./src/assets/images/home/phones-2.svg" alt="Phones"></div>
+                            <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative right-0 lg:w-9/12 lg:right-[-60px]">
+                                <div class="intro w-10/12">
+                                    <h3 class="text-xl font-bold mb-5 sm:text-4xl">Outfit - Fashion E-Commerce App</h3>
+                                    <p>
+                                        A Kuwait-Based On Demand Pickup And Delivery Service That Allows Its
+                                        Users To Schedule Their Pickup Anytime And Anywhere.
+                                    </p>
+                                </div>
+                                <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
+                                    <p>
+                                        Downloads
+                                        <br>
+                                        <span>3000+</span>
+                                    </p>
+                                    <p>
+                                        Region
+                                        <br>
+                                        <span class="flex items-center gap-2">
+                                            <img src="./src/assets/images/home/country.svg" alt="Country">
+                                            Egypt
+                                        </span>
+                                    </p>
+                                    <p>
+                                        Platforms
+                                        <br>
+                                        <span>Ios, Android</span>
+                                    </p>
+                                    <p>
+                                        Technology
+                                        <br>
+                                        <span>Swift, Kotlin, Angular, Node. Mongodb</span>
+                                    </p>
+                                </div>
+                                <div class="projects-btn mt-10 w-10/12 mx-auto">
+                                    <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">Read More<i class="fa-regular fa-arrow-right relative top-[2px] mx-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="img z-10"><img src="./src/assets/images/home/phones.svg" alt="Phones"></div>
+                            <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
+                                <div class="intro w-10/12">
+                                    <h3 class="text-xl font-bold mb-5 sm:text-4xl">dfgdfgg - Fashion E-Commerce App</h3>
+                                    <p>
+                                        A Kuwait-Based On Demand Pickup And Delivery Service That Allows Its
+                                        Users To Schedule Their Pickup Anytime And Anywhere.
+                                    </p>
+                                </div>
+                                <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
+                                    <p>
+                                        Downloads
+                                        <br>
+                                        <span>3000+</span>
+                                    </p>
+                                    <p>
+                                        Region
+                                        <br>
+                                        <span class="flex items-center gap-2">
+                                            <img src="./src/assets/images/home/country.svg" alt="Country">
+                                            Egypt
+                                        </span>
+                                    </p>
+                                    <p>
+                                        Platforms
+                                        <br>
+                                        <span>Ios, Android</span>
+                                    </p>
+                                    <p>
+                                        Technology
+                                        <br>
+                                        <span>Swift, Kotlin, Angular, Node. Mongodb</span>
+                                    </p>
+                                </div>
+                                <div class="projects-btn mt-10 w-10/12 mx-auto">
+                                    <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">Read More<i class="fa-regular fa-arrow-right relative top-[2px] mx-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item flex-row-reverse">
+                            <div class="img z-10"><img src="./src/assets/images/home/phones-2.svg" alt="Phones"></div>
+                            <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative right-0 lg:w-9/12 lg:right-[-60px]">
+                                <div class="intro w-10/12">
+                                    <h3 class="text-xl font-bold mb-5 sm:text-4xl">asdasdasd - Fashion E-Commerce App</h3>
+                                    <p>
+                                        A Kuwait-Based On Demand Pickup And Delivery Service That Allows Its
+                                        Users To Schedule Their Pickup Anytime And Anywhere.
+                                    </p>
+                                </div>
+                                <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
+                                    <p>
+                                        Downloads
+                                        <br>
+                                        <span>3000+</span>
+                                    </p>
+                                    <p>
+                                        Region
+                                        <br>
+                                        <span class="flex items-center gap-2">
+                                            <img src="./src/assets/images/home/country.svg" alt="Country">
+                                            Egypt
+                                        </span>
+                                    </p>
+                                    <p>
+                                        Platforms
+                                        <br>
+                                        <span>Ios, Android</span>
+                                    </p>
+                                    <p>
+                                        Technology
+                                        <br>
+                                        <span>Swift, Kotlin, Angular, Node. Mongodb</span>
+                                    </p>
+                                </div>
+                                <div class="projects-btn mt-10 w-10/12 mx-auto">
+                                    <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">Read More<i class="fa-regular fa-arrow-right relative top-[2px] mx-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="prev-btn">Previous</button>
+                        <button id="next-btn">Next</button>
                     </div>
                     <div class="mt-10 text-center lg:mt-16">
                         <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">Show More</a>
@@ -389,6 +472,7 @@
 
         <script type="module" src="./src/plugins/jquery-3.7.0.min.js"></script>
         <script type="module" src="./src/plugins/owl.carousel.min.js"></script>
+        <script type="module" src="./src/plugins/slick.min.js"></script>
         <script type="module" src="./src/main.js"></script>
         <script type="module" src="./src/assets/js/home.js"></script>
     </body>
