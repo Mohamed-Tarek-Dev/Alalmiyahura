@@ -1,23 +1,23 @@
 // Certificates Slider
-document.addEventListener("DOMContentLoaded", function () {
-    $("#certificates-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 3,
-            },
-            1000: {
-                items: 4,
-                margin: 80,
-            },
+$("#certificates-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1,
         },
-    });
+        768: {
+            items: 3,
+        },
+        1000: {
+            items: 4,
+            margin: 80,
+        },
+    },
+});
 
+document.addEventListener("DOMContentLoaded", function () {
     // Get all project items and next/prev buttons
     const projectItems = document.querySelectorAll(".project-item");
     const prevBtn = document.getElementById("prev-btn");

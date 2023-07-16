@@ -1,5 +1,3 @@
-import "./assets/css/style.css";
-
 // Get all the dropdown links and menus
 const dropdownLinks = document.querySelectorAll(".nav__content--link");
 const dropdownMenus = document.querySelectorAll(".nav__content--dropdown");
@@ -102,11 +100,10 @@ function handleScroll() {
 
 window.addEventListener("scroll", handleScroll);
 
-// Nav carousel
 $("#nav-carousel").owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     responsive: {
         0: {
             items: 1,

@@ -44,5 +44,5 @@ export default {
         extend: {},
     },
     plugins: [],
-    important: true,
+    // important: true,
 };
