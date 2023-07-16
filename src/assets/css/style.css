@@ -10,7 +10,7 @@
   background: linear-gradient(118deg, #5ebab3, #95d0cb, #add1ce); }
 
 .background-3 {
-  background: linear-gradient(118deg, #dcffe3, #ddffbd, #deff92); }
+  background: linear-gradient(90deg, #d5fff8 0%, #d5fff8 25%, #deff92 100%); }
 
 *,
 *::before,
@@ -19,7 +19,8 @@
 
 body {
   font-family: inherit;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 5000px; }
 
 a {
   text-decoration: none; }
@@ -29,6 +30,20 @@ ul {
 
 img {
   width: 100%; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #29398c;
+  border-radius: 15px; }
 
 .nav__top--phones li a {
   @apply flex items-center gap-1 hover:text-[#0A6EBD] focus:text-[#0A6EBD] duration-200 ease-in; }
@@ -71,12 +86,11 @@ img {
       background-color: crimson; }
 @media (max-width: 992px) {
   .nav__content {
-    transition: all 0.3s ease-in-out;
-    @apply translate-x-[-100%]; } }
+    @apply left-[-500px] translate-x-[-100%] overflow-y-scroll transition-all duration-300 ease-in-out; } }
 .nav__content a {
   @apply cursor-pointer; }
 .nav__content--link {
-  @apply text-black py-3 px-0 lg:flex lg:items-center; }
+  @apply text-primary py-3 px-0 lg:flex lg:items-center; }
   .nav__content--link:nth-child(1), .nav__content--link:nth-child(2), .nav__content--link:nth-child(3) {
     @apply border-b-[1px] border-[#dddddd] lg:border-0; }
   .nav__content--link:last-child {
@@ -98,15 +112,15 @@ img {
   .nav__content--link.active a::after {
     @apply w-full; }
 .nav__content--dropdown {
-  @apply transition-all duration-300 ease-in opacity-0 invisible lg:shadow-[0_-3px_3px_0px_#0001_inset] lg:translate-y-[-60px]; }
+  @apply max-h-0 opacity-0 overflow-hidden transition-all duration-300 translate-y-[-60px] z-[-1] lg:shadow-[0_-3px_3px_0px_#0001_inset]; }
   @media (min-width: 992px) {
     .nav__content--dropdown.active {
-      @apply translate-y-0 opacity-100 visible pb-10 bg-white z-50; } }
+      @apply max-h-fit opacity-100 translate-y-0 pb-10 bg-white z-50; } }
   @media (max-width: 992px) {
     .nav__content--dropdown.active {
-      @apply flex opacity-100 visible relative  mt-5 h-[500px] max-h-[100%] translate-y-0 bg-white z-50; } }
+      @apply flex left-0 opacity-100 visible relative  mt-5 h-[500px] max-h-[100%] translate-y-0 bg-white z-50; } }
   .nav__content--dropdown .links ul li a {
-    @apply flex items-center gap-5 font-semibold hover:text-primary hover:translate-x-[7px] transition-all duration-300 ease-in-out; }
+    @apply text-black flex items-center gap-5 font-semibold hover:text-primary hover:translate-x-[7px] transition-all duration-300 ease-in-out; }
     .nav__content--dropdown .links ul li a img {
       @apply w-[30px] h-[30px]; }
   .nav__content--dropdown .owl-carousel {
@@ -143,10 +157,11 @@ img {
   .nav__content.opened {
     @apply fixed translate-x-0 top-0 left-0 w-full h-full z-10 bg-white opacity-100 visible; } }
 .nav.scrolled {
-  @apply fixed top-0 left-0 right-0 w-full;
-  background-color: rgba(238, 238, 238, 0.5); }
+  transition: all 0.3s ease;
+  @apply fixed top-0 left-0 right-0 w-full z-50;
+  background-color: rgba(238, 238, 238, 0.99); }
   .nav.scrolled .nav__content--dropdown {
-    background-color: rgba(238, 238, 238, 0.5); }
+    background-color: rgba(238, 238, 238, 0.99); }
   .nav.scrolled .nav__top {
     @apply hidden; }
 
@@ -157,12 +172,29 @@ header::before {
   background-clip: border-box;
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 48%;
+  background-size: 45%;
   width: 73%;
   height: 100%;
   right: 0;
   bottom: 0;
   animation: floatUp 2.5s ease-in-out infinite;
-  z-index: -1; }
+  z-index: -1;
+  animation: bounce 2.5s infinite; }
+header .col {
+  @apply p-5 rounded-2xl border-[1px] border-solid border-borderColor w-full; }
+  header .col h3 {
+    @apply gap-2 items-center;
+    @apply flex; }
+    header .col h3 img {
+      @apply h-6 w-6; }
+  header .col p {
+    @apply my-5; }
+
+@keyframes bounce {
+  0%,
+    100% {
+    transform: translateY(-5%); }
+  50% {
+    transform: none; } }
 
 /*# sourceMappingURL=style.css.map */

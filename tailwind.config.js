@@ -12,6 +12,10 @@ export default {
             background: "rgba(0,0,0,0.5)",
             crimson: "crimson",
             black: "black",
+            lightYellow: "#FFFBEB",
+            lightGreen: "#F2FBF2",
+            lightBlue: "#F2F9FF",
+            borderColor: "hsl(230, 32%, 90%)",
         },
         screens: {
             sm: "576px",

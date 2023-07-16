@@ -7,7 +7,8 @@
 body {
     font-family: inherit;
     overflow-x: hidden;
-    // height: 2000px;
+    height: 5000px;
+    // transition: all 3s ease;
 }
 a {
     text-decoration: none;
@@ -17,4 +18,21 @@ ul {
 }
 img {
     width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $colorPrimary;
+    border-radius: 15px;
 }

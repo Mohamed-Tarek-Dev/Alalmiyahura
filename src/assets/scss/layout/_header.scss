@@ -6,12 +6,43 @@ header {
         background-clip: border-box;
         background-repeat: no-repeat;
         background-position: top right;
-        background-size: 48%;
+        background-size: 45%;
         width: 73%;
         height: 100%;
         right: 0;
         bottom: 0;
         animation: floatUp 2.5s ease-in-out infinite;
         z-index: -1;
+        animation: bounce 2.5s infinite;
+    }
+
+    .col {
+        @apply p-5 rounded-2xl border-[1px] border-solid border-borderColor w-full;
+        &:first-child {
+        }
+        &:nth-child(2) {
+        }
+        &:last-child {
+        }
+        h3 {
+            @apply gap-2 items-center;
+            img {
+                @apply h-6 w-6;
+            }
+            @apply flex;
+        }
+        p {
+            @apply my-5;
+        }
+    }
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(-5%);
+    }
+    50% {
+        transform: none;
     }
 }

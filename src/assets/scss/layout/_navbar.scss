@@ -83,14 +83,13 @@
 
     &__content {
         @media (max-width: 992px) {
-            transition: all 0.3s ease-in-out;
-            @apply translate-x-[-100%];
+            @apply left-[-500px] translate-x-[-100%] overflow-y-scroll transition-all duration-300 ease-in-out;
         }
         a {
             @apply cursor-pointer;
         }
         &--link {
-            @apply text-black py-3 px-0 lg:flex lg:items-center;
+            @apply text-primary py-3 px-0 lg:flex lg:items-center;
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3) {
@@ -137,20 +136,20 @@
         }
 
         &--dropdown {
-            @apply transition-all duration-300 ease-in opacity-0 invisible lg:shadow-[0_-3px_3px_0px_#0001_inset] lg:translate-y-[-60px];
+            @apply max-h-0 opacity-0 overflow-hidden transition-all duration-300 translate-y-[-60px] z-[-1] lg:shadow-[0_-3px_3px_0px_#0001_inset];
             &.active {
                 @media (min-width: 992px) {
-                    @apply translate-y-0 opacity-100 visible pb-10 bg-white z-50;
+                    @apply max-h-fit opacity-100 translate-y-0 pb-10 bg-white z-50;
                 }
                 @media (max-width: 992px) {
-                    @apply flex opacity-100 visible relative  mt-5 h-[500px] max-h-[100%] translate-y-0 bg-white z-50;
+                    @apply flex left-0 opacity-100 visible relative  mt-5 h-[500px] max-h-[100%] translate-y-0 bg-white z-50;
                 }
             }
             .links {
                 ul {
                     li {
                         a {
-                            @apply flex items-center gap-5 font-semibold hover:text-primary hover:translate-x-[7px] transition-all duration-300 ease-in-out;
+                            @apply text-black flex items-center gap-5 font-semibold hover:text-primary hover:translate-x-[7px] transition-all duration-300 ease-in-out;
                             img {
                                 @apply w-[30px] h-[30px];
                             }
@@ -231,13 +230,14 @@
     }
 
     &.scrolled {
-        @apply fixed top-0 left-0 right-0 w-full;
-        background-color: rgba(238, 238, 238, 0.5);
+        transition: all 0.3s ease;
+        @apply fixed top-0 left-0 right-0 w-full z-50;
+        background-color: rgba(238, 238, 238, 0.99);
         a {
             // color: #fff;
         }
         .nav__content--dropdown {
-            background-color: rgba(238, 238, 238, 0.5);
+            background-color: rgba(238, 238, 238, 0.99);
         }
         .nav__top {
             @apply hidden;
