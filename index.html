@@ -138,7 +138,7 @@
                                             <div class="nav__content--dropdown portfolio p-0 w-full left-0 top-full overflow-y-scroll h-0 active:h-fit lg:absolute lg:h-auto lg:px-10 lg:py-4 lg:overflow-y-hidden" data-dropdown="portfolio">
                                                 <div class="container">
                                                     <h2 class="text-xl font-bold text-black mb-5 lg:text-4xl lg:mb-24">Our Latest Projects</h2>
-                                                    <div class="owl-carousel owl-theme">
+                                                    <div id="nav-carousel" class="owl-carousel owl-theme">
                                                         <div class="item">
                                                             <div class="img"><img src="./src/assets/images/navbar/portfolio.webp" alt="Portfolio"></div>
                                                             <div class="info background-1">
@@ -221,17 +221,175 @@
                         <button class="bg-primary text-white py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-white hover:text-primary duration-300">Take Step</button>
                         <button class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">Contact Us</button>
                     </div>
-                    <div class="flex">
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
+                    <div class="flex flex-wrap mt-10 text-start gap-4 lg:flex-nowrap lg:mt-24">
+                        <div class="col bg-lightYellow">
+                            <h3><img src="./src/assets/images/header/lumb.svg" alt="innovation">Innovative Solutions</h3>
+                            <p>
+                                We are distinguished in the field of design and development
+                                with innovative solutions that we provide to make our projects of the
+                                highest degree of efficiency and quality
+                            </p>
+                        </div>
+                        <div class="col bg-lightGreen">
+                            <h3><img src="./src/assets/images/header/speed.svg" alt="innovation">Performance</h3>
+                            <p>The speed in the implementation of services is something we have been keen on from the beginning to reach our customers where they want in a short time</p>
+                        </div>
+                        <div class="col bg-lightBlue">
+                            <h3><img src="./src/assets/images/header/lumb.svg" alt="innovation">Fast Technical Support</h3>
+                            <p>
+                                Always ready to serve our customers and answer all questions and inquiries as quickly as possible
+                            </p>
+                        </div>
                     </div>
                 </div>
             </header>
+
+            <!--=============== About us =================-->
+            <section id="about" class="mt-20 lg:mt-32">
+                <div class="container">
+                    <div class="flex flex-wrap justify-between gap-8 lg:flex-nowrap">
+                        <div class="about__img flex justify-center w-full lg:block lg:w-1/2">
+                            <img src="./src/assets/images/home/about-pic.png" class="max-w-[550px]" alt="About">
+                        </div>
+                        <div class="about__content flex flex-col items-start gap-7 w-full lg:w-1/2">
+                            <h5 class="text-primary font-bold">About Us</h5>
+                            <h2 class="text-3xl font-extrabold">Best IT Solution For Your Business Theme</h2>
+                            <p>
+                                Business solution company sit our any how site used the our company any site
+                                us it-solve theme is very professional theme business & corporate, finance, advisor,
+                                solution, company and all project used.
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <img src="./src/assets/images/home/certified.svg" class="w-[122px] h-[109px]" alt="certified">
+                                <p>Years of experience in software services.</p>
+                            </div>
+                            <button class="text-center bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300 flex items-center gap-2">
+                                More about us<i class="fa-regular fa-arrow-right relative top-[2px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificates" class="mt-16 lg:mt-32">
+                <div class="container">
+                    <h5 class="text-primary font-bold mb-3">Certificates</h5>
+                    <h2 class="text-3xl font-extrabold">We're <br> Certificated In</h2>
+                    <div id="certificates-carousel" class="owl-carousel owl-theme mt-16">
+                        <div class="item">
+                            <img src="./src/assets/images/home/certificate-1.svg" alt="Certificate">
+                        </div>
+                        <div class="item">
+                            <img src="./src/assets/images/home/certificate-2.svg" alt="Certificate">
+                        </div>
+                        <div class="item">
+                            <img src="./src/assets/images/home/certificate-3.svg" alt="Certificate">
+                        </div>
+                        <div class="item">
+                            <img src="./src/assets/images/home/certificate-4.svg" alt="Certificate">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="projects" class="mt-16 lg:mt-32">
+                <div class="container">
+                    <h5 class="text-primary font-bold mb-3">Featured Projects</h5>
+                    <h2 class="text-3xl font-extrabold">Latest Projects</h2>
+                    <div class="project-item flex flex-wrap items-center justify-center gap-7 mt-16 lg:flex-nowrap lg:gap-0">
+                        <div class="img z-10"><img src="./src/assets/images/home/phones.svg" alt="Phones"></div>
+                        <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
+                            <div class="intro w-10/12">
+                                <h3 class="text-xl font-bold mb-5 sm:text-4xl">Outfit - Fashion E-Commerce App</h3>
+                                <p>
+                                    A Kuwait-Based On Demand Pickup And Delivery Service That Allows Its
+                                    Users To Schedule Their Pickup Anytime And Anywhere.
+                                </p>
+                            </div>
+                            <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
+                                <p>
+                                    Downloads
+                                    <br>
+                                    <span>3000+</span>
+                                </p>
+                                <p>
+                                    Region
+                                    <br>
+                                    <span class="flex items-center gap-2">
+                                        <img src="./src/assets/images/home/country.svg" alt="Country">
+                                        Egypt
+                                    </span>
+                                </p>
+                                <p>
+                                    Platforms
+                                    <br>
+                                    <span>Ios, Android</span>
+                                </p>
+                                <p>
+                                    Technology
+                                    <br>
+                                    <span>Swift, Kotlin, Angular, Node. Mongodb</span>
+                                </p>
+                            </div>
+                            <div class="projects-btn mt-10 w-10/12 mx-auto">
+                                <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">Read More<i class="fa-regular fa-arrow-right relative top-[2px] mx-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item flex flex-row-reverse flex-wrap items-center justify-center gap-7 mt-16 lg:flex-nowrap lg:gap-0">
+                        <div class="img z-10"><img src="./src/assets/images/home/phones-2.svg" alt="Phones"></div>
+                        <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative right-0 lg:w-9/12 lg:right-[-60px]">
+                            <div class="intro w-10/12">
+                                <h3 class="text-xl font-bold mb-5 sm:text-4xl">Outfit - Fashion E-Commerce App</h3>
+                                <p>
+                                    A Kuwait-Based On Demand Pickup And Delivery Service That Allows Its
+                                    Users To Schedule Their Pickup Anytime And Anywhere.
+                                </p>
+                            </div>
+                            <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
+                                <p>
+                                    Downloads
+                                    <br>
+                                    <span>3000+</span>
+                                </p>
+                                <p>
+                                    Region
+                                    <br>
+                                    <span class="flex items-center gap-2">
+                                        <img src="./src/assets/images/home/country.svg" alt="Country">
+                                        Egypt
+                                    </span>
+                                </p>
+                                <p>
+                                    Platforms
+                                    <br>
+                                    <span>Ios, Android</span>
+                                </p>
+                                <p>
+                                    Technology
+                                    <br>
+                                    <span>Swift, Kotlin, Angular, Node. Mongodb</span>
+                                </p>
+                            </div>
+                            <div class="projects-btn mt-10 w-10/12 mx-auto">
+                                <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">Read More<i class="fa-regular fa-arrow-right relative top-[2px] mx-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10 text-center lg:mt-16">
+                        <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">Show More</a>
+                    </div>
+                </div>
+            </section>
+
+            
+
         </div>
 
         <script type="module" src="./src/plugins/jquery-3.7.0.min.js"></script>
         <script type="module" src="./src/plugins/owl.carousel.min.js"></script>
         <script type="module" src="./src/main.js"></script>
+        <script type="module" src="./src/assets/js/home.js"></script>
     </body>
 </html>
