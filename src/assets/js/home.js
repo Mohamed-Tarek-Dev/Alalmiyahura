@@ -28,12 +28,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const itemsToShow = 2;
 
     // Function to show the current slides
+    const showMore = document.getElementById("showMore");
     function showSlides(startIndex) {
         projectItems.forEach((item, i) => {
             if (i >= startIndex && i < startIndex + itemsToShow) {
-                item.style.display = "flex";
+                item.classList.remove("hidden");
+                setTimeout(() => {
+                    item.classList.add("active");
+                }, 50);
             } else {
-                item.style.display = "none";
+                item.classList.add("hidden");
+                item.classList.remove("active");
+                setTimeout(() => {}, 300);
             }
         });
     }
@@ -58,4 +64,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Show the initial slides
     showSlides(currentIndex);
+});
+
+$("#discover-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        768: {
+            items: 2,
+        },
+        1000: {
+            items: 3,
+            margin: 15,
+        },
+    },
+});
+
+$("#testimonials-carousel").owlCarousel({
+    loop: true,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+            margin: 10,
+        },
+        1000: {
+            items: 2.5,
+            margin: 15,
+        },
+    },
 });

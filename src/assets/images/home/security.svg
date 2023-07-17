@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="vuesax_linear_security-safe" data-name="vuesax/linear/security-safe" transform="translate(-364 -316)">
+    <g id="security-safe" transform="translate(364 316)">
+      <path id="Vector" d="M35.588,18.209c0,9.772-7.09,18.924-16.775,21.6a3.913,3.913,0,0,1-2.037,0C7.09,37.133,0,27.981,0,18.209V9.437A4.8,4.8,0,0,1,2.776,5.32L13.9.764a10.354,10.354,0,0,1,7.808,0L32.832,5.32a4.837,4.837,0,0,1,2.776,4.116Z" transform="translate(6.206 4.032)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <g id="Group" transform="translate(19.983 16.97)">
+        <path id="Vector-2" data-name="Vector" d="M8.034,4.017A4.017,4.017,0,1,1,4.017,0,4.017,4.017,0,0,1,8.034,4.017Z" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Vector-3" data-name="Vector" d="M0,0V6.026" transform="translate(4.017 8.034)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <path id="Vector-4" data-name="Vector" d="M0,0H48V48H0Z" transform="translate(48 48) rotate(180)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

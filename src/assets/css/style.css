@@ -17,7 +17,7 @@
 body {
   font-family: inherit;
   overflow-x: hidden;
-  height: 5000px; }
+  height: 10000px; }
 
 a {
   text-decoration: none; }
@@ -42,6 +42,13 @@ img {
   background: #29398c;
   border-radius: 15px; }
 
+@keyframes scale {
+  0% {
+    transform: scale(0.7); }
+  50% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0.7); } }
 .nav__top--phones li a {
   @apply flex items-center gap-1 hover:text-[#0A6EBD] focus:text-[#0A6EBD] duration-200 ease-in; }
   .nav__top--phones li a img {
@@ -83,7 +90,7 @@ img {
       background-color: crimson; }
 @media (max-width: 992px) {
   .nav__content {
-    @apply left-[-500px] translate-x-[-100%] overflow-y-scroll transition-all duration-300 ease-in-out; } }
+    @apply translate-x-[-100%] overflow-y-scroll transition-all duration-300 ease-in-out; } }
 .nav__content a {
   @apply cursor-pointer; }
 .nav__content--link {
@@ -180,7 +187,7 @@ header::before {
 header .col {
   @apply p-5 rounded-2xl border-[1px] border-solid border-borderColor w-full; }
   header .col h3 {
-    @apply gap-2 items-center;
+    @apply gap-2 items-center font-bold text-2xl;
     @apply flex; }
     header .col h3 img {
       @apply h-6 w-6; }

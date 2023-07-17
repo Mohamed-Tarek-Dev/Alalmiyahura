@@ -16,6 +16,9 @@ export default {
             lightGreen: "#F2FBF2",
             lightBlue: "#F2F9FF",
             borderColor: "hsl(230, 32%, 90%)",
+            backgroundOne: "#F6FAFF",
+            backgroundTwo: "#FFF9FB",
+            backgroundThree: "#F7FBF7",
         },
         screens: {
             sm: "576px",

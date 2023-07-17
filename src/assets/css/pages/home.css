@@ -4,7 +4,7 @@
     @apply w-[200px] h-[200px] max-w-full max-h-full; }
 #certificates .owl-nav,
 #certificates .owl-nav.disabled {
-  @apply hidden gap-3 absolute top-[-30%] right-0 sm:flex; }
+  @apply hidden gap-3 absolute top-[-39%] right-0 sm:flex; }
   #certificates .owl-nav .owl-prev,
   #certificates .owl-nav .owl-next,
   #certificates .owl-nav.disabled .owl-prev,
@@ -35,13 +35,141 @@
   #certificates .owl-nav.disabled .owl-next::after {
     content: "\f061"; }
 
+#projects .slider {
+  @apply min-h-[1200px] max-h-full; }
 #projects .project-item {
-  @apply flex flex-wrap items-center justify-center gap-7 mt-16 lg:flex-nowrap lg:gap-0; }
+  @apply transition-all duration-[500ms] translate-x-[-50%] absolute invisible opacity-0 flex-wrap items-center justify-center gap-7 mt-10 lg:flex-nowrap lg:gap-0; }
   #projects .project-item .details p img {
     @apply w-[20px] h-[15px]; }
   #projects .project-item .projects-btn a i {
     @apply transition-all duration-300 ease-in-out; }
   #projects .project-item .projects-btn a:hover i {
     @apply translate-x-[10px]; }
+  #projects .project-item.active {
+    @apply flex translate-x-0 relative left-0 opacity-100 visible h-full; }
+#projects .slide-buttons {
+  @apply w-full justify-end hidden gap-3 absolute top-[-8%] sm:flex; }
+  #projects .slide-buttons #prev-btn,
+  #projects .slide-buttons #next-btn {
+    @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out; }
+    #projects .slide-buttons #prev-btn::after,
+    #projects .slide-buttons #next-btn::after {
+      @apply text-2xl;
+      display: block;
+      font-family: "Font Awesome 6 Pro";
+      font-weight: 400; }
+    #projects .slide-buttons #prev-btn:hover,
+    #projects .slide-buttons #next-btn:hover {
+      @apply bg-primary text-white; }
+  #projects .slide-buttons #prev-btn::after {
+    content: "\f060"; }
+  #projects .slide-buttons #next-btn::after {
+    content: "\f061"; }
+
+#discover .item {
+  @apply flex flex-col gap-5 p-8 rounded-3xl; }
+  #discover .item img {
+    @apply w-[100px] h-[100px]; }
+  #discover .item a {
+    @apply self-end text-primary font-semibold flex items-center gap-2; }
+    #discover .item a i {
+      @apply relative top-[2px]; }
+#discover .owl-nav,
+#discover .owl-nav.disabled {
+  @apply hidden gap-3 absolute top-[-39%] right-0 sm:flex; }
+  #discover .owl-nav .owl-prev,
+  #discover .owl-nav .owl-next,
+  #discover .owl-nav.disabled .owl-prev,
+  #discover .owl-nav.disabled .owl-next {
+    @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out; }
+    #discover .owl-nav .owl-prev span,
+    #discover .owl-nav .owl-next span,
+    #discover .owl-nav.disabled .owl-prev span,
+    #discover .owl-nav.disabled .owl-next span {
+      @apply hidden; }
+    #discover .owl-nav .owl-prev::after,
+    #discover .owl-nav .owl-next::after,
+    #discover .owl-nav.disabled .owl-prev::after,
+    #discover .owl-nav.disabled .owl-next::after {
+      @apply text-2xl;
+      display: block;
+      font-family: "Font Awesome 6 Pro";
+      font-weight: 400; }
+    #discover .owl-nav .owl-prev:hover,
+    #discover .owl-nav .owl-next:hover,
+    #discover .owl-nav.disabled .owl-prev:hover,
+    #discover .owl-nav.disabled .owl-next:hover {
+      @apply bg-primary text-white; }
+  #discover .owl-nav .owl-prev::after,
+  #discover .owl-nav.disabled .owl-prev::after {
+    content: "\f060"; }
+  #discover .owl-nav .owl-next::after,
+  #discover .owl-nav.disabled .owl-next::after {
+    content: "\f061"; }
+
+#technology::before {
+  content: "";
+  background: url("../../images/home/tech-bg.svg");
+  background-repeat: no-repeat;
+  animation: scale 2.5s ease-in-out infinite alternate;
+  transform-origin: center;
+  @apply hidden w-[200px] h-[150px] absolute top-[-20px] left-[74%] translate-x-[-50%] z-[-1] sm:block lg:top-[10px] lg:left-[40%]; }
+#technology .cards .card {
+  @apply border-[1px] border-solid border-borderColor p-5 lg:p-10 rounded-2xl; }
+  #technology .cards .card h3 {
+    @apply text-3xl font-semibold; }
+  #technology .cards .card ul {
+    @apply flex flex-wrap gap-10 items-center mt-10 lg:gap-5 2xl:gap-20; }
+    #technology .cards .card ul li a {
+      @apply flex flex-col items-center gap-1; }
+      #technology .cards .card ul li a img {
+        @apply w-[50px] h-[50px]; }
+
+#testimonials .item {
+  @apply border-[1px] border-solid border-borderColor p-5 lg:p-10 rounded-2xl; }
+  #testimonials .item .icon {
+    @apply pb-4 border-b-[1px] border-solid border-borderColor; }
+    #testimonials .item .icon img {
+      @apply w-[114px] h-[32px]; }
+  #testimonials .item p {
+    @apply text-justify my-5; }
+  #testimonials .item .person {
+    @apply flex items-center gap-3; }
+    #testimonials .item .person img {
+      @apply w-[80px] h-[80px] rounded-full object-cover; }
+    #testimonials .item .person .details h3 {
+      @apply font-semibold text-xl; }
+#testimonials .owl-nav,
+#testimonials .owl-nav.disabled {
+  @apply hidden gap-3 absolute top-[-30%] right-0 sm:flex; }
+  #testimonials .owl-nav .owl-prev,
+  #testimonials .owl-nav .owl-next,
+  #testimonials .owl-nav.disabled .owl-prev,
+  #testimonials .owl-nav.disabled .owl-next {
+    @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out; }
+    #testimonials .owl-nav .owl-prev span,
+    #testimonials .owl-nav .owl-next span,
+    #testimonials .owl-nav.disabled .owl-prev span,
+    #testimonials .owl-nav.disabled .owl-next span {
+      @apply hidden; }
+    #testimonials .owl-nav .owl-prev::after,
+    #testimonials .owl-nav .owl-next::after,
+    #testimonials .owl-nav.disabled .owl-prev::after,
+    #testimonials .owl-nav.disabled .owl-next::after {
+      @apply text-2xl;
+      display: block;
+      font-family: "Font Awesome 6 Pro";
+      font-weight: 400; }
+    #testimonials .owl-nav .owl-prev:hover,
+    #testimonials .owl-nav .owl-next:hover,
+    #testimonials .owl-nav.disabled .owl-prev:hover,
+    #testimonials .owl-nav.disabled .owl-next:hover {
+      @apply bg-primary text-white; }
+  #testimonials .owl-nav .owl-prev::after,
+  #testimonials .owl-nav.disabled .owl-prev::after {
+    content: "\f060"; }
+  #testimonials .owl-nav .owl-next::after,
+  #testimonials .owl-nav.disabled .owl-next::after {
+    content: "\f061"; }
 
 /*# sourceMappingURL=home.css.map */

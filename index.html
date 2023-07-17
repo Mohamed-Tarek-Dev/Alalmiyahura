@@ -254,7 +254,7 @@
                             <img src="./src/assets/images/home/about-pic.png" class="max-w-[550px]" alt="About">
                         </div>
                         <div class="about__content flex flex-col items-start gap-7 w-full lg:w-1/2">
-                            <h2 class="text-3xl font-extrabold">Best IT Solution For Your Business Theme</h2>
+                            <h2 class="text-3xl font-bold lg:text-5xl">Best IT Solution For Your Business Theme</h2>
                             <p>
                                 Business solution company sit our any how site used the our company any site
                                 us it-solve theme is very professional theme business & corporate, finance, advisor,
@@ -274,7 +274,7 @@
 
             <section id="certificates" class="mt-16 lg:mt-32">
                 <div class="container">
-                    <h2 class="text-3xl font-extrabold">We're <br> Certificated In</h2>
+                    <h2 class="text-3xl font-bold lg:text-6xl">We're <br> Certificated In</h2>
                     <div id="certificates-carousel" class="owl-carousel owl-theme mt-16">
                         <div class="item">
                             <img src="./src/assets/images/home/certificate-1.svg" alt="Certificate">
@@ -295,9 +295,8 @@
 
             <section id="projects" class="mt-16 lg:mt-32">
                 <div class="container">
-                    <h2 class="text-3xl font-extrabold">Latest Projects</h2>
-
-                    <div class="slider">
+                    <h2 class="text-3xl font-bold lg:text-6xl">Latest Projects</h2>
+                    <div class="slider relative mt-12">
                         <div class="project-item">
                             <div class="img z-10"><img src="./src/assets/images/home/phones.svg" alt="Phones"></div>
                             <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
@@ -458,20 +457,262 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="prev-btn">Previous</button>
-                        <button id="next-btn">Next</button>
+                        <div class="slide-buttons">
+                            <button id="prev-btn"></button>
+                            <button id="next-btn"></button>
+                        </div>
                     </div>
-                    <div class="mt-10 text-center lg:mt-16">
+                    <div id="showMore" class="mt-10 text-center lg:mt-16">
                         <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">Show More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="discover" class="mt-16 lg:mt-32">
+                <div class="container">
+                    <h2 class="text-3xl font-bold lg:text-6xl">Discover Our services</h2>
+                    <p class="mt-3 hidden lg:block">Turning your ideas into cutting-edge technologies Turning your ideas <br> into cutting-edge technologies</p>
+                    <p class="mt-3 block lg:hidden">Turning your ideas into cutting-edge technologies Turning your ideas into cutting-edge technologies</p>
+                    <div id="discover-carousel" class="owl-carousel owl-theme mt-10">
+                        <div class="item bg-backgroundOne">
+                            <img src="./src/assets/images/icons/test.svg" alt="Service Icon">
+                            <h3 class="text-black text-3xl font-bold">E-Marketing</h3>
+                            <p>Incorporating Easy Navigation Functions To Deliver The Best Customer Experience.</p>
+                            <a href="#">Show More<i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                        <div class="item bg-backgroundTwo">
+                            <img src="./src/assets/images/icons/test.svg" alt="Service Icon">
+                            <h3 class="text-black text-3xl font-bold">E-Marketing</h3>
+                            <p>Incorporating Easy Navigation Functions To Deliver The Best Customer Experience.</p>
+                            <a href="#">Show More<i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                        <div class="item bg-backgroundThree">
+                            <img src="./src/assets/images/icons/test.svg" alt="Service Icon">
+                            <h3 class="text-black text-3xl font-bold">E-Marketing</h3>
+                            <p>Incorporating Easy Navigation Functions To Deliver The Best Customer Experience.</p>
+                            <a href="#">Show More<i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="technology"  class="relative mt-16 py-0 lg:mt-32">
+                <div class="container">
+                    <h2 class="text-3xl font-bold lg:text-6xl">Technology and Tools</h2>
+                    <p class="mt-4 hidden lg:block">Our engineers apprehend your business requirements and <br> help you choose the right technology for your solution.</p>
+                    <p class="mt-3 block lg:hidden">Our engineers apprehend your business requirements and help you choose the right technology for your solution.</p>
+                    <div class="cards mt-10 grid grid-cols-1 gap-5 lg:grid-cols-2 ">
+                        <div class="card">
+                            <h3>Design</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/1.svg" alt="Tech Icon">
+                                        Illustrator
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/2.svg" alt="Tech Icon">
+                                        Adobe XD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/3.svg" alt="Tech Icon">
+                                        Figma
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/4.svg" alt="Tech Icon">
+                                        Photoshop
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Mobile Design</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/1.svg" alt="Tech Icon">
+                                        Illustrator
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/2.svg" alt="Tech Icon">
+                                        Adobe XD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/3.svg" alt="Tech Icon">
+                                        Figma
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/4.svg" alt="Tech Icon">
+                                        Photoshop
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Front-end</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/1.svg" alt="Tech Icon">
+                                        Illustrator
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/2.svg" alt="Tech Icon">
+                                        Adobe XD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/3.svg" alt="Tech Icon">
+                                        Figma
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/4.svg" alt="Tech Icon">
+                                        Photoshop
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Back-End</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/1.svg" alt="Tech Icon">
+                                        Illustrator
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/2.svg" alt="Tech Icon">
+                                        Adobe XD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/3.svg" alt="Tech Icon">
+                                        Figma
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/assets/images/home/4.svg" alt="Tech Icon">
+                                        Photoshop
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials" class="mt-16 py-0 lg:mt-32">
+                <div class="container">
+                    <h2 class="text-3xl font-bold lg:text-6xl">Let's Hear <br> What Our Clients Say</h2>
+                    <div id="testimonials-carousel" class="owl-carousel owl-theme mt-16">
+                        <div class="item">
+                            <div class="icon">
+                                <img src="./src/assets/images/home/outfit.svg" alt="Logo">
+                            </div>
+                            <p>
+                                The teams are very responsive and understanding. they managed to understand my business idea well and I am highly satisfied
+                                with the quality of work they deliver. I appreciate all the assistance you guys have offered and I would definitely
+                                recommend Al Almiya Al Hura for transforming your business.
+                            </p>
+                            <div class="person">
+                                <img src="./src/assets/images/home/person-1.jpeg" alt="Person">
+                                <div class="details">
+                                    <h3>Sophia Adam</h3>
+                                    <span>ceo, Co-Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <img src="./src/assets/images/home/caption.svg" alt="Logo">
+                            </div>
+                            <p>
+                                The teams are very responsive and understanding. they managed to understand my business idea well and I am highly satisfied
+                                with the quality of work they deliver. I appreciate all the assistance you guys have offered and I would definitely
+                                recommend Al Almiya Al Hura for transforming your business.
+                            </p>
+                            <div class="person">
+                                <img src="./src/assets/images/home/person-2.webp" alt="Person">
+                                <div class="details">
+                                    <h3>Sophia Adam</h3>
+                                    <span>ceo, Co-Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <img src="./src/assets/images/home/wesselna.svg" alt="Logo">
+                            </div>
+                            <p>
+                                The teams are very responsive and understanding. they managed to understand my business idea well and I am highly satisfied
+                                with the quality of work they deliver. I appreciate all the assistance you guys have offered and I would definitely
+                                recommend Al Almiya Al Hura for transforming your business.
+                            </p>
+                            <div class="person">
+                                <img src="./src/assets/images/home/person-3.webp" alt="Person">
+                                <div class="details">
+                                    <h3>Sophia Adam</h3>
+                                    <span>ceo, Co-Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="whyUs" class="mt-16 py-0 lg:mt-32">
+                <div class="container">
+                    <div class="flex">
+                        <div class="intro">
+                            <h2 class="text-3xl font-bold lg:text-6xl">Why<br> Choose Us?</h2>
+                            <p>
+                                More the years, the better the solutions! we have been
+                                partnering with brands and offering our expertise for
+                                more than 5 years.
+                            </p>
+                            <a href="#">Let's Work Togother<i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                        <div class="qualities">
+                            <div class="quality">
+                                <div>
+                                    <img src="./src/assets/images/home/medal.svg" alt="Quality">
+                                    <h3>Quality</h3>
+                                </div>
+                                <p>We aim to deliver high-quality products. Hence, we take care of everything at the granular level.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
 
-        <script src="./src/assets/plugins/jquery-3.7.0.min.js"></script>
-        <script src="./src/assets/plugins/owl.carousel.min.js"></script>
+        <!-- <script src="./src/assets/plugins/jquery-3.7.0.min.js"></script>
+        <script src="./src/assets/plugins/owl.carousel.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script type="module" src="./src/assets/plugins/tailwind.js"></script>
-        <script src="./src/main.js"></script>
-        <script src="./src/assets/js/home.js"></script>
+        <script type="module" src="./src/main.js"></script>
+        <script type="module" src="./src/assets/js/home.js"></script>
     </body>
 </html>
