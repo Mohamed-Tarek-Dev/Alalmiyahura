@@ -7,7 +7,7 @@
     }
     .owl-nav,
     .owl-nav.disabled {
-        @apply hidden gap-3 absolute top-[-30%] right-0 sm:flex;
+        @apply hidden gap-3 absolute top-[-39%] right-0 sm:flex;
         .owl-prev,
         .owl-next {
             @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
@@ -38,8 +38,11 @@
 }
 
 #projects {
+    .slider {
+        @apply min-h-[1200px] max-h-full;
+    }
     .project-item {
-        @apply flex flex-wrap items-center justify-center gap-7 mt-16 lg:flex-nowrap lg:gap-0;
+        @apply transition-all duration-[500ms] translate-x-[-50%] absolute invisible opacity-0 flex-wrap items-center justify-center gap-7 mt-10 lg:flex-nowrap lg:gap-0;
         .details {
             p {
                 img {
@@ -57,6 +60,172 @@
                         @apply translate-x-[10px];
                     }
                 }
+            }
+        }
+
+        &.active {
+            @apply flex translate-x-0 relative left-0 opacity-100 visible h-full;
+        }
+    }
+
+    .slide-buttons {
+        @apply w-full justify-end hidden gap-3 absolute top-[-8%] sm:flex;
+        #prev-btn,
+        #next-btn {
+            @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
+            &::after {
+                @apply text-2xl;
+                display: block;
+                font-family: "Font Awesome 6 Pro";
+                font-weight: 400;
+            }
+            &:hover {
+                @apply bg-primary text-white;
+            }
+        }
+        #prev-btn {
+            &::after {
+                content: "\f060";
+            }
+        }
+        #next-btn {
+            &::after {
+                content: "\f061";
+            }
+        }
+    }
+}
+
+#discover {
+    .item {
+        @apply flex flex-col gap-5 p-8 rounded-3xl;
+        img {
+            @apply w-[100px] h-[100px];
+        }
+        a {
+            @apply self-end text-primary font-semibold flex items-center gap-2;
+            i {
+                @apply relative top-[2px];
+            }
+        }
+    }
+
+    .owl-nav,
+    .owl-nav.disabled {
+        @apply hidden gap-3 absolute top-[-39%] right-0 sm:flex;
+        .owl-prev,
+        .owl-next {
+            @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
+            span {
+                @apply hidden;
+            }
+            &::after {
+                @apply text-2xl;
+                display: block;
+                font-family: "Font Awesome 6 Pro";
+                font-weight: 400;
+            }
+            &:hover {
+                @apply bg-primary text-white;
+            }
+        }
+        .owl-prev {
+            &::after {
+                content: "\f060";
+            }
+        }
+        .owl-next {
+            &::after {
+                content: "\f061";
+            }
+        }
+    }
+}
+
+#technology {
+    &::before {
+        content: "";
+        background: url("../../images/home/tech-bg.svg");
+        background-repeat: no-repeat;
+        animation: scale 2.5s ease-in-out infinite alternate;
+        transform-origin: center;
+        @apply hidden w-[200px] h-[150px] absolute top-[-20px] left-[74%] translate-x-[-50%] z-[-1] sm:block lg:top-[10px] lg:left-[40%];
+    }
+    .cards {
+        .card {
+            @apply border-[1px] border-solid border-borderColor p-5 lg:p-10 rounded-2xl;
+            h3 {
+                @apply text-3xl font-semibold;
+            }
+            ul {
+                @apply flex flex-wrap gap-10 items-center mt-10 lg:gap-5 2xl:gap-20;
+                li {
+                    a {
+                        @apply flex flex-col items-center gap-1;
+                        img {
+                            @apply w-[50px] h-[50px];
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#testimonials {
+    .item {
+        @apply border-[1px] border-solid border-borderColor p-5 lg:p-10 rounded-2xl;
+        .icon {
+            @apply pb-4 border-b-[1px] border-solid border-borderColor;
+            img {
+                @apply w-[114px] h-[32px];
+            }
+        }
+        p {
+            @apply text-justify my-5;
+        }
+        .person {
+            @apply flex items-center gap-3;
+            img {
+                @apply w-[80px] h-[80px] rounded-full object-cover;
+            }
+            .details {
+                h3 {
+                    @apply font-semibold text-xl;
+                }
+                span {
+                }
+            }
+        }
+    }
+
+    .owl-nav,
+    .owl-nav.disabled {
+        @apply hidden gap-3 absolute top-[-30%] right-0 sm:flex;
+        .owl-prev,
+        .owl-next {
+            @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
+            span {
+                @apply hidden;
+            }
+            &::after {
+                @apply text-2xl;
+                display: block;
+                font-family: "Font Awesome 6 Pro";
+                font-weight: 400;
+            }
+            &:hover {
+                @apply bg-primary text-white;
+            }
+        }
+        .owl-prev {
+            &::after {
+                content: "\f060";
+            }
+        }
+        .owl-next {
+            &::after {
+                content: "\f061";
             }
         }
     }
