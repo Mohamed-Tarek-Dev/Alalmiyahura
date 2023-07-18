@@ -9,3 +9,9 @@
         transform: scale(0.7);
     }
 }
+
+@keyframes bounceX {
+    to {
+        transform: translateX(10px);
+    }
+}

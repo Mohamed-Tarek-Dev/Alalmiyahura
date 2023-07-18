@@ -16,6 +16,7 @@ export default {
             lightGreen: "#F2FBF2",
             lightBlue: "#F2F9FF",
             borderColor: "hsl(230, 32%, 90%)",
+            borderColorTwo: "#f9f9f9",
             backgroundOne: "#F6FAFF",
             backgroundTwo: "#FFF9FB",
             backgroundThree: "#F7FBF7",
