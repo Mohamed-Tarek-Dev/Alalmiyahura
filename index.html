@@ -42,7 +42,8 @@
                     <!--================== Navbar Section ===================-->
                     <div class="flex justify-between items-center">
                         <div class="nav__logo">
-                            <a href="./index.html"><img src="./src/assets/images/logo-EN.svg" alt="Logo"></a>
+                            <a href="./index.html" class="hidden lg:block"><img src="./src/assets/images/logo-EN.svg" alt="Logo"></a>
+                            <a href="./index.html" class="block lg:hidden"><img class="max-w-[50px]" src="./src/assets/images/logo-sm.svg" alt="Logo"></a>
                         </div>
 
                         <div class="flex justify-start">
@@ -683,23 +684,87 @@
 
             <section id="whyUs" class="mt-16 py-0 lg:mt-32">
                 <div class="container">
-                    <div class="flex">
-                        <div class="intro">
+                    <div class="flex flex-wrap lg:flex-nowrap">
+                        <div class="intro lg:w-[30%]">
                             <h2 class="text-3xl font-bold lg:text-6xl">Why<br> Choose Us?</h2>
-                            <p>
+                            <p class="mt-4 mb-10">
                                 More the years, the better the solutions! we have been
                                 partnering with brands and offering our expertise for
                                 more than 5 years.
                             </p>
-                            <a href="#">Let's Work Togother<i class="fa-regular fa-arrow-right"></i></a>
+                            <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">
+                                Let's Work Togother<i class="fa-regular fa-arrow-right relative top-[2px] mx-3"></i>
+                            </a>
                         </div>
-                        <div class="qualities">
-                            <div class="quality">
-                                <div>
-                                    <img src="./src/assets/images/home/medal.svg" alt="Quality">
-                                    <h3>Quality</h3>
+                        <div class="qualities mt-10 flex flex-col gap-7 lg:w-[70%] lg:mt-0">
+                            <div class="quality bg-backYellow self-end">
+                                <div class="flex items-start">
+                                    <img class="w-[48px] h-[48px]" src="./src/assets/images/home/medal.svg" alt="Quality">
                                 </div>
-                                <p>We aim to deliver high-quality products. Hence, we take care of everything at the granular level.</p>
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-2xl mb-3">Quality</h3>
+                                    <p>We aim to deliver high-quality products. Hence, we take care of everything at the granular level.</p>
+                                </div>
+                            </div>
+                            <div class="quality bg-lightBlue self-center">
+                                <div class="flex items-start">
+                                    <img class="w-[48px] h-[48px]" src="./src/assets/images/home/security.svg" alt="Security">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-2xl mb-3">Quality</h3>
+                                    <p>We aim to deliver high-quality products. Hence, we take care of everything at the granular level.</p>
+                                </div>
+                            </div>
+                            <div class="quality bg-backDarkBule self-start">
+                                <div class="flex items-start">
+                                    <img class="w-[48px] h-[48px]" src="./src/assets/images/home/flash.svg" alt="flash">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-2xl mb-3">Quality</h3>
+                                    <p>We aim to deliver high-quality products. Hence, we take care of everything at the granular level.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="partners" class="mt-16 py-0 lg:mt-32 lg:py-10">
+                <div class="container">
+                    <div class="flex flex-wrap justify-center items-center xl:flex-nowrap xl:gap-x-40">
+                        <div class="intro w-full xl:w-[50%]">
+                            <h2 class="text-3xl font-bold lg:text-6xl">We Work With The Best Partners</h2>
+                            <p class="mt-5 mb-10">
+                                While we are at the forefront of and specialize in design-build, 
+                                we are very familiar with a number of delivery methods and
+                                confident we can find the process that will best help you meet
+                                your goals.
+                            </p>
+                        </div>
+                        <div id="partners-carousel" class="owl-carousel owl-theme w-full xl:w-[50%]">
+                            <div class="item">
+                                <div class="partner">
+                                    <img src="./src/assets/images/home/partner-1.svg" alt="Partner">
+                                </div>
+                                <div class="partner">
+                                    <img src="./src/assets/images/home/partner-2.svg" alt="Partner">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="partner">
+                                    <img src="./src/assets/images/home/partner-3.svg" alt="Partner">
+                                </div>
+                                <div class="partner">
+                                    <img src="./src/assets/images/home/partner-4.svg" alt="Partner">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="partner">
+                                    <img src="./src/assets/images/home/partner-5.svg" alt="Partner">
+                                </div>
+                                <div class="partner">
+                                    <img src="./src/assets/images/home/partner-6.svg" alt="Partner">
+                                </div>
                             </div>
                         </div>
                     </div>

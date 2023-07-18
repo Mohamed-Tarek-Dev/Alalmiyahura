@@ -19,6 +19,9 @@ export default {
             backgroundOne: "#F6FAFF",
             backgroundTwo: "#FFF9FB",
             backgroundThree: "#F7FBF7",
+            backYellow: "#FFFBEB",
+            lightBlue: "#F2F9FF",
+            backDarkBule: "#F2F4FB",
         },
         screens: {
             sm: "576px",

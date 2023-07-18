@@ -136,13 +136,13 @@
         }
 
         &--dropdown {
-            @apply max-h-0 opacity-0 overflow-hidden transition-all duration-300 translate-y-[-60px] z-[-1] lg:shadow-[0_-3px_3px_0px_#0001_inset];
+            @apply max-h-0 opacity-0 overflow-hidden transition-all duration-300 z-[-1] lg:translate-y-[-60px] lg:shadow-[0_-3px_3px_0px_#0001_inset];
             &.active {
                 @media (min-width: 992px) {
                     @apply max-h-fit opacity-100 translate-y-0 pb-10 bg-white z-50;
                 }
                 @media (max-width: 992px) {
-                    @apply flex left-0 opacity-100 visible relative  mt-5 h-[500px] max-h-[100%] translate-y-0 bg-white z-50;
+                    @apply flex left-0 opacity-100 visible relative  mt-5 h-[500px] max-h-[100%] translate-y-0 bg-white z-50 overflow-y-scroll;
                 }
             }
             .links {

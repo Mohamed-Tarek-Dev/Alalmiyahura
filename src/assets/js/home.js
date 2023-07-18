@@ -101,3 +101,24 @@ $("#testimonials-carousel").owlCarousel({
         },
     },
 });
+
+$("#partners-carousel").owlCarousel({
+    loop: true,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        576: {
+            items: 2,
+        },
+        768: {
+            items: 3,
+            margin: 10,
+        },
+        1000: {
+            items: 2.8,
+            margin: 0,
+        },
+    },
+});
