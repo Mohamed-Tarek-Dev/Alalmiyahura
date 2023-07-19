@@ -54,6 +54,53 @@ img {
 @keyframes bounceX {
   to {
     transform: translateX(10px); } }
+.modal-popup {
+  @apply opacity-0 invisible duration-300 fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-full z-50 flex justify-center items-center;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .modal-popup .modal {
+    @apply flex justify-center items-center relative; }
+    .modal-popup .modal__container {
+      @apply bg-primary relative w-full h-[600px] max-h-full overflow-y-scroll box-border rounded-[20px] lg:overflow-hidden lg:scale-[0.8] lg:h-full; }
+    .modal-popup .modal__close {
+      @apply absolute w-full flex justify-end p-8 cursor-pointer; }
+      .modal-popup .modal__close button {
+        @apply text-white text-4xl relative z-50 duration-200; }
+        .modal-popup .modal__close button:hover {
+          @apply text-crimson; }
+    .modal-popup .modal__form {
+      background: transparent; }
+      .modal-popup .modal__form--input {
+        @apply border-[2px] border-solid border-formBorderColor w-full rounded-[10px]; }
+        .modal-popup .modal__form--input input,
+        .modal-popup .modal__form--input textarea,
+        .modal-popup .modal__form--input select {
+          background: transparent;
+          @apply text-xs w-full h-full p-7 outline-none text-white resize-none md:text-base lg:text-xl; }
+          .modal-popup .modal__form--input input::placeholder,
+          .modal-popup .modal__form--input textarea::placeholder,
+          .modal-popup .modal__form--input select::placeholder {
+            @apply text-white; }
+        .modal-popup .modal__form--input .country-code-select {
+          @apply text-white; }
+          .modal-popup .modal__form--input .country-code-select option[disabled]:selected {
+            @apply text-white; }
+          .modal-popup .modal__form--input .country-code-select option {
+            @apply text-black; }
+            .modal-popup .modal__form--input .country-code-select option:first-child {
+              @apply text-[#707070]; }
+        .modal-popup .modal__form--input .iti__selected-flag {
+          background: transparent; }
+          .modal-popup .modal__form--input .iti__selected-flag .iti__selected-dial-code {
+            @apply text-white; }
+          .modal-popup .modal__form--input .iti__selected-flag .iti__arrow {
+            @apply border-l-[5px] border-r-[5px] border-t-[6px] border-t-white; }
+      .modal-popup .modal__form .send button {
+        @apply border-[1px] border-solid border-white; }
+        .modal-popup .modal__form .send button:hover {
+          @apply duration-300 bg-primary text-white border-[1px] border-solid border-white; }
+  .modal-popup.show {
+    @apply opacity-100 visible; }
+
 .nav__top--phones li a {
   @apply flex items-center gap-1 hover:text-[#0A6EBD] focus:text-[#0A6EBD] duration-200 ease-in; }
   .nav__top--phones li a img {
@@ -161,13 +208,13 @@ img {
   @apply border-2 text-[#8f98c5] p-4 rounded-full duration-200 ease-in-out w-10 h-10 flex items-center justify-center; }
   .nav__content--social .social-links ul li a i:hover,
   .nav__content--social .social-links ul li a i :active {
-    @apply text-white bg-linksColor border-[1px] border-linksColor; }
+    @apply text-white bg-linksColor border-[2px] border-linksColor; }
 @media (max-width: 992px) {
   .nav__content.opened {
     @apply fixed translate-x-0 top-0 left-0 w-full h-full z-10 bg-white opacity-100 visible; } }
 .nav.scrolled {
   transition: all 0.3s ease;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 5px #0001;
   @apply fixed top-0 left-0 right-0 w-full z-50 bg-white; }
   .nav.scrolled .nav__top {
     @apply hidden; }
@@ -207,7 +254,7 @@ footer .col-1 ul li a i {
   @apply border-2 text-primary p-4 rounded-full duration-200 ease-in-out w-10 h-10 flex items-center justify-center; }
   footer .col-1 ul li a i:hover,
   footer .col-1 ul li a i :active {
-    @apply text-white bg-linksColor border-[1px] border-linksColor; }
+    @apply text-white bg-linksColor border-[2px] border-linksColor; }
 footer .col-2 h4 {
   @apply text-xl font-bold mb-3; }
 footer .col-2 li {

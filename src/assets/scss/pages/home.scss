@@ -398,7 +398,7 @@
                 textarea,
                 select {
                     background: transparent;
-                    @apply w-full h-full p-7 outline-none text-white resize-none;
+                    @apply text-xs w-full h-full p-7 outline-none text-white resize-none md:text-base lg:text-xl;
                     &::placeholder {
                         @apply text-white;
                     }
@@ -423,6 +423,14 @@
                     }
                     .iti__arrow {
                         @apply border-l-[5px] border-r-[5px] border-t-[6px] border-t-white;
+                    }
+                }
+            }
+            .send {
+                button {
+                    @apply border-[1px] border-solid border-white;
+                    &:hover {
+                        @apply duration-300 bg-primary text-white border-[1px] border-solid border-white;
                     }
                 }
             }

@@ -282,7 +282,7 @@
     #talk .talk__form--input textarea,
     #talk .talk__form--input select {
       background: transparent;
-      @apply w-full h-full p-7 outline-none text-white resize-none; }
+      @apply text-xs w-full h-full p-7 outline-none text-white resize-none md:text-base lg:text-xl; }
       #talk .talk__form--input input::placeholder,
       #talk .talk__form--input textarea::placeholder,
       #talk .talk__form--input select::placeholder {
@@ -301,5 +301,9 @@
         @apply text-white; }
       #talk .talk__form--input .iti__selected-flag .iti__arrow {
         @apply border-l-[5px] border-r-[5px] border-t-[6px] border-t-white; }
+  #talk .talk__form .send button {
+    @apply border-[1px] border-solid border-white; }
+    #talk .talk__form .send button:hover {
+      @apply duration-300 bg-primary text-white border-[1px] border-solid border-white; }
 
 /*# sourceMappingURL=home.css.map */

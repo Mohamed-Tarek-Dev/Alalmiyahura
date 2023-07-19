@@ -213,7 +213,7 @@
                                 @apply border-2 text-[#8f98c5] p-4 rounded-full duration-200 ease-in-out w-10 h-10 flex items-center justify-center;
                                 &:hover,
                                 :active {
-                                    @apply text-white bg-linksColor border-[1px] border-linksColor;
+                                    @apply text-white bg-linksColor border-[2px] border-linksColor;
                                 }
                             }
                         }
@@ -231,7 +231,7 @@
 
     &.scrolled {
         transition: all 0.3s ease;
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 5px 5px #0001;
         @apply fixed top-0 left-0 right-0 w-full z-50 bg-white;
         .nav__top {
             @apply hidden;

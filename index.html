@@ -13,7 +13,7 @@
         <title>Alalmiyahura</title>
     </head>
     <body>
-        <div id="app">
+        <div id="app" class="relative">
             <!--=============== Start Navbar =================-->
             <nav class="nav p-5 relative font-poppins">
                 <div class="container">
@@ -181,9 +181,9 @@
                                         <li class="nav__content--link"><button class=""><i class="fa-regular fa-globe"></i></button></li>
                                     </ul>
                                     <div class="nav--button mt-10 mx-auto p-4 lg:mx-0 lg:mt-0 lg:p-0">
-                                        <a href="#" class="bg-primary text-white rounded-md py-2 px-3 hover:bg-primaryLight focus:bg-primaryLight duration-200 ease-in xl:py-2 xl:px-6">
+                                        <button class="bg-primary text-white rounded-md py-2 px-3 hover:bg-primaryLight focus:bg-primaryLight duration-200 ease-in xl:py-2 xl:px-6">
                                             Get a Quote
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                                  <!--================= Social and Contacts in the phone Menu ==================-->
@@ -204,6 +204,7 @@
                                                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                                     <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
                                                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -860,7 +861,7 @@
             <section id="talk" class="relative top-[15rem] mt-[-10rem] lg:top-[18rem] lg:mt-[-13rem]">
                 <div class="talk container">
                     <div class="talk__container">
-                        <div class="px-12 py-16 relative z-10">
+                        <div class="px-4 py-10 relative z-10 lg:px-12 lg:py-16">
                             <h2 class="text-3xl text-white font-bold lg:text-6xl">Let's Talk.</h2>
                             <p class="mt-5 text-white">Let's Build Best Digital Solutions For Your Business Now!</p>
                             <form class="talk__form flex flex-col gap-5 mt-10 w-full lg:grid lg:grid-cols-2">
@@ -884,7 +885,7 @@
                                 <div class="talk__form--input col-span-2">
                                     <textarea name="description" rows="8" placeholder="Tell Us What You Need" class="w-full"></textarea>
                                 </div>
-                                <div class="col-span-2 w-full flex justify-center lg:justify-end">
+                                <div class="send col-span-2 w-full flex justify-center lg:justify-end">
                                     <button class="py-5 px-10 text-primary bg-white text-center text-xl font-semibold rounded-[5px] mt-3">Send Request</button>
                                 </div>
                             </form>
@@ -955,6 +956,45 @@
                     <p>&copy; 2022 Al Almiya Al Hura. All Rights Reserved </p>
                 </div>
             </footer>
+
+            <div id="modal" class="modal-popup">
+                <div class="modal container">
+                    <div class="modal__container">
+                        <div class="modal__close">
+                            <button><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="px-4 py-10 relative z-10 lg:px-12 lg:py-16">
+                            <h2 class="text-3xl text-white font-bold lg:text-6xl">Let's Talk.</h2>
+                            <p class="mt-5 text-white">Let's Build Best Digital Solutions For Your Business Now!</p>
+                            <form class="modal__form flex flex-col gap-5 mt-10 w-full lg:grid lg:grid-cols-2">
+                                <div class="modal__form--input">
+                                    <input type="text" name="Full name" placeholder="Your Full Name" required>
+                                </div>
+                                <div class="modal__form--input">
+                                    <input type="email" name="Email" placeholder="Your Email" required>
+                                </div>
+                                <div class="modal__form--input">
+                                    <input id="modal-phone" name="Phone Number" type="tel" placeholder="Phone Number" required>
+                                </div>
+                                <div class="modal__form--input">
+                                    <select class="country-code-select" id="countryCode" placeholder="select budget">
+                                        <option disabled selected>Select a Service</option>
+                                        <option>Mobile App Desgin</option>
+                                        <option>Software Testing</option>
+                                        <option>UI UX Design</option>
+                                    </select>
+                                </div>
+                                <div class="modal__form--input col-span-2">
+                                    <textarea name="description" rows="8" placeholder="Tell Us What You Need" class="w-full"></textarea>
+                                </div>
+                                <div class="send col-span-2 w-full flex justify-center lg:justify-end">
+                                    <button class="py-5 px-10 text-primary bg-white text-center text-xl font-semibold rounded-[5px] mt-3">Send Request</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <!-- <script src="./assets/jquery-3.7.0.min.js"></script> -->
