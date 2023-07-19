@@ -1,0 +1,50 @@
+footer {
+    .col-1 {
+        ul {
+            li {
+                a {
+                    i {
+                        @apply border-2 text-primary p-4 rounded-full duration-200 ease-in-out w-10 h-10 flex items-center justify-center;
+                        &:hover,
+                        :active {
+                            @apply text-white bg-linksColor border-[1px] border-linksColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .col-2 {
+        h4 {
+            @apply text-xl font-bold mb-3;
+        }
+        li {
+            @apply mt-3;
+            a {
+                @apply text-base font-semibold transition-all duration-300;
+                &:hover {
+                    @apply text-primary;
+                }
+            }
+        }
+    }
+    .col-3 {
+        form {
+            input {
+                background: transparent;
+            }
+        }
+        .emails {
+            @apply flex flex-col gap-3;
+            .email {
+                @apply flex items-center justify-between p-4 bg-lightPurple rounded-[5px];
+                a {
+                    @apply flex items-center gap-3 font-semibold;
+                    i {
+                        @apply text-2xl;
+                    }
+                }
+            }
+        }
+    }
+}
