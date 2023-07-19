@@ -67,3 +67,16 @@
         @apply opacity-100 visible;
     }
 }
+
+.iti--container {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.iti__country-list {
+    @media (max-width: 768px) {
+        height: 250px;
+        max-width: 420px !important;
+        max-width: 100%;
+    }
+}

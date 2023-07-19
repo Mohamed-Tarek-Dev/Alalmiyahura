@@ -101,6 +101,17 @@ img {
   .modal-popup.show {
     @apply opacity-100 visible; }
 
+.iti--container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center; }
+
+@media (max-width: 768px) {
+  .iti__country-list {
+    height: 250px;
+    max-width: 420px !important;
+    max-width: 100%; } }
+
 .nav__top--phones li a {
   @apply flex items-center gap-1 hover:text-[#0A6EBD] focus:text-[#0A6EBD] duration-200 ease-in; }
   .nav__top--phones li a img {
