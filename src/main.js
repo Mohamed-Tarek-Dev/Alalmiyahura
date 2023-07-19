@@ -135,3 +135,44 @@ async function copyToClipboard(text) {
         console.error("Failed to copy text: ", err);
     }
 }
+
+// Modal Phone number
+var input = document.querySelector("#modal-phone");
+window.intlTelInput(input, {
+    utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.8/js/utils.js",
+    initialCountry: "auto",
+    geoIpLookup: function (callback) {
+        fetch("https://ipapi.co/json")
+            .then(function (res) {
+                return res.json();
+            })
+            .then(function (data) {
+                callback(data.country_code);
+            })
+            .catch(function () {
+                callback("us");
+            });
+    },
+    excludeCountries: ["il"],
+    separateDialCode: true,
+});
+
+// Navbar popup
+const navBtn = document.querySelector(".nav--button");
+const modal = document.querySelector(".modal-popup");
+const closeBtn = document.querySelector(".modal__close");
+const modalContainer = document.querySelector(".modal__container");
+
+navBtn.addEventListener("click", () => {
+    modal.classList.add("show");
+});
+closeBtn.addEventListener("click", () => {
+    modal.classList.remove("show");
+});
+modal.addEventListener("click", () => {
+    modal.classList.remove("show");
+});
+modalContainer.addEventListener("click", (e) => {
+    e.stopPropagation();
+});
