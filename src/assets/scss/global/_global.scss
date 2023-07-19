@@ -10,7 +10,6 @@ html {
 body {
     font-family: inherit;
     overflow-x: hidden;
-    height: 10000px;
 }
 a {
     text-decoration: none;
@@ -22,19 +21,21 @@ img {
     width: 100%;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 7px;
-}
+@media (min-width: 992px) {
+    /* width */
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #eee;
-    border-radius: 10px;
-}
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #eee;
+        border-radius: 10px;
+    }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: $colorPrimary;
-    border-radius: 15px;
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $colorPrimary;
+        border-radius: 15px;
+    }
 }

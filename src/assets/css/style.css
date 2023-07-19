@@ -19,8 +19,7 @@ html {
 
 body {
   font-family: inherit;
-  overflow-x: hidden;
-  height: 10000px; }
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
@@ -31,20 +30,20 @@ ul {
 img {
   width: 100%; }
 
-/* width */
-::-webkit-scrollbar {
-  width: 7px; }
+@media (min-width: 992px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7px; }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #eee;
-  border-radius: 10px; }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 10px; }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #29398c;
-  border-radius: 15px; }
-
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #29398c;
+    border-radius: 15px; } }
 @keyframes scale {
   0% {
     transform: scale(0.7); }
@@ -162,7 +161,7 @@ img {
   @apply border-2 text-[#8f98c5] p-4 rounded-full duration-200 ease-in-out w-10 h-10 flex items-center justify-center; }
   .nav__content--social .social-links ul li a i:hover,
   .nav__content--social .social-links ul li a i :active {
-    @apply text-white bg-linksColor; }
+    @apply text-white bg-linksColor border-[1px] border-linksColor; }
 @media (max-width: 992px) {
   .nav__content.opened {
     @apply fixed translate-x-0 top-0 left-0 w-full h-full z-10 bg-white opacity-100 visible; } }
@@ -204,5 +203,28 @@ header .col {
     transform: translateY(-5%); }
   50% {
     transform: none; } }
+footer .col-1 ul li a i {
+  @apply border-2 text-primary p-4 rounded-full duration-200 ease-in-out w-10 h-10 flex items-center justify-center; }
+  footer .col-1 ul li a i:hover,
+  footer .col-1 ul li a i :active {
+    @apply text-white bg-linksColor border-[1px] border-linksColor; }
+footer .col-2 h4 {
+  @apply text-xl font-bold mb-3; }
+footer .col-2 li {
+  @apply mt-3; }
+  footer .col-2 li a {
+    @apply text-base font-semibold transition-all duration-300; }
+    footer .col-2 li a:hover {
+      @apply text-primary; }
+footer .col-3 form input {
+  background: transparent; }
+footer .col-3 .emails {
+  @apply flex flex-col gap-3; }
+  footer .col-3 .emails .email {
+    @apply flex items-center justify-between p-4 bg-lightPurple rounded-[5px]; }
+    footer .col-3 .emails .email a {
+      @apply flex items-center gap-3 font-semibold; }
+      footer .col-3 .emails .email a i {
+        @apply text-2xl; }
 
 /*# sourceMappingURL=style.css.map */

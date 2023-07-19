@@ -213,7 +213,7 @@
                                 @apply border-2 text-[#8f98c5] p-4 rounded-full duration-200 ease-in-out w-10 h-10 flex items-center justify-center;
                                 &:hover,
                                 :active {
-                                    @apply text-white bg-linksColor;
+                                    @apply text-white bg-linksColor border-[1px] border-linksColor;
                                 }
                             }
                         }

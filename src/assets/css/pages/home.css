@@ -268,4 +268,38 @@
   #happening .cards .card:hover .details a i, #happening .cards .card:focus .details a i {
     animation: bounceX 1s linear infinite alternate-reverse; }
 
+#talk .talk__container {
+  @apply bg-primary relative w-full h-full box-border rounded-[40px] overflow-hidden; }
+  #talk .talk__container::before {
+    content: "";
+    background: url("../../images/home/talk-bg.png");
+    @apply block absolute w-full h-full z-0 opacity-50; }
+#talk .talk__form {
+  background: transparent; }
+  #talk .talk__form--input {
+    @apply border-[2px] border-solid border-formBorderColor w-full rounded-[10px]; }
+    #talk .talk__form--input input,
+    #talk .talk__form--input textarea,
+    #talk .talk__form--input select {
+      background: transparent;
+      @apply w-full h-full p-7 outline-none text-white resize-none; }
+      #talk .talk__form--input input::placeholder,
+      #talk .talk__form--input textarea::placeholder,
+      #talk .talk__form--input select::placeholder {
+        @apply text-white; }
+    #talk .talk__form--input .country-code-select {
+      @apply text-white; }
+      #talk .talk__form--input .country-code-select option[disabled]:selected {
+        @apply text-white; }
+      #talk .talk__form--input .country-code-select option {
+        @apply text-black; }
+        #talk .talk__form--input .country-code-select option:first-child {
+          @apply text-[#707070]; }
+    #talk .talk__form--input .iti__selected-flag {
+      background: transparent; }
+      #talk .talk__form--input .iti__selected-flag .iti__selected-dial-code {
+        @apply text-white; }
+      #talk .talk__form--input .iti__selected-flag .iti__arrow {
+        @apply border-l-[5px] border-r-[5px] border-t-[6px] border-t-white; }
+
 /*# sourceMappingURL=home.css.map */

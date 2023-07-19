@@ -4,11 +4,12 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./src/assets/plugins/tailwind.css" />
+        <link rel="stylesheet" href="./src/plugins/tailwind.css" />
         <link rel="stylesheet" href="./src/assets/css/style.css" />
         <link rel="stylesheet" href="./src/assets/css/pages/home.css" />
-        <link rel="stylesheet" href="./src/assets/plugins/all.css" />
-        <link rel="stylesheet" href="./src/assets/plugins/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./src/plugins/all.css" />
+        <link rel="stylesheet" href="./src/plugins/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.8/css/intlTelInput.css">
         <title>Alalmiyahura</title>
     </head>
     <body>
@@ -176,7 +177,7 @@
                                         </li>
                                         <li class="nav__content--link"><a class="justify-between hover"  href="#">Blog</a></li>
                                         <li class="nav__content--link"><a class="justify-between hover" href="#">Contact</a></li>
-                                        <li class="nav__content--link"><a class="justify-between hover" href="#">About</a></li>
+                                        <li class="nav__content--link"><a class="justify-between hover" href="./src/pages/about.html">About</a></li>
                                         <li class="nav__content--link"><button class=""><i class="fa-regular fa-globe"></i></button></li>
                                     </ul>
                                     <div class="nav--button mt-10 mx-auto p-4 lg:mx-0 lg:mt-0 lg:p-0">
@@ -203,7 +204,6 @@
                                                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                                     <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
                                                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                                </ul>
                                                 </ul>
                                             </div>
                                         </div>
@@ -292,7 +292,6 @@
                     </div>
                 </div>
             </section>
-
 
             <section id="projects" class="mt-16 lg:mt-32">
                 <div class="container">
@@ -850,20 +849,120 @@
                         </div>
                     </div>
                     <div class="text-center mt-16 xl:mt-32">
-                        <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">
+                        <a href="#" class="bg-white text-primary font-semibold py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">
                             Show More
                             <i class="fa-regular fa-arrow-right relative top-[2px] mx-2"></i>
                         </a>
                     </div>
                 </div>
             </section>
-        </div>
 
-        <!-- <script src="./src/assets/plugins/jquery-3.7.0.min.js"></script>
-        <script src="./src/assets/plugins/owl.carousel.min.js"></script> -->
+            <section id="talk" class="relative top-[15rem] mt-[-10rem] lg:top-[18rem] lg:mt-[-13rem]">
+                <div class="talk container">
+                    <div class="talk__container">
+                        <div class="px-12 py-16 relative z-10">
+                            <h2 class="text-3xl text-white font-bold lg:text-6xl">Let's Talk.</h2>
+                            <p class="mt-5 text-white">Let's Build Best Digital Solutions For Your Business Now!</p>
+                            <form class="talk__form flex flex-col gap-5 mt-10 w-full lg:grid lg:grid-cols-2">
+                                <div class="talk__form--input">
+                                    <input type="text" name="Full name" placeholder="Your Full Name" required>
+                                </div>
+                                <div class="talk__form--input">
+                                    <input type="email" name="Email" placeholder="Your Email" required>
+                                </div>
+                                <div class="talk__form--input">
+                                    <input id="phone" name="Phone Number" type="tel" placeholder="Phone Number" required>
+                                </div>
+                                <div class="talk__form--input">
+                                    <select class="country-code-select" id="countryCode" placeholder="select budget">
+                                        <option disabled selected>Select a Service</option>
+                                        <option>Mobile App Desgin</option>
+                                        <option>Software Testing</option>
+                                        <option>UI UX Design</option>
+                                    </select>
+                                </div>
+                                <div class="talk__form--input col-span-2">
+                                    <textarea name="description" rows="8" placeholder="Tell Us What You Need" class="w-full"></textarea>
+                                </div>
+                                <div class="col-span-2 w-full flex justify-center lg:justify-end">
+                                    <button class="py-5 px-10 text-primary bg-white text-center text-xl font-semibold rounded-[5px] mt-3">Send Request</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="bg-footerBg pt-72 lg:pt-96">
+                <div class="container">
+                    <div class="grid grid-cols-1 xl:grid-cols-3">
+                        <div class="col-1 lg:w-[80%]">
+                            <a href="./index.html"><img src="./src/assets/images/logo-EN.svg" alt="Logo"></a>
+                            <p class="border-b-[1px] border-borderColor mt-5 mb-3 pb-3">We are Keen to Provide You with Innovative Digital Solutions; depending On Our Extensive Experience in The Field of Information Technology.</p>
+                            <ul class="flex flex-wrap gap-6 mt-5">
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2 hidden gap-10 my-10 sm:flex xl:my-0 xl:justify-self-end lg:w-[95%]">
+                            <div class="quick">
+                                <h4>Quick Access</h4>
+                                <ul>
+                                    <li><a href="#">Mobile App Development</a></li>
+                                    <li><a href="#">UX/UI Designing</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Website Development</a></li>
+                                    <li><a href="#">Mobile Development</a></li>
+                                    <li><a href="#">Mobile App Development</a></li>
+                                </ul>
+                            </div>
+                            <div class="main">
+                                <h4>Main Links</h4>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Alalmiya World</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 xl:justify-self-end mt-10 xl:mt-0">
+                            <h4 class="text-xl font-bold mb-5">Subscribe For Latest Updates</h4>
+                            <p class="mb-3">Make the right business move.</p>
+                            <form class="flex items-center py-5 justify-end bg-white text-start rounded-[5px] h-[65px] max-h-fit max-w-full relative lg:py-0 xl:w-[400px]">
+                                <input type="text" name="Subscribe" id="subscribe-btn" placeholder="Your Email Address" class="absolute left-0 top-0 bottom-0 w-[70%] text-black px-8 outline-none">
+                                <button class="w-[30%] bg-primary text-white absolute h-full rounded-[9px] border-[1px] boder-solid border-white hover:bg-[#0A6EBD] duration-300">Subscribe</button>
+                            </form>
+                            <div class="emails mt-5">
+                                <div class="email">
+                                    <a id="email1" href="mailto:info@alalmiyaalhura.com"><i class="fa-solid fa-envelope"></i>info@alalmiyaalhura.com</a>
+                                    <button class="copy-button" data-email-id="email1"><img src="./src/assets/images/icons/copy.svg" alt="Copy"></button>
+                                </div>
+                                <div class="email">
+                                    <a id="email2" href="mailto:sales@alalmiyaalhura.com"><i class="fa-solid fa-envelope"></i>sales@alalmiyaalhura.com</a>
+                                    <button class="copy-button" data-email-id="email2"><img src="./src/assets/images/icons/copy.svg" alt="Copy"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright bg-primary text-center text-white p-6 mt-10 xl:mt-40">
+                    <p>&copy; 2022 Al Almiya Al Hura. All Rights Reserved </p>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- <script src="./assets/jquery-3.7.0.min.js"></script> -->
+        <!-- <script src="./src/assets/plugins/owl.carousel.min.js"></script> -->
         <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script type="module" src="./src/assets/plugins/tailwind.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.8/js/intlTelInput.min.js"></script>
+        <script type="module" src="./src/plugins/tailwind.js"></script>
         <script type="module" src="./src/main.js"></script>
         <script type="module" src="./src/assets/js/home.js"></script>
     </body>

@@ -122,3 +122,24 @@ $("#partners-carousel").owlCarousel({
         },
     },
 });
+
+var input = document.querySelector("#phone");
+window.intlTelInput(input, {
+    utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.8/js/utils.js",
+    initialCountry: "auto",
+    geoIpLookup: function (callback) {
+        fetch("https://ipapi.co/json")
+            .then(function (res) {
+                return res.json();
+            })
+            .then(function (data) {
+                callback(data.country_code);
+            })
+            .catch(function () {
+                callback("us");
+            });
+    },
+    excludeCountries: ["il"],
+    separateDialCode: true,
+});

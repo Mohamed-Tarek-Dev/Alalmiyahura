@@ -5,7 +5,7 @@ const dropdownMenus = document.querySelectorAll(".nav__content--dropdown");
 // Add click event listener to each dropdown link
 dropdownLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
-        event.preventDefault();
+        // event.preventDefault();
         const anchor = this.querySelector("a");
         const dropdownId = anchor ? anchor.id : null;
         const dropdownMenu = dropdownId
@@ -85,7 +85,7 @@ hamburger.addEventListener("click", (e) => {
 // Change Navbar with scroll
 function handleScroll() {
     const nav = document.querySelector("nav");
-    const offset = 80; // Adjust this value as needed
+    const offset = nav.offsetHeight;
     const body = document.body;
     const navHeight = nav.offsetHeight;
 
@@ -114,3 +114,24 @@ $("#nav-carousel").owlCarousel({
         },
     },
 });
+
+// footer copy emails buttons
+const copyButtons = document.querySelectorAll(".copy-button");
+
+copyButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const emailId = button.getAttribute("data-email-id");
+        const emailLink = document.getElementById(emailId);
+        const emailText = emailLink.textContent;
+
+        copyToClipboard(emailText);
+    });
+});
+
+async function copyToClipboard(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+    } catch (err) {
+        console.error("Failed to copy text: ", err);
+    }
+}

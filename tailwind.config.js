@@ -16,6 +16,7 @@ export default {
             lightGreen: "#F2FBF2",
             lightBlue: "#F2F9FF",
             borderColor: "hsl(230, 32%, 90%)",
+            formBorderColor: "hsl(230, 32%, 50%)",
             borderColorTwo: "#f9f9f9",
             backgroundOne: "#F6FAFF",
             backgroundTwo: "#FFF9FB",
@@ -23,6 +24,8 @@ export default {
             backYellow: "#FFFBEB",
             lightBlue: "#F2F9FF",
             backDarkBule: "#F2F4FB",
+            footerBg: "#F2F4FB",
+            lightPurple: "hsl(230,50%, 93%)",
         },
         screens: {
             sm: "576px",
