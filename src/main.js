@@ -1,45 +1,40 @@
-// Get all the dropdown links and menus
+// Dropdown menus
 const dropdownLinks = document.querySelectorAll(".nav__content--link");
 const dropdownMenus = document.querySelectorAll(".nav__content--dropdown");
 
-// Add click event listener to each dropdown link
+function toggleDropdown(link) {
+    const anchor = link.querySelector("a");
+    const dropdownId = anchor ? anchor.id : null;
+    const dropdownMenu = dropdownId
+        ? document.querySelector(`[data-dropdown="${dropdownId}"]`)
+        : null;
+
+    link.classList.toggle("active");
+    if (dropdownMenu) {
+        dropdownMenu.classList.toggle("active");
+    }
+}
+
+// Event listener for dropdown links
 dropdownLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
-        // event.preventDefault();
-        const anchor = this.querySelector("a");
-        const dropdownId = anchor ? anchor.id : null;
-        const dropdownMenu = dropdownId
-            ? document.querySelector(`[data-dropdown="${dropdownId}"]`)
-            : null;
-
-        if (this.classList.contains("active")) {
-            // Link is already active, so close the dropdown menu
-            this.classList.remove("active");
-            if (dropdownMenu) {
-                dropdownMenu.classList.remove("active");
-            }
-        } else {
-            // Add 'active' class to the clicked link and its related dropdown menu
-            dropdownLinks.forEach((otherLink) => {
-                if (otherLink !== this) {
-                    otherLink.classList.remove("active");
-                    const otherAnchor = otherLink.querySelector("a");
-                    const otherDropdownId = otherAnchor ? otherAnchor.id : null;
-                    const otherDropdownMenu = otherDropdownId
-                        ? document.querySelector(
-                              `[data-dropdown="${otherDropdownId}"]`,
-                          )
-                        : null;
-                    if (otherDropdownMenu) {
-                        otherDropdownMenu.classList.remove("active");
-                    }
+        event.preventDefault();
+        toggleDropdown(this);
+        dropdownLinks.forEach((otherLink) => {
+            if (otherLink !== this) {
+                otherLink.classList.remove("active");
+                const otherAnchor = otherLink.querySelector("a");
+                const otherDropdownId = otherAnchor ? otherAnchor.id : null;
+                const otherDropdownMenu = otherDropdownId
+                    ? document.querySelector(
+                          `[data-dropdown="${otherDropdownId}"]`,
+                      )
+                    : null;
+                if (otherDropdownMenu) {
+                    otherDropdownMenu.classList.remove("active");
                 }
-            });
-            this.classList.add("active");
-            if (dropdownMenu) {
-                dropdownMenu.classList.add("active");
             }
-        }
+        });
     });
 });
 
@@ -74,6 +69,7 @@ window.addEventListener("scroll", function () {
     });
 });
 
+// Mobile menu toggle
 const hamburger = document.getElementById("menu-btn");
 const navbar = document.querySelector(".nav__content");
 
@@ -100,6 +96,7 @@ function handleScroll() {
 
 window.addEventListener("scroll", handleScroll);
 
+// Initialize Owl Carousel
 $("#nav-carousel").owlCarousel({
     loop: true,
     margin: 10,
@@ -115,7 +112,7 @@ $("#nav-carousel").owlCarousel({
     },
 });
 
-// footer copy emails buttons
+// Copy email buttons
 const copyButtons = document.querySelectorAll(".copy-button");
 
 copyButtons.forEach((button) => {
@@ -123,8 +120,16 @@ copyButtons.forEach((button) => {
         const emailId = button.getAttribute("data-email-id");
         const emailLink = document.getElementById(emailId);
         const emailText = emailLink.textContent;
-
         copyToClipboard(emailText);
+
+        // Add the "copied" class to the span element
+        const spanElement = emailLink.nextElementSibling;
+        spanElement.classList.add("copied");
+
+        // Remove the "copied" class after a short delay (optional)
+        setTimeout(() => {
+            spanElement.classList.remove("copied");
+        }, 1500); // 1.5 seconds, you can adjust this value as needed
     });
 });
 
@@ -164,15 +169,13 @@ const modal = document.querySelector(".modal-popup");
 const closeBtn = document.querySelector(".modal__close");
 const modalContainer = document.querySelector(".modal__container");
 
-navBtn.addEventListener("click", () => {
-    modal.classList.add("show");
-});
-closeBtn.addEventListener("click", () => {
-    modal.classList.remove("show");
-});
-modal.addEventListener("click", () => {
-    modal.classList.remove("show");
-});
+const toggleModal = () => {
+    modal.classList.toggle("show");
+};
+
+navBtn.addEventListener("click", toggleModal);
+closeBtn.addEventListener("click", toggleModal);
+modal.addEventListener("click", toggleModal);
 modalContainer.addEventListener("click", (e) => {
     e.stopPropagation();
 });

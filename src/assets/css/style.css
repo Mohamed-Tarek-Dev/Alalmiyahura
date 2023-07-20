@@ -279,10 +279,14 @@ footer .col-3 form input {
 footer .col-3 .emails {
   @apply flex flex-col gap-3; }
   footer .col-3 .emails .email {
-    @apply flex items-center justify-between p-4 bg-lightPurple rounded-[5px]; }
+    @apply relative flex items-center justify-between p-4 bg-lightPurple rounded-[5px]; }
     footer .col-3 .emails .email a {
       @apply flex items-center gap-3 font-semibold; }
       footer .col-3 .emails .email a i {
         @apply text-2xl; }
+    footer .col-3 .emails .email .copy {
+      @apply absolute w-full px-8 flex justify-end items-center duration-300 opacity-0 invisible; }
+      footer .col-3 .emails .email .copy.copied {
+        @apply opacity-100 visible; }
 
 /*# sourceMappingURL=style.css.map */

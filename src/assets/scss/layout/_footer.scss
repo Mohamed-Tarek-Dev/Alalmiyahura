@@ -37,11 +37,17 @@ footer {
         .emails {
             @apply flex flex-col gap-3;
             .email {
-                @apply flex items-center justify-between p-4 bg-lightPurple rounded-[5px];
+                @apply relative flex items-center justify-between p-4 bg-lightPurple rounded-[5px];
                 a {
                     @apply flex items-center gap-3 font-semibold;
                     i {
                         @apply text-2xl;
+                    }
+                }
+                .copy {
+                    @apply absolute w-full px-8 flex justify-end items-center duration-300 opacity-0 invisible;
+                    &.copied {
+                        @apply opacity-100 visible;
                     }
                 }
             }
