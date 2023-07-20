@@ -55,6 +55,9 @@ img {
   .back-to-top-btn i {
     @apply text-2xl; }
 
+.animate-x {
+  animation: bounceX 1s linear infinite alternate-reverse; }
+
 @keyframes scale {
   0% {
     transform: scale(0.7); }
@@ -71,7 +74,7 @@ img {
   .modal-popup .modal {
     @apply flex justify-center items-center relative; }
     .modal-popup .modal__container {
-      @apply bg-primary relative w-full h-[600px] max-h-full overflow-y-scroll box-border rounded-[20px] lg:overflow-hidden lg:scale-[0.8] lg:h-full; }
+      @apply bg-primary relative w-full h-[500px] max-h-full overflow-y-scroll box-border rounded-[20px] lg:overflow-hidden lg:scale-[0.8] lg:h-full; }
     .modal-popup .modal__close {
       @apply absolute w-full flex justify-end p-8 cursor-pointer; }
       .modal-popup .modal__close button {

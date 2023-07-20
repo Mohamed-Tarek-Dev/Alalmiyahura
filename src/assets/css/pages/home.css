@@ -38,7 +38,7 @@
 #projects .slider {
   @apply min-h-[1200px] max-h-full; }
 #projects .project-item {
-  @apply transition-all duration-[500ms] translate-x-[-50%] absolute invisible opacity-0 flex-wrap items-center justify-center gap-7 mt-10 lg:flex-nowrap lg:gap-0; }
+  @apply flex flex-wrap items-center justify-center gap-7 mt-10 lg:flex-nowrap lg:gap-0; }
   #projects .project-item .details p img {
     @apply w-[20px] h-[15px]; }
   #projects .project-item .projects-btn a i {
@@ -47,23 +47,37 @@
     @apply translate-x-[10px]; }
   #projects .project-item.active {
     @apply flex translate-x-0 relative left-0 opacity-100 visible h-full; }
-#projects .slide-buttons {
-  @apply w-full justify-end hidden gap-3 absolute top-[-8%] sm:flex; }
-  #projects .slide-buttons #prev-btn,
-  #projects .slide-buttons #next-btn {
+#projects .owl-nav,
+#projects .owl-nav.disabled {
+  @apply hidden gap-3 absolute top-[-2%] right-0 sm:flex; }
+  #projects .owl-nav .owl-prev,
+  #projects .owl-nav .owl-next,
+  #projects .owl-nav.disabled .owl-prev,
+  #projects .owl-nav.disabled .owl-next {
     @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out; }
-    #projects .slide-buttons #prev-btn::after,
-    #projects .slide-buttons #next-btn::after {
+    #projects .owl-nav .owl-prev span,
+    #projects .owl-nav .owl-next span,
+    #projects .owl-nav.disabled .owl-prev span,
+    #projects .owl-nav.disabled .owl-next span {
+      @apply hidden; }
+    #projects .owl-nav .owl-prev::after,
+    #projects .owl-nav .owl-next::after,
+    #projects .owl-nav.disabled .owl-prev::after,
+    #projects .owl-nav.disabled .owl-next::after {
       @apply text-2xl;
       display: block;
       font-family: "Font Awesome 6 Pro";
       font-weight: 400; }
-    #projects .slide-buttons #prev-btn:hover,
-    #projects .slide-buttons #next-btn:hover {
+    #projects .owl-nav .owl-prev:hover,
+    #projects .owl-nav .owl-next:hover,
+    #projects .owl-nav.disabled .owl-prev:hover,
+    #projects .owl-nav.disabled .owl-next:hover {
       @apply bg-primary text-white; }
-  #projects .slide-buttons #prev-btn::after {
+  #projects .owl-nav .owl-prev::after,
+  #projects .owl-nav.disabled .owl-prev::after {
     content: "\f060"; }
-  #projects .slide-buttons #next-btn::after {
+  #projects .owl-nav .owl-next::after,
+  #projects .owl-nav.disabled .owl-next::after {
     content: "\f061"; }
 
 #discover .item {
@@ -180,6 +194,8 @@
     content: "";
     background: url("../../images/home/why-us.svg") no-repeat;
     @apply hidden absolute left-0 top-0 z-[-1] opacity-[0.1] w-1/2 max-w-full h-full scale-75 lg:top-[25%] lg:left-[3%] lg:block; }
+  #whyUs .intro a i {
+    animation: bounceX 1s linear infinite alternate-reverse; }
   #whyUs .qualities {
     @apply z-20; }
     #whyUs .qualities .quality {
@@ -267,6 +283,8 @@
     @apply bg-white border-primary text-primary; }
   #happening .cards .card:hover .details a i, #happening .cards .card:focus .details a i {
     animation: bounceX 1s linear infinite alternate-reverse; }
+#happening .show-more a i {
+  animation: bounceX 1s linear infinite alternate-reverse; }
 
 #talk .talk__container {
   @apply bg-primary relative w-full h-full box-border rounded-[40px] overflow-hidden; }

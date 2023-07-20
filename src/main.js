@@ -1,4 +1,6 @@
+import "animate.css";
 document.addEventListener("DOMContentLoaded", function () {
+    new WOW().init();
     // Dropdown menus
     const dropdownLinks = document.querySelectorAll(".nav__content--link");
     const dropdownMenus = document.querySelectorAll(".nav__content--dropdown");

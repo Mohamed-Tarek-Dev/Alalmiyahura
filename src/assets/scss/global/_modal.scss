@@ -4,7 +4,7 @@
     .modal {
         @apply flex justify-center items-center relative;
         &__container {
-            @apply bg-primary relative w-full h-[600px] max-h-full overflow-y-scroll box-border rounded-[20px] lg:overflow-hidden lg:scale-[0.8] lg:h-full;
+            @apply bg-primary relative w-full h-[500px] max-h-full overflow-y-scroll box-border rounded-[20px] lg:overflow-hidden lg:scale-[0.8] lg:h-full;
         }
 
         &__close {

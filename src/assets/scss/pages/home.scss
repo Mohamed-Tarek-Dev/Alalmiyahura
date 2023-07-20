@@ -42,7 +42,7 @@
         @apply min-h-[1200px] max-h-full;
     }
     .project-item {
-        @apply transition-all duration-[500ms] translate-x-[-50%] absolute invisible opacity-0 flex-wrap items-center justify-center gap-7 mt-10 lg:flex-nowrap lg:gap-0;
+        @apply flex flex-wrap items-center justify-center gap-7 mt-10 lg:flex-nowrap lg:gap-0;
         .details {
             p {
                 img {
@@ -68,11 +68,15 @@
         }
     }
 
-    .slide-buttons {
-        @apply w-full justify-end hidden gap-3 absolute top-[-8%] sm:flex;
-        #prev-btn,
-        #next-btn {
+    .owl-nav,
+    .owl-nav.disabled {
+        @apply hidden gap-3 absolute top-[-2%] right-0 sm:flex;
+        .owl-prev,
+        .owl-next {
             @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
+            span {
+                @apply hidden;
+            }
             &::after {
                 @apply text-2xl;
                 display: block;
@@ -83,12 +87,12 @@
                 @apply bg-primary text-white;
             }
         }
-        #prev-btn {
+        .owl-prev {
             &::after {
                 content: "\f060";
             }
         }
-        #next-btn {
+        .owl-next {
             &::after {
                 content: "\f061";
             }
@@ -242,6 +246,13 @@
         background: url("../../images/home/why-us.svg") no-repeat;
         @apply hidden absolute left-0 top-0 z-[-1] opacity-[0.1] w-1/2 max-w-full h-full scale-75 lg:top-[25%] lg:left-[3%] lg:block;
     }
+    .intro {
+        a {
+            i {
+                animation: bounceX 1s linear infinite alternate-reverse;
+            }
+        }
+    }
     .qualities {
         @apply z-20;
         .quality {
@@ -374,6 +385,13 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .show-more {
+        a {
+            i {
+                animation: bounceX 1s linear infinite alternate-reverse;
             }
         }
     }
