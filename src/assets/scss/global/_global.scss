@@ -39,3 +39,20 @@ img {
         border-radius: 15px;
     }
 }
+
+.back-to-top-btn {
+    @apply fixed z-50 bottom-[5%] right-[2%] w-[40px] h-[40px] bg-primary text-white rounded-full flex justify-center items-center cursor-pointer opacity-0 pointer-events-none transition-all duration-300 ease-in;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    &:hover {
+        @apply bg-[#007bff];
+    }
+
+    &.show {
+        @apply opacity-100 pointer-events-auto;
+    }
+
+    i {
+        @apply text-2xl;
+    }
+}
