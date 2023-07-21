@@ -11,9 +11,8 @@ header {
         height: 100%;
         right: 0;
         bottom: 0;
-        animation: floatUp 2.5s ease-in-out infinite;
         z-index: -1;
-        animation: bounce 2.5s infinite;
+        animation: bounceHeader 2.5s infinite;
     }
 
     .col {
@@ -34,15 +33,5 @@ header {
         p {
             @apply my-5;
         }
-    }
-}
-
-@keyframes bounce {
-    0%,
-    100% {
-        transform: translateY(-5%);
-    }
-    50% {
-        transform: none;
     }
 }

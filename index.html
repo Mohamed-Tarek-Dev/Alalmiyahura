@@ -10,6 +10,10 @@
         <link rel="stylesheet" href="./src/plugins/all.css" />
         <link rel="stylesheet" href="./src/plugins/owl.carousel.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.8/css/intlTelInput.css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
         <title>Alalmiyahura</title>
     </head>
     <body>
@@ -219,14 +223,18 @@
             <!--=============== Start Header =================-->
             <header class="header mt-10 font-inter relative lg:mt-24">
                 <div class="container text-center">
-                    <h1 class="text-3xl font-extrabold leading-normal sm:text-5xl lg:text-[80px]">At <span class="text-primary">Al Almiya Al Hura</span><br> We Make Your Ideas Work.</h1>
-                    <p class="text-base my-10 mx-auto max-w-[600px]">We turn your ideas into reality. Participate with us to make your project digital through innovation and technology.</p>
-                    <div class="header__buttons flex flex-wrap gap-4 justify-center">
+                    <h1 class="text-3xl font-extrabold leading-normal sm:text-5xl lg:text-[80px] wow animate__animated animate__fadeInDown">
+                        At <span class="text-primary">Al Almiya Al Hura</span><br> We Make Your Ideas Work.
+                    </h1>
+                    <p class="text-base my-10 mx-auto max-w-[600px] wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+                        We turn your ideas into reality. Participate with us to make your project digital through innovation and technology.
+                    </p>
+                    <div class="header__buttons flex flex-wrap gap-4 justify-center wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
                         <button class="bg-primary text-white py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-white hover:text-primary duration-300">Take Step</button>
-                        <button class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">Contact Us</button>
+                        <button class="bg-white text-primary py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">Contact Us</button>
                     </div>
                     <div class="flex flex-wrap mt-10 text-start gap-4 lg:flex-nowrap lg:mt-24">
-                        <div class="col bg-lightYellow">
+                        <div class="col bg-lightYellow wow animate__animated animate__fadeInLeft" data-wow-delay="0.9s">
                             <h3><img src="./src/assets/images/header/lumb.svg" alt="innovation">Innovative Solutions</h3>
                             <p>
                                 We are distinguished in the field of design and development
@@ -234,11 +242,11 @@
                                 highest degree of efficiency and quality
                             </p>
                         </div>
-                        <div class="col bg-lightGreen">
+                        <div class="col bg-lightGreen wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
                             <h3><img src="./src/assets/images/header/speed.svg" alt="innovation">Performance</h3>
                             <p>The speed in the implementation of services is something we have been keen on from the beginning to reach our customers where they want in a short time</p>
                         </div>
-                        <div class="col bg-lightBlue">
+                        <div class="col bg-lightBlue wow animate__animated animate__fadeInRight" data-wow-delay="1.5s">
                             <h3><img src="./src/assets/images/header/lumb.svg" alt="innovation">Fast Technical Support</h3>
                             <p>
                                 Always ready to serve our customers and answer all questions and inquiries as quickly as possible
@@ -247,58 +255,62 @@
                     </div>
                 </div>
             </header>
-
+            
             <!--=============== About us =================-->
-            <section id="about" class="mt-20 lg:mt-32">
+            <section id="about" class="mt-20 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <div class="flex flex-wrap justify-between gap-8 lg:flex-nowrap">
-                        <div class="about__img flex justify-center w-full lg:block lg:w-1/2">
+                        <div class="about__img flex justify-center w-full lg:block lg:w-1/2 wow animate__animated animate__fadeInLeft animate__delay-0s">
                             <img src="./src/assets/images/home/about-pic.png" class="max-w-[550px]" alt="About">
                         </div>
-                        <div class="about__content flex flex-col items-start gap-7 w-full lg:w-1/2">
-                            <h2 class="text-3xl font-bold lg:text-5xl">Best IT Solution For Your Business Theme</h2>
-                            <p>
+                        <div class="about__content flex flex-col items-start gap-7 w-full lg:w-1/2 wow animate__animated animate__fadeInRight animate__delay-0s">
+                            <h2 class="text-3xl font-bold lg:text-5xl wow animate__animated animate__fadeInUp animate__delay-0.3s">
+                                Best IT Solution For Your Business Theme
+                            </h2>
+                            <p class="wow animate__animated animate__fadeInUp animate__delay-0.6s">
                                 Business solution company sit our any how site used the our company any site
                                 us it-solve theme is very professional theme business & corporate, finance, advisor,
                                 solution, company and all project used.
                             </p>
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-3 wow animate__animated animate__fadeInUp animate__delay-0.9s">
                                 <img src="./src/assets/images/home/certified.svg" class="w-[122px] h-[109px]" alt="certified">
                                 <p>Years of experience in software services.</p>
                             </div>
-                            <button class="text-center bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300 flex items-center gap-2">
+                            <button class="text-center bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300 flex items-center gap-2 wow animate__animated animate__fadeInUp animate__delay-1.2s">
                                 More about us<i class="fa-regular fa-arrow-right relative top-[2px] animate-x"></i>
                             </button>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section id="certificates" class="mt-16 lg:mt-32">
+            
+            <section id="certificates" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
-                    <h2 class="text-3xl font-bold lg:text-6xl">We're <br> Certificated In</h2>
+                    <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
+                        We're <br> Certificated In
+                    </h2>
                     <div id="certificates-carousel" class="owl-carousel owl-theme mt-16">
-                        <div class="item">
+                        <div class="item wow animate__animated animate__flipInX" data-wow-duration="0.5s">
                             <img src="./src/assets/images/home/certificate-1.svg" alt="Certificate">
                         </div>
-                        <div class="item">
+                        <div class="item wow animate__animated animate__flipInX" data-wow-duration="0.5s" data-wow-delay="0.2s">
                             <img src="./src/assets/images/home/certificate-2.svg" alt="Certificate">
                         </div>
-                        <div class="item">
+                        <div class="item wow animate__animated animate__flipInX" data-wow-duration="0.5s" data-wow-delay="0.4s">
                             <img src="./src/assets/images/home/certificate-3.svg" alt="Certificate">
                         </div>
-                        <div class="item">
+                        <div class="item wow animate__animated animate__flipInX" data-wow-duration="0.5s" data-wow-delay="0.6s">
                             <img src="./src/assets/images/home/certificate-4.svg" alt="Certificate">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="projects" class="mt-16 lg:mt-32">
+            <section id="projects" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
-                    <h2 class="text-3xl font-bold lg:text-6xl">Latest Projects</h2>
+                    <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">Latest Projects</h2>
                     <div id="project-carousel" class="owl-carousel owl-theme relative">
-                        <div class="item">
+                        <div class="item wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
                             <div class="project-item">
                                 <div class="img z-10"><img src="./src/assets/images/home/phones.svg" alt="Phones"></div>
                                 <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
@@ -384,7 +396,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
                             <div class="project-item">
                                 <div class="img z-10"><img src="./src/assets/images/home/phones.svg" alt="Phones"></div>
                                 <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
@@ -471,7 +483,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="showMore" class="mt-10 text-center lg:mt-16">
+                    <div id="showMore" class="mt-10 text-center lg:mt-16 wow animate__animated animate__fadeInUp">
                         <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">
                             Show More
                         </a>
@@ -479,41 +491,59 @@
                 </div>
             </section>
 
-            <section id="discover" class="mt-16 lg:mt-32">
+            <section id="discover" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
-                    <h2 class="text-3xl font-bold lg:text-6xl">Discover Our services</h2>
-                    <p class="mt-3 hidden lg:block">Turning your ideas into cutting-edge technologies Turning your ideas <br> into cutting-edge technologies</p>
-                    <p class="mt-3 block lg:hidden">Turning your ideas into cutting-edge technologies Turning your ideas into cutting-edge technologies</p>
+                    <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
+                        Discover Our Services
+                    </h2>
+                    <p class="mt-3 hidden lg:block wow animate__animated animate__fadeIn">
+                        Turning your ideas into cutting-edge technologies Turning your ideas <br> into cutting-edge technologies
+                    </p>
+                    <p class="mt-3 block lg:hidden wow animate__animated animate__fadeIn">
+                        Turning your ideas into cutting-edge technologies Turning your ideas into cutting-edge technologies
+                    </p>
                     <div id="discover-carousel" class="owl-carousel owl-theme mt-10">
-                        <div class="item bg-backgroundOne">
+                        <div class="item bg-backgroundOne wow animate__animated animate__zoomIn">
                             <img src="./src/assets/images/icons/test.svg" alt="Service Icon">
                             <h3 class="text-black text-3xl font-bold">E-Marketing</h3>
                             <p>Incorporating Easy Navigation Functions To Deliver The Best Customer Experience.</p>
-                            <a href="#">Show More<i class="fa-regular fa-arrow-right animate-x"></i></a>
+                            <a href="#" class="wow animate__animated animate__fadeInUp">
+                                Show More<i class="fa-regular fa-arrow-right animate-x"></i>
+                            </a>
                         </div>
-                        <div class="item bg-backgroundTwo">
+                        <div class="item bg-backgroundTwo wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
                             <img src="./src/assets/images/icons/test.svg" alt="Service Icon">
                             <h3 class="text-black text-3xl font-bold">E-Marketing</h3>
                             <p>Incorporating Easy Navigation Functions To Deliver The Best Customer Experience.</p>
-                            <a href="#">Show More<i class="fa-regular fa-arrow-right animate-x"></i></a>
+                            <a href="#" class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                Show More<i class="fa-regular fa-arrow-right animate-x"></i>
+                            </a>
                         </div>
-                        <div class="item bg-backgroundThree">
+                        <div class="item bg-backgroundThree wow animate__animated animate__zoomIn" data-wow-delay="0.6s">
                             <img src="./src/assets/images/icons/test.svg" alt="Service Icon">
                             <h3 class="text-black text-3xl font-bold">E-Marketing</h3>
                             <p>Incorporating Easy Navigation Functions To Deliver The Best Customer Experience.</p>
-                            <a href="#">Show More<i class="fa-regular fa-arrow-right animate-x"></i></a>
+                            <a href="#" class="wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                                Show More<i class="fa-regular fa-arrow-right animate-x"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section id="technology"  class="relative mt-16 lg:mt-32">
+            
+            <section id="technology" class="relative mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
-                    <h2 class="text-3xl font-bold lg:text-6xl">Technology and Tools</h2>
-                    <p class="mt-4 hidden lg:block">Our engineers apprehend your business requirements and <br> help you choose the right technology for your solution.</p>
-                    <p class="mt-3 block lg:hidden">Our engineers apprehend your business requirements and help you choose the right technology for your solution.</p>
-                    <div class="cards mt-10 grid grid-cols-1 gap-5 lg:grid-cols-2 ">
-                        <div class="card">
+                    <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
+                        Technology and Tools
+                    </h2>
+                    <p class="mt-4 hidden lg:block wow animate__animated animate__fadeIn">
+                        Our engineers apprehend your business requirements and <br> help you choose the right technology for your solution.
+                    </p>
+                    <p class="mt-3 block lg:hidden wow animate__animated animate__fadeIn">
+                        Our engineers apprehend your business requirements and help you choose the right technology for your solution.
+                    </p>
+                    <div class="cards mt-10 grid grid-cols-1 gap-5 lg:grid-cols-2">
+                        <div class="card wow animate__animated animate__fadeInLeft">
                             <h3>Design</h3>
                             <ul>
                                 <li>
@@ -542,7 +572,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
                             <h3>Mobile Design</h3>
                             <ul>
                                 <li>
@@ -571,7 +601,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeInLeft" data-wow-delay="0.6s">
                             <h3>Front-end</h3>
                             <ul>
                                 <li>
@@ -600,7 +630,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeInRight" data-wow-delay="0.9s">
                             <h3>Back-End</h3>
                             <ul>
                                 <li>
@@ -631,13 +661,15 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>            
 
-            <section id="testimonials" class="mt-16 lg:mt-32">
+            <section id="testimonials" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
-                    <h2 class="text-3xl font-bold lg:text-6xl">Let's Hear <br> What Our Clients Say</h2>
+                    <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
+                        Let's Hear <br> What Our Clients Say
+                    </h2>
                     <div id="testimonials-carousel" class="owl-carousel owl-theme mt-16">
-                        <div class="item">
+                        <div class="item wow animate__animated animate__fadeIn">
                             <div class="icon">
                                 <img src="./src/assets/images/home/outfit.svg" alt="Logo">
                             </div>
@@ -650,11 +682,11 @@
                                 <img src="./src/assets/images/home/person-1.jpeg" alt="Person">
                                 <div class="details">
                                     <h3>Sophia Adam</h3>
-                                    <span>ceo, Co-Founder</span>
+                                    <span>CEO, Co-Founder</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
                             <div class="icon">
                                 <img src="./src/assets/images/home/caption.svg" alt="Logo">
                             </div>
@@ -667,11 +699,11 @@
                                 <img src="./src/assets/images/home/person-2.webp" alt="Person">
                                 <div class="details">
                                     <h3>Sophia Adam</h3>
-                                    <span>ceo, Co-Founder</span>
+                                    <span>CEO, Co-Founder</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
                             <div class="icon">
                                 <img src="./src/assets/images/home/wesselna.svg" alt="Logo">
                             </div>
@@ -684,30 +716,26 @@
                                 <img src="./src/assets/images/home/person-3.webp" alt="Person">
                                 <div class="details">
                                     <h3>Sophia Adam</h3>
-                                    <span>ceo, Co-Founder</span>
+                                    <span>CEO, Co-Founder</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section id="whyUs" class="mt-16 lg:mt-32">
+            
+            <section id="whyUs" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <div class="flex flex-wrap lg:flex-nowrap">
-                        <div class="intro lg:w-[30%]">
+                        <div class="intro lg:w-[30%] wow animate__animated animate__fadeInLeft" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0s;">
                             <h2 class="text-3xl font-bold lg:text-6xl">Why<br> Choose Us?</h2>
-                            <p class="mt-4 mb-10">
-                                More the years, the better the solutions! we have been
-                                partnering with brands and offering our expertise for
-                                more than 5 years.
-                            </p>
-                            <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">
-                                Let's Work Togother<i class="fa-regular fa-arrow-right relative top-[2px] mx-3"></i>
+                            <p class="mt-4 mb-10">More the years, the better the solutions! we have been partnering with brands and offering our expertise for more than 5 years.</p>
+                            <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300 wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.3s;">
+                                Let's Work Together<i class="fa-regular fa-arrow-right relative top-[2px] mx-3 animate-x"></i>
                             </a>
                         </div>
                         <div class="qualities mt-10 flex flex-col gap-7 lg:w-[70%] lg:mt-0">
-                            <div class="quality bg-backYellow self-end">
+                            <div class="quality bg-backYellow self-end wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.6s;">
                                 <div class="flex items-start">
                                     <img class="w-[48px] h-[48px]" src="./src/assets/images/home/medal.svg" alt="Quality">
                                 </div>
@@ -716,42 +744,37 @@
                                     <p>We aim to deliver high-quality products. Hence, we take care of everything at the granular level.</p>
                                 </div>
                             </div>
-                            <div class="quality bg-lightBlue self-center">
+                            <div class="quality bg-lightBlue self-center wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.9s;">
                                 <div class="flex items-start">
                                     <img class="w-[48px] h-[48px]" src="./src/assets/images/home/security.svg" alt="Security">
                                 </div>
                                 <div class="mt-2">
-                                    <h3 class="font-bold text-2xl mb-3">Quality</h3>
-                                    <p>We aim to deliver high-quality products. Hence, we take care of everything at the granular level.</p>
+                                    <h3 class="font-bold text-2xl mb-3">Security</h3>
+                                    <p>We prioritize the security of your projects and data, ensuring a safe and reliable experience.</p>
                                 </div>
                             </div>
-                            <div class="quality bg-backDarkBule self-start">
+                            <div class="quality bg-backDarkBule self-start wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 1.2s;">
                                 <div class="flex items-start">
-                                    <img class="w-[48px] h-[48px]" src="./src/assets/images/home/flash.svg" alt="flash">
+                                    <img class="w-[48px] h-[48px]" src="./src/assets/images/home/flash.svg" alt="Flash">
                                 </div>
                                 <div class="mt-2">
-                                    <h3 class="font-bold text-2xl mb-3">Quality</h3>
-                                    <p>We aim to deliver high-quality products. Hence, we take care of everything at the granular level.</p>
+                                    <h3 class="font-bold text-2xl mb-3">Efficiency</h3>
+                                    <p>We strive to deliver efficient solutions, optimizing the performance of your projects and applications.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section id="partners" class="mt-16 lg:mt-32 wow animate__animated animate__bounce">
+            
+            <section id="partners" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <div class="flex flex-wrap justify-center items-center xl:flex-nowrap xl:gap-x-40">
-                        <div class="intro w-full xl:w-[50%]">
+                        <div class="intro w-full xl:w-[50%] wow animate__animated animate__fadeInLeft" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0s;">
                             <h2 class="text-3xl font-bold lg:text-6xl">We Work With The Best Partners</h2>
-                            <p class="mt-5 mb-10">
-                                While we are at the forefront of and specialize in design-build, 
-                                we are very familiar with a number of delivery methods and
-                                confident we can find the process that will best help you meet
-                                your goals.
-                            </p>
+                            <p class="mt-5 mb-10">While we are at the forefront of and specialize in design-build, we are very familiar with a number of delivery methods and confident we can find the process that will best help you meet your goals.</p>
                         </div>
-                        <div id="partners-carousel" class="owl-carousel owl-theme w-full xl:w-[50%!important]">
+                        <div id="partners-carousel" class="owl-carousel owl-theme w-full xl:w-[50%!important] wow animate__animated animate__fadeInRight" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.3s;">
                             <div class="item">
                                 <div class="partner">
                                     <img src="./src/assets/images/home/partner-1.svg" alt="Partner">
@@ -780,34 +803,34 @@
                     </div>
                 </div>
             </section>
-
-            <section id="subscribe" class="mt-16 lg:mt-24">
+            
+            <section id="subscribe" class="mt-16 lg:mt-24 wow animate__animated animate__fadeIn">
                 <div class="video-container">
                     <video autoplay muted loop>
                         <source src="./src/assets/videos/subsctibe.mp4" type="video/mp4">
                         <!-- You can add additional video formats here for better browser compatibility -->
                         Your browser does not support the video tag.
-                      </video>                      
+                    </video>                      
                 </div>
-                <div class="content flex flex-col">
+                <div class="content flex flex-col wow animate__animated animate__fadeIn" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.3s;">
                     <h2 class="text-3xl font-bold lg:text-6xl lg:leading-[5.5rem!important]">Subscribe To Our Newsletter <br> To Get New Updates</h2>
-                    <p class="mt-5 mb-12">Stay in touch with our team here at Al Almiya Al Hura and learn about our latest creations <br> and projects from our regular newsletter.</p>
+                    <p class="mt-5 mb-12">Stay in touch with our team here at Al Almiya Al Hura and learn about our latest creations and projects from our regular newsletter.</p>
                     <form class="flex items-center py-5 justify-end bg-white text-start rounded-[9px] w-[700px] h-[65px] max-h-fit max-w-full relative lg:py-0">
                         <input type="text" name="Subscribe" id="subscribe-btn" placeholder="Your Email Address" class="absolute left-0 top-0 bottom-0 w-[70%] text-black px-8 outline-none">
                         <button class="w-[30%] bg-primary absolute h-full rounded-[9px] border-[1px] boder-solid border-white hover:bg-[#0A6EBD] duration-300">Subscribe</button>
                     </form>
                 </div>
             </section>
-
+            
             <section id="happening" class="mt-16 lg:mt-24">
                 <div class="container">
-                    <div class="intro">
+                    <div class="intro wow animate__animated animate__fadeInLeft" data-wow-duration="1s">
                         <h2 class="text-3xl font-bold lg:text-6xl">What's Happening!</h2>
                         <p class="mt-3 hidden lg:block">Turning your ideas into cutting-edge technologies Turning your ideas <br> into cutting-edge technologies</p>
                         <p class="mt-3 block lg:hidden">Turning your ideas into cutting-edge technologies Turning your ideas into cutting-edge technologies</p>
                     </div>
                     <div class="cards flex flex-wrap justify-center mt-10 gap-5 xl:gap-3 xl:flex-nowrap">
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0s">
                             <div class="card-img">
                                 <img src="./src/assets/images/home/happening-1.png" alt="">
                                 <h4>Business</h4>
@@ -824,7 +847,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
                             <div class="card-img">
                                 <img src="./src/assets/images/home/happening-2.png" alt="">
                                 <h4>Business</h4>
@@ -841,7 +864,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                             <div class="card-img">
                                 <img src="./src/assets/images/home/happening-3.png" alt="">
                                 <h4>Business</h4>
@@ -859,7 +882,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="show-more text-center mt-16 xl:mt-32">
+                    <div class="show-more text-center mt-16 xl:mt-32 wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
                         <a href="#" class="bg-white text-primary font-semibold py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">
                             Show More
                             <i class="fa-regular fa-arrow-right relative top-[2px] mx-2"></i>
@@ -867,13 +890,13 @@
                     </div>
                 </div>
             </section>
-
+            
             <section id="talk" class="relative top-[15rem] mt-[-10rem] lg:top-[18rem] lg:mt-[-13rem]">
-                <div class="talk container">
+                <div class="talk container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
                     <div class="talk__container">
                         <div class="px-4 py-10 relative z-10 lg:px-12 lg:py-16">
                             <h2 class="text-3xl text-white font-bold lg:text-6xl">Let's Talk.</h2>
-                            <p class="mt-5 text-base text-white text-xl">Let's Build Best Digital Solutions For Your Business Now!</p>
+                            <p class="mt-5 text-base text-white lg:text-xl">Let's Build Best Digital Solutions For Your Business Now!</p>
                             <form class="talk__form flex flex-col gap-5 mt-10 w-full lg:grid lg:grid-cols-2">
                                 <div class="talk__form--input">
                                     <input type="text" name="Full name" placeholder="Your Full Name" required>
@@ -907,7 +930,7 @@
             <footer class="bg-footerBg pt-72 lg:pt-96">
                 <div class="container">
                     <div class="grid grid-cols-1 xl:grid-cols-3">
-                        <div class="col-1 lg:w-[80%]">
+                        <div class="col-1 lg:w-[80%] wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s">
                             <a href="./index.html"><img src="./src/assets/images/logo-EN.svg" alt="Logo"></a>
                             <p class="border-b-[1px] border-borderColor mt-5 mb-3 pb-3">We are Keen to Provide You with Innovative Digital Solutions; depending On Our Extensive Experience in The Field of Information Technology.</p>
                             <ul class="flex flex-wrap gap-6 mt-5">
@@ -919,7 +942,7 @@
                                 <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                             </ul>
                         </div>
-                        <div class="col-2 hidden gap-10 my-10 sm:flex xl:my-0 xl:justify-self-end lg:w-[95%]">
+                        <div class="col-2 hidden gap-10 my-10 sm:flex xl:my-0 xl:justify-self-end lg:w-[95%] wow animate__animated animate__fadeInUp" data-wow-duration="0.5s">
                             <div class="quick">
                                 <h4>Quick Access</h4>
                                 <ul>
@@ -942,7 +965,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-3 xl:justify-self-end mt-10 xl:mt-0">
+                        <div class="col-3 xl:justify-self-end mt-10 xl:mt-0 wow animate__animated animate__fadeInRight" data-wow-duration="0.5s">
                             <h4 class="text-xl font-bold mb-5">Subscribe For Latest Updates</h4>
                             <p class="mb-3">Make the right business move.</p>
                             <form class="flex items-center py-5 justify-end bg-white text-start rounded-[5px] h-[65px] max-h-fit max-w-full relative lg:py-0 xl:w-[400px]">
@@ -968,7 +991,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="copyright bg-primary text-center text-white p-6 mt-10 xl:mt-40">
+                <div class="copyright bg-primary text-center text-white p-6 mt-10 xl:mt-40 wow animate__animated animate__fadeIn" data-wow-duration="0.5s">
                     <p>&copy; 2022 Al Almiya Al Hura. All Rights Reserved </p>
                 </div>
             </footer>

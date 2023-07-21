@@ -1,3 +1,12 @@
+@keyframes bounceHeader {
+    0%,
+    100% {
+        transform: translateY(-5%);
+    }
+    50% {
+        transform: none;
+    }
+}
 @keyframes scale {
     0% {
         transform: scale(0.7);

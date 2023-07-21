@@ -58,6 +58,12 @@ img {
 .animate-x {
   animation: bounceX 1s linear infinite alternate-reverse; }
 
+@keyframes bounceHeader {
+  0%,
+    100% {
+    transform: translateY(-5%); }
+  50% {
+    transform: none; } }
 @keyframes scale {
   0% {
     transform: scale(0.7); }
@@ -256,9 +262,8 @@ header::before {
   height: 100%;
   right: 0;
   bottom: 0;
-  animation: floatUp 2.5s ease-in-out infinite;
   z-index: -1;
-  animation: bounce 2.5s infinite; }
+  animation: bounceHeader 2.5s infinite; }
 header .col {
   @apply p-5 rounded-2xl border-[1px] border-solid border-borderColor w-full; }
   header .col h3 {
@@ -269,12 +274,6 @@ header .col {
   header .col p {
     @apply my-5; }
 
-@keyframes bounce {
-  0%,
-    100% {
-    transform: translateY(-5%); }
-  50% {
-    transform: none; } }
 footer .col-1 ul li a i {
   @apply border-2 text-primary p-4 rounded-full duration-200 ease-in-out w-10 h-10 flex items-center justify-center; }
   footer .col-1 ul li a i:hover,
