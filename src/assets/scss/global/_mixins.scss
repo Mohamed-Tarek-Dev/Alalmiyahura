@@ -1,3 +1,9 @@
 .animate-x {
     animation: bounceX 1s linear infinite alternate-reverse;
 }
+.animate-x-right {
+    animation: bounceXRight 1s linear infinite alternate-reverse;
+}
+.rotateInfinity {
+    animation: rotateInfinity 6s linear infinite;
+}

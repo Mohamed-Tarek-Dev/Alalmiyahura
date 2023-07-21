@@ -58,6 +58,12 @@ img {
 .animate-x {
   animation: bounceX 1s linear infinite alternate-reverse; }
 
+.animate-x-right {
+  animation: bounceXRight 1s linear infinite alternate-reverse; }
+
+.rotateInfinity {
+  animation: rotateInfinity 6s linear infinite; }
+
 @keyframes bounceHeader {
   0%,
     100% {
@@ -74,6 +80,14 @@ img {
 @keyframes bounceX {
   to {
     transform: translateX(10px); } }
+@keyframes bounceXRight {
+  to {
+    transform: translateX(-10px); } }
+@keyframes rotateInfinity {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 .modal-popup {
   @apply opacity-0 invisible duration-300 fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-full z-50 flex justify-center items-center;
   background-color: rgba(0, 0, 0, 0.5); }
@@ -140,6 +154,10 @@ img {
   @apply hover:text-[#0A6EBD] focus:text-[#0A6EBD] duration-200 ease-in; }
   .nav__top--social li a i {
     @apply text-2xl; }
+.nav__logo {
+  @apply w-[20%]; }
+  .nav__logo img {
+    @apply w-full max-w-[220px]; }
 .nav__hamburger {
   cursor: pointer;
   width: 24px;
@@ -301,5 +319,12 @@ footer .col-3 .emails {
       @apply absolute w-full px-8 flex justify-end items-center duration-300 opacity-0 invisible; }
       footer .col-3 .emails .email .copy.copied {
         @apply opacity-100 visible; }
+@media (max-width: 768px) {
+  footer .col-3 .lang ul {
+    @apply top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-50 gap-y-7; } }
+footer .col-3 .lang ul li a {
+  @apply text-4xl text-primary font-semibold md:text-base; }
+footer .col-3 .lang ul.show {
+  @apply opacity-100 visible; }
 
 /*# sourceMappingURL=style.css.map */

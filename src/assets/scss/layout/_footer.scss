@@ -52,5 +52,20 @@ footer {
                 }
             }
         }
+        .lang {
+            ul {
+                @media (max-width: 768px) {
+                    @apply top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-50 gap-y-7;
+                }
+                li {
+                    a {
+                        @apply text-4xl text-primary font-semibold md:text-base;
+                    }
+                }
+                &.show {
+                    @apply opacity-100 visible;
+                }
+            }
+        }
     }
 }

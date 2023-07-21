@@ -25,6 +25,10 @@
     }
 
     &__logo {
+        @apply w-[20%];
+        img {
+            @apply w-full max-w-[220px];
+        }
     }
 
     &__hamburger {

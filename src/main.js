@@ -1,6 +1,17 @@
 import "animate.css";
 document.addEventListener("DOMContentLoaded", function () {
     new WOW().init();
+
+    // Page loading
+    document.onreadystatechange = function () {
+        const loadingDiv = document.querySelector(".loading");
+        if (document.readyState === "loading") {
+            loadingDiv.classList.remove("hidden");
+        } else {
+            loadingDiv.classList.add("hidden");
+        }
+    };
+
     // Dropdown menus
     const dropdownLinks = document.querySelectorAll(".nav__content--link");
     const dropdownMenus = document.querySelectorAll(".nav__content--dropdown");
@@ -21,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Event listener for dropdown links
     dropdownLinks.forEach((link) => {
         link.addEventListener("click", function (event) {
-            event.preventDefault();
+            // event.preventDefault();
             toggleDropdown(this);
             dropdownLinks.forEach((otherLink) => {
                 if (otherLink !== this) {
@@ -205,4 +216,26 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: "smooth",
         });
     });
+});
+
+// Toggle lang list dropdown menu
+function toggleLanguageList() {
+    const languageList = document.querySelector(".lang ul");
+    languageList.classList.toggle("show");
+}
+document
+    .getElementById("footer-lang")
+    .addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        toggleLanguageList();
+    });
+
+document.addEventListener("click", function (event) {
+    const languageList = document.querySelector(".lang ul");
+    const button = document.getElementById("footer-lang");
+
+    if (!languageList.contains(event.target) && event.target !== button) {
+        languageList.classList.remove("show");
+    }
 });

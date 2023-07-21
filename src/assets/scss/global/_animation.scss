@@ -24,3 +24,18 @@
         transform: translateX(10px);
     }
 }
+
+@keyframes bounceXRight {
+    to {
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes rotateInfinity {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

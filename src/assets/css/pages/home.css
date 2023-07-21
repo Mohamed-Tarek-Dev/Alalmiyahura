@@ -4,7 +4,7 @@
     @apply w-[200px] h-[200px] max-w-full max-h-full; }
 #certificates .owl-nav,
 #certificates .owl-nav.disabled {
-  @apply hidden gap-3 absolute top-[-39%] right-0 sm:flex; }
+  @apply hidden gap-3 absolute top-[-39%] w-full justify-end lg:flex sm:flex; }
   #certificates .owl-nav .owl-prev,
   #certificates .owl-nav .owl-next,
   #certificates .owl-nav.disabled .owl-prev,
@@ -207,7 +207,7 @@
     @apply w-[200px] h-[200px]; }
 #partners .owl-nav,
 #partners .owl-nav.disabled {
-  @apply flex justify-center gap-3 xl:absolute xl:left-[-7%]; }
+  @apply flex justify-center gap-3 xl:absolute left-[50%] translate-x-[-50%]; }
   #partners .owl-nav .owl-prev,
   #partners .owl-nav .owl-next,
   #partners .owl-nav.disabled .owl-prev,
@@ -291,7 +291,8 @@
   #talk .talk__container::before {
     content: "";
     background: url("../../images/home/talk-bg.png");
-    @apply block absolute w-full h-full z-0 opacity-50; }
+    @apply block absolute w-full h-full z-0
+                    opacity-50; }
 #talk .talk__form {
   background: transparent; }
   #talk .talk__form--input {
