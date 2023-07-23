@@ -5,36 +5,6 @@
             @apply w-[200px] h-[200px] max-w-full max-h-full;
         }
     }
-    .owl-nav,
-    .owl-nav.disabled {
-        @apply hidden gap-3 absolute top-[-39%] w-full justify-end lg:flex sm:flex;
-        .owl-prev,
-        .owl-next {
-            @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
-            span {
-                @apply hidden;
-            }
-            &::after {
-                @apply text-2xl;
-                display: block;
-                font-family: "Font Awesome 6 Pro";
-                font-weight: 400;
-            }
-            &:hover {
-                @apply bg-primary text-white;
-            }
-        }
-        .owl-prev {
-            &::after {
-                content: "\f060";
-            }
-        }
-        .owl-next {
-            &::after {
-                content: "\f061";
-            }
-        }
-    }
 }
 
 #projects {
@@ -69,34 +39,8 @@
     }
 
     .owl-nav,
-    .owl-nav.disabled {
-        @apply hidden gap-3 absolute top-[-2%] right-0 sm:flex;
-        .owl-prev,
-        .owl-next {
-            @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
-            span {
-                @apply hidden;
-            }
-            &::after {
-                @apply text-2xl;
-                display: block;
-                font-family: "Font Awesome 6 Pro";
-                font-weight: 400;
-            }
-            &:hover {
-                @apply bg-primary text-white;
-            }
-        }
-        .owl-prev {
-            &::after {
-                content: "\f060";
-            }
-        }
-        .owl-next {
-            &::after {
-                content: "\f061";
-            }
-        }
+    .owl-nav {
+        top: -6%;
     }
 }
 
@@ -110,37 +54,6 @@
             @apply self-end text-primary font-semibold flex items-center gap-2;
             i {
                 @apply relative top-[2px];
-            }
-        }
-    }
-
-    .owl-nav,
-    .owl-nav.disabled {
-        @apply hidden gap-3 absolute top-[-39%] right-0 sm:flex;
-        .owl-prev,
-        .owl-next {
-            @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
-            span {
-                @apply hidden;
-            }
-            &::after {
-                @apply text-2xl;
-                display: block;
-                font-family: "Font Awesome 6 Pro";
-                font-weight: 400;
-            }
-            &:hover {
-                @apply bg-primary text-white;
-            }
-        }
-        .owl-prev {
-            &::after {
-                content: "\f060";
-            }
-        }
-        .owl-next {
-            &::after {
-                content: "\f061";
             }
         }
     }
@@ -179,6 +92,14 @@
         }
     }
 }
+html[dir="rtl"] {
+    #technology {
+        &::before {
+            left: unset;
+            right: 40%;
+        }
+    }
+}
 
 #testimonials {
     .item {
@@ -206,37 +127,6 @@
             }
         }
     }
-
-    .owl-nav,
-    .owl-nav.disabled {
-        @apply hidden gap-3 absolute top-[-30%] right-0 sm:flex;
-        .owl-prev,
-        .owl-next {
-            @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
-            span {
-                @apply hidden;
-            }
-            &::after {
-                @apply text-2xl;
-                display: block;
-                font-family: "Font Awesome 6 Pro";
-                font-weight: 400;
-            }
-            &:hover {
-                @apply bg-primary text-white;
-            }
-        }
-        .owl-prev {
-            &::after {
-                content: "\f060";
-            }
-        }
-        .owl-next {
-            &::after {
-                content: "\f061";
-            }
-        }
-    }
 }
 
 #whyUs {
@@ -260,6 +150,14 @@
         }
     }
 }
+html[dir="rtl"] {
+    #whyUs {
+        &::before {
+            left: unset;
+            right: -10%;
+        }
+    }
+}
 
 #partners {
     .item {
@@ -273,33 +171,8 @@
 
     .owl-nav,
     .owl-nav.disabled {
+        top: unset;
         @apply flex justify-center gap-3 xl:absolute left-[50%] translate-x-[-50%];
-        .owl-prev,
-        .owl-next {
-            @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
-            span {
-                @apply hidden;
-            }
-            &::after {
-                @apply text-2xl;
-                display: block;
-                font-family: "Font Awesome 6 Pro";
-                font-weight: 400;
-            }
-            &:hover {
-                @apply bg-primary text-white;
-            }
-        }
-        .owl-prev {
-            &::after {
-                content: "\f060";
-            }
-        }
-        .owl-next {
-            &::after {
-                content: "\f061";
-            }
-        }
     }
 }
 
@@ -321,6 +194,7 @@
 
         input {
             background: transparent;
+            @apply w-full;
         }
     }
 }
@@ -388,10 +262,29 @@
             }
         }
     }
-    .show-more {
-        a {
-            i {
-                animation: bounceX 1s linear infinite alternate-reverse;
+}
+html[dir="rtl"] {
+    #happening {
+        .cards {
+            .card {
+                @apply justify-start;
+
+                h4 {
+                    left: unset;
+                    right: 15px;
+                }
+
+                &:hover,
+                &:focus {
+                    .details {
+                        a {
+                            i {
+                                animation: bounceXRight 1s linear infinite
+                                    alternate-reverse;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

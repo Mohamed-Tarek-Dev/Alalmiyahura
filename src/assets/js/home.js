@@ -1,5 +1,26 @@
-// ============================ Certificates Slider
-$("#certificates-carousel").owlCarousel({
+// Carousel class to handle initialization and configuration
+class CustomCarousel {
+    constructor(selector, options) {
+        this.selector = selector;
+        this.options = options;
+    }
+
+    init() {
+        // Get the HTML direction attribute
+        const isRTL = document.documentElement.getAttribute("dir") === "rtl";
+
+        // If the HTML direction is RTL, set the "rtl" property to true in the options
+        if (isRTL) {
+            this.options.rtl = true;
+        }
+
+        // Initialize the carousel with the updated options
+        $(this.selector).owlCarousel(this.options);
+    }
+}
+
+// Create instances for each carousel on the page
+const certificatesCarousel = new CustomCarousel("#certificates-carousel", {
     loop: true,
     margin: 10,
     nav: true,
@@ -17,8 +38,7 @@ $("#certificates-carousel").owlCarousel({
     },
 });
 
-// ========================= Projects carousel
-$("#project-carousel").owlCarousel({
+const projectCarousel = new CustomCarousel("#project-carousel", {
     loop: true,
     margin: 10,
     nav: true,
@@ -31,13 +51,12 @@ $("#project-carousel").owlCarousel({
         },
         1000: {
             items: 1,
-            margin: 10,
+            margin: 20,
         },
     },
 });
 
-// ========================= Discover carousel
-$("#discover-carousel").owlCarousel({
+const discoverCarousel = new CustomCarousel("#discover-carousel", {
     loop: true,
     margin: 10,
     nav: true,
@@ -55,8 +74,7 @@ $("#discover-carousel").owlCarousel({
     },
 });
 
-// ========================= Testimonials carousel
-$("#testimonials-carousel").owlCarousel({
+const testimonialsCarousel = new CustomCarousel("#testimonials-carousel", {
     loop: true,
     nav: true,
     responsive: {
@@ -74,8 +92,7 @@ $("#testimonials-carousel").owlCarousel({
     },
 });
 
-// ========================= Partners carousel
-$("#partners-carousel").owlCarousel({
+const partnersCarousel = new CustomCarousel("#partners-carousel", {
     loop: true,
     nav: true,
     responsive: {
@@ -96,7 +113,12 @@ $("#partners-carousel").owlCarousel({
     },
 });
 
-//=================== What's Happening Counter up
+// Initialize all carousels
+certificatesCarousel.init();
+projectCarousel.init();
+discoverCarousel.init();
+testimonialsCarousel.init();
+partnersCarousel.init();
 
 // Function to animate counting from zero to a target value with a specified increment
 function animateCount(targetValue, duration, element, increment = 1) {

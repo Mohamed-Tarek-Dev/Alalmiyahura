@@ -183,9 +183,9 @@
                         @apply mt-3 text-black font-bold text-3xl;
                     }
                     a {
-                        @apply flex items-center gap-1 mt-24 text-sm;
-                        img {
-                            @apply w-[20px] h-[17px];
+                        @apply flex items-center gap-2 mt-24 text-sm;
+                        i {
+                            @apply relative top-[2px];
                         }
                     }
                 }

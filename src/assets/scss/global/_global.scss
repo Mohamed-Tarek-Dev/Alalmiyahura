@@ -56,3 +56,54 @@ img {
         @apply text-2xl;
     }
 }
+.owl-carousel {
+    .owl-nav {
+        @apply hidden gap-3 absolute top-[-39%] w-full justify-end lg:flex sm:flex;
+        .owl-prev,
+        .owl-next {
+            background-color: #f2f4fb !important;
+            color: #29398c !important;
+            @apply w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out;
+            span {
+                @apply hidden;
+            }
+            &::after {
+                @apply text-2xl;
+                display: block;
+                font-family: "Font Awesome 6 Pro";
+                font-weight: 400;
+            }
+            &:hover {
+                background-color: #29398c !important;
+                color: #f2f4fb !important;
+            }
+        }
+        .owl-prev {
+            &::after {
+                content: "\f060";
+            }
+        }
+        .owl-next {
+            &::after {
+                content: "\f061";
+            }
+        }
+    }
+}
+
+html[dir="rtl"] {
+    .owl-carousel {
+        .owl-nav {
+            .owl-prev {
+                &::after {
+                    content: "\f061";
+                }
+            }
+            .owl-next {
+                &::after {
+                    content: "\f060";
+                }
+            }
+        }
+    }
+}

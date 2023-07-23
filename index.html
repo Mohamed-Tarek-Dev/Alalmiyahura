@@ -5,11 +5,11 @@
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./src/plugins/tailwind.css" />
-        <link rel="stylesheet" href="./src/assets/css/style.css" />
-        <link rel="stylesheet" href="./src/assets/css/pages/home.css" />
         <link rel="stylesheet" href="./src/plugins/all.css" />
         <link rel="stylesheet" href="./src/plugins/owl.carousel.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.8/css/intlTelInput.css">
+        <link rel="stylesheet" href="./src/assets/css/style.css" />
+        <link rel="stylesheet" href="./src/assets/css/pages/home.css" />
         <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -154,21 +154,30 @@
                                                             <div class="img"><img src="./src/assets/images/navbar/portfolio.webp" alt="Portfolio"></div>
                                                             <div class="info background-1">
                                                                 <h4>Caption One App</h4>
-                                                                <a href="#">Discover More<img src="./src/assets/images/navbar/arrow.png" alt="Arrow"></a>
+                                                                <a href="#">
+                                                                    Discover more
+                                                                    <i class="fa-solid fa-arrow-right animate-x"></i>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                         <div class="item">
                                                             <div class="img"><img src="./src/assets/images/navbar/portfolio.webp" alt="Portfolio"></div>
                                                             <div class="info background-2">
                                                                 <h4>Caption One App</h4>
-                                                                <a href="#">Discover More<img src="./src/assets/images/navbar/arrow.png" alt="Arrow"></a>
+                                                                <a href="#">
+                                                                    Discover more
+                                                                    <i class="fa-solid fa-arrow-right animate-x"></i>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                         <div class="item">
                                                             <div class="img"><img src="./src/assets/images/navbar/portfolio.webp" alt="Portfolio"></div>
                                                             <div class="info background-3">
                                                                 <h4>Caption One App</h4>
-                                                                <a href="#">Discover More<img src="./src/assets/images/navbar/arrow.png" alt="Arrow"></a>
+                                                                <a href="#">
+                                                                    Discover more
+                                                                    <i class="fa-solid fa-arrow-right animate-x"></i>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -287,6 +296,7 @@
                 </div>
             </section>
             
+             <!--=============== Certificates=================-->
             <section id="certificates" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
@@ -305,15 +315,19 @@
                         <div class="item wow animate__animated animate__flipInX" data-wow-duration="0.5s" data-wow-delay="0.6s">
                             <img src="./src/assets/images/home/certificate-4.svg" alt="Certificate">
                         </div>
+                        <div class="item wow animate__animated animate__flipInX" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                            <img src="./src/assets/images/home/certificate-4.svg" alt="Certificate">
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="projects" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
+            <!--=============== projects =================-->
+            <section id="projects" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn" data-wow-duration="1s">
                 <div class="container">
                     <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">Latest Projects</h2>
-                    <div id="project-carousel" class="owl-carousel owl-theme relative">
-                        <div class="item wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+                    <div id="project-carousel" class="owl-carousel owl-theme relative mt-10">
+                        <div class="item">
                             <div class="project-item">
                                 <div class="img z-10"><img src="./src/assets/images/home/phones.svg" alt="Phones"></div>
                                 <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
@@ -399,7 +413,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+                        <div class="item">
                             <div class="project-item">
                                 <div class="img z-10"><img src="./src/assets/images/home/phones.svg" alt="Phones"></div>
                                 <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
@@ -494,6 +508,7 @@
                 </div>
             </section>
 
+            <!--=============== discover =================-->
             <section id="discover" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
@@ -534,12 +549,13 @@
                 </div>
             </section>
             
+            <!--=============== technology =================-->
             <section id="technology" class="relative mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
                         Technology and Tools
                     </h2>
-                    <p class="mt-4 hidden lg:block wow animate__animated animate__fadeIn">
+                    <p class="mt-5 hidden lg:block wow animate__animated animate__fadeIn">
                         Our engineers apprehend your business requirements and <br> help you choose the right technology for your solution.
                     </p>
                     <p class="mt-3 block lg:hidden wow animate__animated animate__fadeIn">
@@ -666,6 +682,7 @@
                 </div>
             </section>            
 
+            <!--=============== testimonials =================-->
             <section id="testimonials" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
@@ -727,18 +744,19 @@
                 </div>
             </section>
             
+            <!--=============== whyUs =================-->
             <section id="whyUs" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <div class="flex flex-wrap lg:flex-nowrap">
-                        <div class="intro lg:w-[30%] wow animate__animated animate__fadeInLeft" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0s;">
+                        <div class="intro lg:w-[30%] wow animate__animated animate__fadeInLeft">
                             <h2 class="text-3xl font-bold lg:text-6xl">Why<br> Choose Us?</h2>
                             <p class="mt-4 mb-10">More the years, the better the solutions! we have been partnering with brands and offering our expertise for more than 5 years.</p>
-                            <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300 wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.3s;">
+                            <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300 wow animate__animated animate__fadeInUp">
                                 Let's Work Together<i class="fa-regular fa-arrow-right relative top-[2px] mx-3 animate-x"></i>
                             </a>
                         </div>
                         <div class="qualities mt-10 flex flex-col gap-7 lg:w-[70%] lg:mt-0">
-                            <div class="quality bg-backYellow self-end wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.6s;">
+                            <div class="quality bg-backYellow self-end wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
                                 <div class="flex items-start">
                                     <img class="w-[48px] h-[48px]" src="./src/assets/images/home/medal.svg" alt="Quality">
                                 </div>
@@ -747,7 +765,7 @@
                                     <p>We aim to deliver high-quality products. Hence, we take care of everything at the granular level.</p>
                                 </div>
                             </div>
-                            <div class="quality bg-lightBlue self-center wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.9s;">
+                            <div class="quality bg-lightBlue self-center wow animate__animated animate__fadeInUp" data-wow-delay="0.9s">
                                 <div class="flex items-start">
                                     <img class="w-[48px] h-[48px]" src="./src/assets/images/home/security.svg" alt="Security">
                                 </div>
@@ -756,7 +774,7 @@
                                     <p>We prioritize the security of your projects and data, ensuring a safe and reliable experience.</p>
                                 </div>
                             </div>
-                            <div class="quality bg-backDarkBule self-start wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 1.2s;">
+                            <div class="quality bg-backDarkBule self-start wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
                                 <div class="flex items-start">
                                     <img class="w-[48px] h-[48px]" src="./src/assets/images/home/flash.svg" alt="Flash">
                                 </div>
@@ -770,14 +788,15 @@
                 </div>
             </section>
             
+            <!--=============== partners =================-->
             <section id="partners" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <div class="flex flex-wrap justify-center items-center xl:flex-nowrap xl:gap-x-40">
-                        <div class="intro w-full xl:w-[50%] wow animate__animated animate__fadeInLeft" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0s;">
+                        <div class="intro w-full xl:w-[50%] wow animate__animated animate__fadeInLeft">
                             <h2 class="text-3xl font-bold lg:text-6xl">We Work With The Best Partners</h2>
                             <p class="mt-5 mb-10">While we are at the forefront of and specialize in design-build, we are very familiar with a number of delivery methods and confident we can find the process that will best help you meet your goals.</p>
                         </div>
-                        <div id="partners-carousel" class="owl-carousel owl-theme w-full xl:w-[50%!important] wow animate__animated animate__fadeInRight" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.3s;">
+                        <div id="partners-carousel" class="owl-carousel owl-theme w-full xl:w-[50%!important] wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
                             <div class="item">
                                 <div class="partner">
                                     <img src="./src/assets/images/home/partner-1.svg" alt="Partner">
@@ -807,15 +826,16 @@
                 </div>
             </section>
             
+            <!--=============== subscribe =================-->
             <section id="subscribe" class="mt-16 lg:mt-24 wow animate__animated animate__fadeIn">
                 <div class="video-container">
                     <video autoplay muted loop>
                         <source src="./src/assets/videos/subsctibe.mp4" type="video/mp4">
                         <!-- You can add additional video formats here for better browser compatibility -->
                         Your browser does not support the video tag.
-                    </video>                      
+                    </video>
                 </div>
-                <div class="content flex flex-col wow animate__animated animate__fadeIn" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.3s;">
+                <div class="content flex flex-col wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
                     <h2 class="text-3xl font-bold lg:text-6xl lg:leading-[5.5rem!important]">Subscribe To Our Newsletter <br> To Get New Updates</h2>
                     <p class="mt-5 mb-12">Stay in touch with our team here at Al Almiya Al Hura and learn about our latest creations and projects from our regular newsletter.</p>
                     <form class="flex items-center py-5 justify-end bg-white text-start rounded-[9px] w-[700px] h-[65px] max-h-fit max-w-full relative lg:py-0">
@@ -825,6 +845,7 @@
                 </div>
             </section>
             
+            <!--=============== happening =================-->
             <section id="happening" class="mt-16 lg:mt-24">
                 <div class="container">
                     <div class="intro wow animate__animated animate__fadeInLeft" data-wow-duration="1s">
@@ -888,12 +909,13 @@
                     <div class="show-more text-center mt-16 xl:mt-32 wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
                         <a href="#" class="bg-white text-primary font-semibold py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">
                             Show More
-                            <i class="fa-regular fa-arrow-right relative top-[2px] mx-2"></i>
+                            <i class="fa-regular fa-arrow-right relative top-[2px] mx-2 animate-x"></i>
                         </a>
                     </div>
                 </div>
             </section>
             
+            <!--=============== talk =================-->
             <section id="talk" class="relative top-[15rem] mt-[-10rem] lg:top-[18rem] lg:mt-[-13rem]">
                 <div class="talk container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
                     <div class="talk__container">
@@ -911,7 +933,7 @@
                                     <input id="phone" name="Phone Number" type="tel" placeholder="Phone Number" required>
                                 </div>
                                 <div class="talk__form--input">
-                                    <select class="country-code-select" id="countryCode" placeholder="select budget">
+                                    <select class="country-code-select" id="countryCode">
                                         <option disabled selected>Select a Service</option>
                                         <option>Mobile App Desgin</option>
                                         <option>Software Testing</option>
@@ -930,6 +952,7 @@
                 </div>
             </section>
 
+            <!--=============== Footer =================-->
             <footer class="bg-footerBg pt-72 lg:pt-96">
                 <div class="container">
                     <div class="grid grid-cols-1 xl:grid-cols-3">
@@ -1032,7 +1055,7 @@
                                     <input id="modal-phone" name="Phone Number" type="tel" placeholder="Phone Number" required>
                                 </div>
                                 <div class="modal__form--input">
-                                    <select class="country-code-select" id="countryCode" placeholder="select budget">
+                                    <select class="country-code-select" id="countryCode">
                                         <option disabled selected>Select a Service</option>
                                         <option>Mobile App Desgin</option>
                                         <option>Software Testing</option>

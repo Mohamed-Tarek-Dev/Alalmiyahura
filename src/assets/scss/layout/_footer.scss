@@ -32,6 +32,7 @@ footer {
         form {
             input {
                 background: transparent;
+                @apply w-full;
             }
         }
         .emails {

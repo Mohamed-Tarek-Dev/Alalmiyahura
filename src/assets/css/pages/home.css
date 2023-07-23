@@ -2,38 +2,6 @@
   @apply flex justify-center items-center border-[1px] border-borderColor border-solid p-8; }
   #certificates .item img {
     @apply w-[200px] h-[200px] max-w-full max-h-full; }
-#certificates .owl-nav,
-#certificates .owl-nav.disabled {
-  @apply hidden gap-3 absolute top-[-39%] w-full justify-end lg:flex sm:flex; }
-  #certificates .owl-nav .owl-prev,
-  #certificates .owl-nav .owl-next,
-  #certificates .owl-nav.disabled .owl-prev,
-  #certificates .owl-nav.disabled .owl-next {
-    @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out; }
-    #certificates .owl-nav .owl-prev span,
-    #certificates .owl-nav .owl-next span,
-    #certificates .owl-nav.disabled .owl-prev span,
-    #certificates .owl-nav.disabled .owl-next span {
-      @apply hidden; }
-    #certificates .owl-nav .owl-prev::after,
-    #certificates .owl-nav .owl-next::after,
-    #certificates .owl-nav.disabled .owl-prev::after,
-    #certificates .owl-nav.disabled .owl-next::after {
-      @apply text-2xl;
-      display: block;
-      font-family: "Font Awesome 6 Pro";
-      font-weight: 400; }
-    #certificates .owl-nav .owl-prev:hover,
-    #certificates .owl-nav .owl-next:hover,
-    #certificates .owl-nav.disabled .owl-prev:hover,
-    #certificates .owl-nav.disabled .owl-next:hover {
-      @apply bg-primary text-white; }
-  #certificates .owl-nav .owl-prev::after,
-  #certificates .owl-nav.disabled .owl-prev::after {
-    content: "\f060"; }
-  #certificates .owl-nav .owl-next::after,
-  #certificates .owl-nav.disabled .owl-next::after {
-    content: "\f061"; }
 
 #projects .slider {
   @apply min-h-[1200px] max-h-full; }
@@ -48,37 +16,8 @@
   #projects .project-item.active {
     @apply flex translate-x-0 relative left-0 opacity-100 visible h-full; }
 #projects .owl-nav,
-#projects .owl-nav.disabled {
-  @apply hidden gap-3 absolute top-[-2%] right-0 sm:flex; }
-  #projects .owl-nav .owl-prev,
-  #projects .owl-nav .owl-next,
-  #projects .owl-nav.disabled .owl-prev,
-  #projects .owl-nav.disabled .owl-next {
-    @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out; }
-    #projects .owl-nav .owl-prev span,
-    #projects .owl-nav .owl-next span,
-    #projects .owl-nav.disabled .owl-prev span,
-    #projects .owl-nav.disabled .owl-next span {
-      @apply hidden; }
-    #projects .owl-nav .owl-prev::after,
-    #projects .owl-nav .owl-next::after,
-    #projects .owl-nav.disabled .owl-prev::after,
-    #projects .owl-nav.disabled .owl-next::after {
-      @apply text-2xl;
-      display: block;
-      font-family: "Font Awesome 6 Pro";
-      font-weight: 400; }
-    #projects .owl-nav .owl-prev:hover,
-    #projects .owl-nav .owl-next:hover,
-    #projects .owl-nav.disabled .owl-prev:hover,
-    #projects .owl-nav.disabled .owl-next:hover {
-      @apply bg-primary text-white; }
-  #projects .owl-nav .owl-prev::after,
-  #projects .owl-nav.disabled .owl-prev::after {
-    content: "\f060"; }
-  #projects .owl-nav .owl-next::after,
-  #projects .owl-nav.disabled .owl-next::after {
-    content: "\f061"; }
+#projects .owl-nav {
+  top: -6%; }
 
 #discover .item {
   @apply flex flex-col gap-5 p-8 rounded-3xl; }
@@ -88,38 +27,6 @@
     @apply self-end text-primary font-semibold flex items-center gap-2; }
     #discover .item a i {
       @apply relative top-[2px]; }
-#discover .owl-nav,
-#discover .owl-nav.disabled {
-  @apply hidden gap-3 absolute top-[-39%] right-0 sm:flex; }
-  #discover .owl-nav .owl-prev,
-  #discover .owl-nav .owl-next,
-  #discover .owl-nav.disabled .owl-prev,
-  #discover .owl-nav.disabled .owl-next {
-    @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out; }
-    #discover .owl-nav .owl-prev span,
-    #discover .owl-nav .owl-next span,
-    #discover .owl-nav.disabled .owl-prev span,
-    #discover .owl-nav.disabled .owl-next span {
-      @apply hidden; }
-    #discover .owl-nav .owl-prev::after,
-    #discover .owl-nav .owl-next::after,
-    #discover .owl-nav.disabled .owl-prev::after,
-    #discover .owl-nav.disabled .owl-next::after {
-      @apply text-2xl;
-      display: block;
-      font-family: "Font Awesome 6 Pro";
-      font-weight: 400; }
-    #discover .owl-nav .owl-prev:hover,
-    #discover .owl-nav .owl-next:hover,
-    #discover .owl-nav.disabled .owl-prev:hover,
-    #discover .owl-nav.disabled .owl-next:hover {
-      @apply bg-primary text-white; }
-  #discover .owl-nav .owl-prev::after,
-  #discover .owl-nav.disabled .owl-prev::after {
-    content: "\f060"; }
-  #discover .owl-nav .owl-next::after,
-  #discover .owl-nav.disabled .owl-next::after {
-    content: "\f061"; }
 
 #technology::before {
   content: "";
@@ -141,6 +48,10 @@
       #technology .cards .card ul li a:hover, #technology .cards .card ul li a:focus {
         transform: translateY(-7px); }
 
+html[dir="rtl"] #technology::before {
+  left: unset;
+  right: 40%; }
+
 #testimonials .item {
   @apply border-[1px] border-solid border-borderColor p-5 lg:p-10 rounded-2xl; }
   #testimonials .item .icon {
@@ -155,38 +66,6 @@
       @apply w-[80px] h-[80px] rounded-full object-cover; }
     #testimonials .item .person .details h3 {
       @apply font-semibold text-xl; }
-#testimonials .owl-nav,
-#testimonials .owl-nav.disabled {
-  @apply hidden gap-3 absolute top-[-30%] right-0 sm:flex; }
-  #testimonials .owl-nav .owl-prev,
-  #testimonials .owl-nav .owl-next,
-  #testimonials .owl-nav.disabled .owl-prev,
-  #testimonials .owl-nav.disabled .owl-next {
-    @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out; }
-    #testimonials .owl-nav .owl-prev span,
-    #testimonials .owl-nav .owl-next span,
-    #testimonials .owl-nav.disabled .owl-prev span,
-    #testimonials .owl-nav.disabled .owl-next span {
-      @apply hidden; }
-    #testimonials .owl-nav .owl-prev::after,
-    #testimonials .owl-nav .owl-next::after,
-    #testimonials .owl-nav.disabled .owl-prev::after,
-    #testimonials .owl-nav.disabled .owl-next::after {
-      @apply text-2xl;
-      display: block;
-      font-family: "Font Awesome 6 Pro";
-      font-weight: 400; }
-    #testimonials .owl-nav .owl-prev:hover,
-    #testimonials .owl-nav .owl-next:hover,
-    #testimonials .owl-nav.disabled .owl-prev:hover,
-    #testimonials .owl-nav.disabled .owl-next:hover {
-      @apply bg-primary text-white; }
-  #testimonials .owl-nav .owl-prev::after,
-  #testimonials .owl-nav.disabled .owl-prev::after {
-    content: "\f060"; }
-  #testimonials .owl-nav .owl-next::after,
-  #testimonials .owl-nav.disabled .owl-next::after {
-    content: "\f061"; }
 
 #whyUs {
   @apply relative; }
@@ -201,42 +80,18 @@
     #whyUs .qualities .quality {
       @apply flex gap-4 p-6 rounded-[20px] lg:w-[70%]; }
 
+html[dir="rtl"] #whyUs::before {
+  left: unset;
+  right: -10%; }
+
 #partners .item {
   @apply flex flex-row justify-center md:flex-col; }
   #partners .item .partner img {
     @apply w-[200px] h-[200px]; }
 #partners .owl-nav,
 #partners .owl-nav.disabled {
+  top: unset;
   @apply flex justify-center gap-3 xl:absolute left-[50%] translate-x-[-50%]; }
-  #partners .owl-nav .owl-prev,
-  #partners .owl-nav .owl-next,
-  #partners .owl-nav.disabled .owl-prev,
-  #partners .owl-nav.disabled .owl-next {
-    @apply bg-[#F2F4FB] text-primary w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out; }
-    #partners .owl-nav .owl-prev span,
-    #partners .owl-nav .owl-next span,
-    #partners .owl-nav.disabled .owl-prev span,
-    #partners .owl-nav.disabled .owl-next span {
-      @apply hidden; }
-    #partners .owl-nav .owl-prev::after,
-    #partners .owl-nav .owl-next::after,
-    #partners .owl-nav.disabled .owl-prev::after,
-    #partners .owl-nav.disabled .owl-next::after {
-      @apply text-2xl;
-      display: block;
-      font-family: "Font Awesome 6 Pro";
-      font-weight: 400; }
-    #partners .owl-nav .owl-prev:hover,
-    #partners .owl-nav .owl-next:hover,
-    #partners .owl-nav.disabled .owl-prev:hover,
-    #partners .owl-nav.disabled .owl-next:hover {
-      @apply bg-primary text-white; }
-  #partners .owl-nav .owl-prev::after,
-  #partners .owl-nav.disabled .owl-prev::after {
-    content: "\f060"; }
-  #partners .owl-nav .owl-next::after,
-  #partners .owl-nav.disabled .owl-next::after {
-    content: "\f061"; }
 
 #subscribe {
   @apply relative w-full h-screen max-h-full overflow-hidden lg:h-[620px]; }
@@ -249,7 +104,8 @@
     background: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay; }
     #subscribe .content input {
-      background: transparent; }
+      background: transparent;
+      @apply w-full; }
 
 #happening .cards .card {
   @apply rounded-[10px] relative border-[1px] border-solid shadow-md border-borderColorTwo xl:flex xl:justify-end xl:bottom-0 xl:shadow-none; }
@@ -283,8 +139,14 @@
     @apply bg-white border-primary text-primary; }
   #happening .cards .card:hover .details a i, #happening .cards .card:focus .details a i {
     animation: bounceX 1s linear infinite alternate-reverse; }
-#happening .show-more a i {
-  animation: bounceX 1s linear infinite alternate-reverse; }
+
+html[dir="rtl"] #happening .cards .card {
+  @apply justify-start; }
+  html[dir="rtl"] #happening .cards .card h4 {
+    left: unset;
+    right: 15px; }
+  html[dir="rtl"] #happening .cards .card:hover .details a i, html[dir="rtl"] #happening .cards .card:focus .details a i {
+    animation: bounceXRight 1s linear infinite alternate-reverse; }
 
 #talk .talk__container {
   @apply bg-primary relative w-full h-full box-border rounded-[40px] overflow-hidden; }

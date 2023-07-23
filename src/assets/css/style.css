@@ -55,6 +55,36 @@ img {
   .back-to-top-btn i {
     @apply text-2xl; }
 
+.owl-carousel .owl-nav {
+  @apply hidden gap-3 absolute top-[-39%] w-full justify-end lg:flex sm:flex; }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    background-color: #f2f4fb !important;
+    color: #29398c !important;
+    @apply w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out; }
+    .owl-carousel .owl-nav .owl-prev span,
+    .owl-carousel .owl-nav .owl-next span {
+      @apply hidden; }
+    .owl-carousel .owl-nav .owl-prev::after,
+    .owl-carousel .owl-nav .owl-next::after {
+      @apply text-2xl;
+      display: block;
+      font-family: "Font Awesome 6 Pro";
+      font-weight: 400; }
+    .owl-carousel .owl-nav .owl-prev:hover,
+    .owl-carousel .owl-nav .owl-next:hover {
+      background-color: #29398c !important;
+      color: #f2f4fb !important; }
+  .owl-carousel .owl-nav .owl-prev::after {
+    content: "\f060"; }
+  .owl-carousel .owl-nav .owl-next::after {
+    content: "\f061"; }
+
+html[dir="rtl"] .owl-carousel .owl-nav .owl-prev::after {
+  content: "\f061"; }
+html[dir="rtl"] .owl-carousel .owl-nav .owl-next::after {
+  content: "\f060"; }
+
 .animate-x {
   animation: bounceX 1s linear infinite alternate-reverse; }
 
@@ -244,9 +274,9 @@ img {
       .nav__content--dropdown .item .info h4 {
         @apply mt-3 text-black font-bold text-3xl; }
       .nav__content--dropdown .item .info a {
-        @apply flex items-center gap-1 mt-24 text-sm; }
-        .nav__content--dropdown .item .info a img {
-          @apply w-[20px] h-[17px]; }
+        @apply flex items-center gap-2 mt-24 text-sm; }
+        .nav__content--dropdown .item .info a i {
+          @apply relative top-[2px]; }
 .nav__content .portfolio.active {
   @apply h-auto; }
 .nav__content--social .phones ul li a {
@@ -306,7 +336,8 @@ footer .col-2 li {
     footer .col-2 li a:hover {
       @apply text-primary; }
 footer .col-3 form input {
-  background: transparent; }
+  background: transparent;
+  @apply w-full; }
 footer .col-3 .emails {
   @apply flex flex-col gap-3; }
   footer .col-3 .emails .email {

@@ -14,7 +14,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
-        <title>Alalmiyahura</title>
+        <title>العالمية الحرة</title>
     </head>
     <body>
         <div class="loading fixed top-0 bottom-0 lef-0 right-0 w-full h-full bg-white z-[99999] flex justify-center items-center">
@@ -154,21 +154,30 @@
                                                             <div class="img"><img src="./src/assets/images/navbar/portfolio.webp" alt="Portfolio"></div>
                                                             <div class="info background-1">
                                                                 <h4>ألتطبيق الاول</h4>
-                                                                <a href="#">أكتشف المزيد<img src="./src/assets/images/navbar/arrow.png" alt="Arrow"></a>
+                                                                <a href="#">
+                                                                    <i class="fa-solid fa-arrow-left animate-x-right"></i>
+                                                                    اكتشف المزيد
+                                                                </a>
                                                             </div>
                                                         </div>
                                                         <div class="item">
                                                             <div class="img"><img src="./src/assets/images/navbar/portfolio.webp" alt="Portfolio"></div>
                                                             <div class="info background-2">
                                                                 <h4>التطبيق الثاني</h4>
-                                                                <a href="#">أكتشف المزيد<img src="./src/assets/images/navbar/arrow.png" alt="Arrow"></a>
+                                                                <a href="#">
+                                                                    <i class="fa-solid fa-arrow-left animate-x-right"></i>
+                                                                    اكتشف المزيد
+                                                                </a>
                                                             </div>
                                                         </div>
                                                         <div class="item">
                                                             <div class="img"><img src="./src/assets/images/navbar/portfolio.webp" alt="Portfolio"></div>
                                                             <div class="info background-3">
                                                                 <h4>التطبيق الثالث</h4>
-                                                                <a href="#">اكتشف المزيد<img src="./src/assets/images/navbar/arrow.png" alt="Arrow"></a>
+                                                                <a href="#">
+                                                                    <i class="fa-solid fa-arrow-left animate-x-right"></i>
+                                                                    اكتشف المزيد
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -185,7 +194,7 @@
                                         <li class="nav__content--link"><a class="justify-between hover"  href="#">المدونة</a></li>
                                         <li class="nav__content--link"><a class="justify-between hover" href="#">تواصل معنا</a></li>
                                         <li class="nav__content--link"><a class="justify-between hover" href="./src/pages/about.html">من نحن</a></li>
-                                        <li class="nav__content--link"><button class=""><i class="fa-regular fa-globe"></i></button></li>
+                                        <li class="nav__content--link"><a href="./index.html"><i class="fa-regular fa-globe"></i></a></li>
                                     </ul>
                                     <div class="nav--button mt-10 mx-auto p-4 lg:mx-0 lg:mt-0 lg:p-0">
                                         <button class="bg-primary text-white rounded-md py-2 px-3 hover:bg-primaryLight focus:bg-primaryLight duration-200 ease-in xl:py-2 xl:px-6">
@@ -277,13 +286,14 @@
                                 <p>سنوات من الخبرة في خدمات البرمجيات</p>
                             </div>
                             <button class="text-center bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300 flex items-center gap-2 wow animate__animated animate__fadeInUp animate__delay-1.2s">
-                                المزيد عنا<i class="fa-regular fa-arrow-left relative top-[2px] animate-x-right"></i>
+                                المزيد عنا<i class="fa-regular fa-arrow-left relative top-[2px] animate-x-right-right"></i>
                             </button>
                         </div>
                     </div>
                 </div>
             </section>
             
+            <!--=============== Certificates=================-->
             <section id="certificates" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
@@ -302,22 +312,26 @@
                         <div class="item wow animate__animated animate__flipInX" data-wow-duration="0.5s" data-wow-delay="0.6s">
                             <img src="./src/assets/images/home/certificate-4.svg" alt="Certificate">
                         </div>
+                        <div class="item wow animate__animated animate__flipInX" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                            <img src="./src/assets/images/home/certificate-4.svg" alt="Certificate">
+                        </div>
                     </div>
                 </div>
             </section>
-
-            <section id="projects" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
+            
+            <!--=============== projects =================-->
+            <section id="projects" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn" data-wow-duration="1s">
                 <div class="container">
-                    <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">أعمالنا الأخيرة</h2>
-                    <div id="project-carousel" class="owl-carousel owl-theme relative">
-                        <div class="item wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+                    <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">اخر المشاريع</h2>
+                    <div id="project-carousel" class="owl-carousel owl-theme relative mt-10">
+                        <div class="item">
                             <div class="project-item">
                                 <div class="img z-10"><img src="./src/assets/images/home/phones.svg" alt="Phones"></div>
-                                <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
+                                <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative right-0 lg:w-9/12 lg:right-[-60px]">
                                     <div class="intro w-10/12">
-                                        <h3 class="text-xl font-bold mb-5 sm:text-4xl">تطبيق كابتن ون</h3>
+                                        <h3 class="text-xl font-bold mb-5 sm:text-4xl">الزي - تطبيق التجارة الإلكترونية للأزياء</h3>
                                         <p>
-                                            كابتن ون تطبيق يوفر خدمة التوصيل للأفراد بأعلى مستوى ممكن من الخصوصية والأمان.
+                                            خدمة توصيل وتسليم عند الطلب مقرها الكويت تتيح لمستخدميها تحديد موعد استلامهم في أي وقت وفي أي مكان.
                                         </p>
                                     </div>
                                     <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
@@ -327,17 +341,17 @@
                                             <span>3000+</span>
                                         </p>
                                         <p>
-                                            المنصات
+                                            الدولة
                                             <br>
                                             <span class="flex items-center gap-2">
                                                 <img src="./src/assets/images/home/country.svg" alt="Country">
-                                                 مصر
+                                                Egypt
                                             </span>
                                         </p>
                                         <p>
                                             المنصات
                                             <br>
-                                            <span>جوجل بلاي & أبل ستور</span>
+                                            <span>Ios, Android</span>
                                         </p>
                                         <p>
                                             التقنيات
@@ -347,18 +361,18 @@
                                     </div>
                                     <div class="projects-btn mt-10 w-10/12 mx-auto">
                                         <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">
-                                            المزيد عنا<i class="fa-regular fa-arrow-left relative top-[2px] mx-5 animate-x"></i>
+                                            المزيد<i class="fa-regular fa-arrow-left relative top-[2px] mx-5 animate-x-right"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="project-item flex-row-reverse">
                                 <div class="img z-10"><img src="./src/assets/images/home/phones-2.svg" alt="Phones"></div>
-                                <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative right-0 lg:w-9/12 lg:right-[-60px]">
+                                <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
                                     <div class="intro w-10/12">
-                                        <h3 class="text-xl font-bold mb-5 sm:text-4xl">تطبيق كابتن ون</h3>
+                                        <h3 class="text-xl font-bold mb-5 sm:text-4xl">Outfit - Fashion E-Commerce App</h3>
                                         <p>
-                                            كابتن ون تطبيق يوفر خدمة التوصيل للأفراد بأعلى مستوى ممكن من الخصوصية والأمان.
+                                            خدمة توصيل وتسليم عند الطلب مقرها الكويت تتيح لمستخدميها تحديد موعد استلامهم في أي وقت وفي أي مكان.
                                         </p>
                                     </div>
                                     <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
@@ -368,17 +382,17 @@
                                             <span>3000+</span>
                                         </p>
                                         <p>
-                                            المنصات
+                                            الدولة
                                             <br>
                                             <span class="flex items-center gap-2">
                                                 <img src="./src/assets/images/home/country.svg" alt="Country">
-                                                 مصر
+                                                Egypt
                                             </span>
                                         </p>
                                         <p>
                                             المنصات
                                             <br>
-                                            <span>جوجل بلاي & أبل ستور</span>
+                                            <span>Ios, Android</span>
                                         </p>
                                         <p>
                                             التقنيات
@@ -388,31 +402,30 @@
                                     </div>
                                     <div class="projects-btn mt-10 w-10/12 mx-auto">
                                         <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">
-                                            Read More<i class="fa-regular fa-arrow-right relative top-[2px] mx-5 animate-x"></i>
+                                            المزيد<i class="fa-regular fa-arrow-left relative top-[2px] mx-5 animate-x-right"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+                        <div class="item">
                             <div class="project-item">
                                 <div class="img z-10"><img src="./src/assets/images/home/phones.svg" alt="Phones"></div>
-                                <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
+                                <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative right-0 lg:w-9/12 lg:right-[-60px]">
                                     <div class="intro w-10/12">
                                         <h3 class="text-xl font-bold mb-5 sm:text-4xl">E-Commerce App</h3>
                                         <p>
-                                            A Kuwait-Based On Demand Pickup And Delivery Service That Allows Its
-                                            Users To Schedule Their Pickup Anytime And Anywhere.
+                                            خدمة توصيل وتسليم عند الطلب مقرها الكويت تتيح لمستخدميها تحديد موعد استلامهم في أي وقت وفي أي مكان.
                                         </p>
                                     </div>
                                     <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
                                         <p>
-                                            Downloads
+                                            التنزيلات
                                             <br>
                                             <span>3000+</span>
                                         </p>
                                         <p>
-                                            Region
+                                            الدولة
                                             <br>
                                             <span class="flex items-center gap-2">
                                                 <img src="./src/assets/images/home/country.svg" alt="Country">
@@ -420,41 +433,40 @@
                                             </span>
                                         </p>
                                         <p>
-                                            Platforms
+                                            المنصات
                                             <br>
                                             <span>Ios, Android</span>
                                         </p>
                                         <p>
-                                            Technology
+                                            التقنيات
                                             <br>
                                             <span>Swift, Kotlin, Angular, Node. Mongodb</span>
                                         </p>
                                     </div>
                                     <div class="projects-btn mt-10 w-10/12 mx-auto">
                                         <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">
-                                            Read More<i class="fa-regular fa-arrow-right relative top-[2px] mx-5 animate-x"></i>
+                                            المزيد<i class="fa-regular fa-arrow-left relative top-[2px] mx-5 animate-x-right"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="project-item flex-row-reverse">
                                 <div class="img z-10"><img src="./src/assets/images/home/phones-2.svg" alt="Phones"></div>
-                                <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative right-0 lg:w-9/12 lg:right-[-60px]">
+                                <div class="flex flex-col gap-7 background-3 p-10 rounded-[20px] w-full mx-auto items-center relative left-0 lg:w-9/12 lg:left-[-60px]">
                                     <div class="intro w-10/12">
                                         <h3 class="text-xl font-bold mb-5 sm:text-4xl">E-Commerce App</h3>
                                         <p>
-                                            A Kuwait-Based On Demand Pickup And Delivery Service That Allows Its
-                                            Users To Schedule Their Pickup Anytime And Anywhere.
+                                            خدمة توصيل وتسليم عند الطلب مقرها الكويت تتيح لمستخدميها تحديد موعد استلامهم في أي وقت وفي أي مكان.
                                         </p>
                                     </div>
                                     <div class="details grid grid-cols-1 gap-7 w-10/12 mx-auto sm:grid-cols-2">
                                         <p>
-                                            Downloads
+                                            التنزيلات
                                             <br>
                                             <span>3000+</span>
                                         </p>
                                         <p>
-                                            Region
+                                            الدولة
                                             <br>
                                             <span class="flex items-center gap-2">
                                                 <img src="./src/assets/images/home/country.svg" alt="Country">
@@ -462,19 +474,19 @@
                                             </span>
                                         </p>
                                         <p>
-                                            Platforms
+                                            المنصات
                                             <br>
                                             <span>Ios, Android</span>
                                         </p>
                                         <p>
-                                            Technology
+                                            التقنيات
                                             <br>
                                             <span>Swift, Kotlin, Angular, Node. Mongodb</span>
                                         </p>
                                     </div>
                                     <div class="projects-btn mt-10 w-10/12 mx-auto">
                                         <a href="#" class="text-black text-center py-4 px-8 rounded-md border-[1px] border-black border-solid duration-300">
-                                            Read More<i class="fa-regular fa-arrow-right relative top-[2px] mx-5 animate-x"></i>
+                                            المزيد<i class="fa-regular fa-arrow-left relative top-[2px] mx-5 animate-x-right"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -483,12 +495,13 @@
                     </div>
                     <div id="showMore" class="mt-10 text-center lg:mt-16 wow animate__animated animate__fadeInUp">
                         <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">
-                            Show More
+                            إظهار المزيد
                         </a>
                     </div>
                 </div>
             </section>
 
+            <!--=============== discover =================-->
             <section id="discover" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
@@ -506,7 +519,7 @@
                             <h3 class="text-black text-3xl font-bold">تسويق إلكتروني</h3>
                             <p>دمج وظائف التنقل السهلة لتقديم أفضل تجربة للعملاء.</p>
                             <a href="#" class="wow animate__animated animate__fadeInUp">
-                                Show More<i class="fa-regular fa-arrow-right animate-x"></i>
+                                إظهار المزيد<i class="fa-regular fa-arrow-left animate-x-right"></i>
                             </a>
                         </div>
                         <div class="item bg-backgroundTwo wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
@@ -514,7 +527,7 @@
                             <h3 class="text-black text-3xl font-bold">تسويق إلكتروني</h3>
                             <p>دمج وظائف التنقل السهلة لتقديم أفضل تجربة للعملاء.</p>
                             <a href="#" class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-                                Show More<i class="fa-regular fa-arrow-right animate-x"></i>
+                                إظهار المزيد<i class="fa-regular fa-arrow-left animate-x-right"></i>
                             </a>
                         </div>
                         <div class="item bg-backgroundThree wow animate__animated animate__zoomIn" data-wow-delay="0.6s">
@@ -522,26 +535,27 @@
                             <h3 class="text-black text-3xl font-bold">تسويق إلكتروني</h3>
                             <p>دمج وظائف التنقل السهلة لتقديم أفضل تجربة للعملاء.</p>
                             <a href="#" class="wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
-                                Show More<i class="fa-regular fa-arrow-right animate-x"></i>
+                                إظهار المزيد<i class="fa-regular fa-arrow-left animate-x-right"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
             
+            <!--=============== technology =================-->
             <section id="technology" class="relative mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
                         نحن دائماً نواكب التطور
                     </h2>
-                    <p class="mt-4 hidden lg:block wow animate__animated animate__fadeIn">
+                    <p class="mt-5 hidden lg:block wow animate__animated animate__fadeIn">
                         حول أفكارك إلى تقنيات متطورة
                     </p>
                     <p class="mt-3 block lg:hidden wow animate__animated animate__fadeIn">
                         حول أفكارك إلى تقنيات متطورة
                     </p>
                     <div class="cards mt-10 grid grid-cols-1 gap-5 lg:grid-cols-2">
-                        <div class="card wow animate__animated animate__fadeInLeft">
+                        <div class="card wow animate__animated animate__fadeInRight">
                             <h3>التصميم</h3>
                             <ul>
                                 <li>
@@ -570,8 +584,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="card wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
-                            <h3>برمجة التطبيقات</h3>
+                        <div class="card wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
+                            <h3>تصميم الموبايل</h3>
                             <ul>
                                 <li>
                                     <a href="#">
@@ -599,8 +613,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="card wow animate__animated animate__fadeInLeft" data-wow-delay="0.6s">
-                            <h3>فرونت إند</h3>
+                        <div class="card wow animate__animated animate__fadeInRight" data-wow-delay="0.6s">
+                            <h3>فرونت اند</h3>
                             <ul>
                                 <li>
                                     <a href="#">
@@ -628,8 +642,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="card wow animate__animated animate__fadeInRight" data-wow-delay="0.9s">
-                            <h3>باك إند</h3>
+                        <div class="card wow animate__animated animate__fadeInLeft" data-wow-delay="0.9s">
+                            <h3>باك اند</h3>
                             <ul>
                                 <li>
                                     <a href="#">
@@ -661,10 +675,11 @@
                 </div>
             </section>            
 
+            <!--=============== testimonials =================-->
             <section id="testimonials" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <h2 class="text-3xl font-bold lg:text-6xl wow animate__animated animate__fadeInUp">
-                        دعونا نعرف <br> ماذايقول عملائنا
+                        دعونا نعرف <br> ماذا يقول عملائنا عنا
                     </h2>
                     <div id="testimonials-carousel" class="owl-carousel owl-theme mt-16">
                         <div class="item wow animate__animated animate__fadeIn">
@@ -672,7 +687,7 @@
                                 <img src="./src/assets/images/home/outfit.svg" alt="Logo">
                             </div>
                             <p>
-                                الفرق متجاوبة ومتفهمة للغاية. لقد تمكنوا من فهم فكرة عملي جيدًا وأنا راضٍ تمامًا عن جودة العمل الذي يقدمونه. إنني أقدر كل المساعدة التي قدمتموها يا رفاق وأود بالتأكيد
+                                شكرًا لكم لقد قمتم بمجهود جبار، والكل متعاون ويحاول أن يسهل ويخدم ويقدم الي يرضي العميل... هذه الايام فعلا تأكدت أنى اخترت الشركة المناسبة لعمل تطبيقي شكرا لكل المهندسات والمهندسين وللإدارة الرائعة.
                             </p>
                             <div class="person">
                                 <img src="./src/assets/images/home/person-1.jpeg" alt="Person">
@@ -687,7 +702,7 @@
                                 <img src="./src/assets/images/home/caption.svg" alt="Logo">
                             </div>
                             <p>
-                                الفرق متجاوبة ومتفهمة للغاية. لقد تمكنوا من فهم فكرة عملي جيدًا وأنا راضٍ تمامًا عن جودة العمل الذي يقدمونه. إنني أقدر كل المساعدة التي قدمتموها يا رفاق وأود بالتأكيد
+                                شكرًا لكم لقد قمتم بمجهود جبار، والكل متعاون ويحاول أن يسهل ويخدم ويقدم الي يرضي العميل... هذه الايام فعلا تأكدت أنى اخترت الشركة المناسبة لعمل تطبيقي شكرا لكل المهندسات والمهندسين وللإدارة الرائعة.
                             </p>
                             <div class="person">
                                 <img src="./src/assets/images/home/person-2.webp" alt="Person">
@@ -702,7 +717,7 @@
                                 <img src="./src/assets/images/home/wesselna.svg" alt="Logo">
                             </div>
                             <p>
-                                الفرق متجاوبة ومتفهمة للغاية. لقد تمكنوا من فهم فكرة عملي جيدًا وأنا راضٍ تمامًا عن جودة العمل الذي يقدمونه. إنني أقدر كل المساعدة التي قدمتموها يا رفاق وأود بالتأكيد
+                                شكرًا لكم لقد قمتم بمجهود جبار، والكل متعاون ويحاول أن يسهل ويخدم ويقدم الي يرضي العميل... هذه الايام فعلا تأكدت أنى اخترت الشركة المناسبة لعمل تطبيقي شكرا لكل المهندسات والمهندسين وللإدارة الرائعة.
                             </p>
                             <div class="person">
                                 <img src="./src/assets/images/home/person-3.webp" alt="Person">
@@ -716,42 +731,43 @@
                 </div>
             </section>
             
+            <!--=============== whyUs =================-->
             <section id="whyUs" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <div class="flex flex-wrap lg:flex-nowrap">
-                        <div class="intro lg:w-[30%] wow animate__animated animate__fadeInLeft" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0s;">
-                            <h2 class="text-3xl font-bold lg:text-6xl">Why<br> Choose Us?</h2>
-                            <p class="mt-4 mb-10">More the years, the better the solutions! we have been partnering with brands and offering our expertise for more than 5 years.</p>
-                            <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300 wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.3s;">
-                                Let's Work Together<i class="fa-regular fa-arrow-right relative top-[2px] mx-3 animate-x"></i>
+                        <div class="intro lg:w-[30%] wow animate__animated animate__fadeInLeft">
+                            <h2 class="text-3xl font-bold lg:text-6xl">لماذا<br> العالمية الحرة؟</h2>
+                            <p class="mt-4 mb-10">مع مرور السنين ، كانت الحلول أفضل! لقد دخلنا في شراكة مع العلامات التجارية وتقديم خبراتنا لأكثر من 5 سنوات.</p>
+                            <a href="#" class="bg-white text-primay py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300 wow animate__animated animate__fadeInUp">
+                                لنعمل معاً<i class="fa-regular fa-arrow-left relative top-[2px] mx-3 animate-x-right"></i>
                             </a>
                         </div>
                         <div class="qualities mt-10 flex flex-col gap-7 lg:w-[70%] lg:mt-0">
-                            <div class="quality bg-backYellow self-end wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.6s;">
+                            <div class="quality bg-backYellow self-end wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
                                 <div class="flex items-start">
                                     <img class="w-[48px] h-[48px]" src="./src/assets/images/home/medal.svg" alt="Quality">
                                 </div>
                                 <div class="mt-2">
-                                    <h3 class="font-bold text-2xl mb-3">Quality</h3>
-                                    <p>We aim to deliver high-quality products. Hence, we take care of everything at the granular level.</p>
+                                    <h3 class="font-bold text-2xl mb-3">الجودة</h3>
+                                    <p>نحن نهدف إلى تقديم منتجات عالية الجودة. ومن ثم ، فإننا نعتني بكل شيء على مستوى الحبيبات.</p>
                                 </div>
                             </div>
-                            <div class="quality bg-lightBlue self-center wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.9s;">
+                            <div class="quality bg-lightBlue self-center wow animate__animated animate__fadeInUp" data-wow-delay="0.9s">
                                 <div class="flex items-start">
                                     <img class="w-[48px] h-[48px]" src="./src/assets/images/home/security.svg" alt="Security">
                                 </div>
                                 <div class="mt-2">
-                                    <h3 class="font-bold text-2xl mb-3">Security</h3>
-                                    <p>We prioritize the security of your projects and data, ensuring a safe and reliable experience.</p>
+                                    <h3 class="font-bold text-2xl mb-3">الامان</h3>
+                                    <p>نعطي الأولوية لأمن مشاريعك وبياناتك ، مما يضمن تجربة آمنة وموثوقة.</p>
                                 </div>
                             </div>
-                            <div class="quality bg-backDarkBule self-start wow animate__animated animate__fadeInUp" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 1.2s;">
+                            <div class="quality bg-backDarkBule self-start wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
                                 <div class="flex items-start">
                                     <img class="w-[48px] h-[48px]" src="./src/assets/images/home/flash.svg" alt="Flash">
                                 </div>
                                 <div class="mt-2">
-                                    <h3 class="font-bold text-2xl mb-3">Efficiency</h3>
-                                    <p>We strive to deliver efficient solutions, optimizing the performance of your projects and applications.</p>
+                                    <h3 class="font-bold text-2xl mb-3">كفاءة</h3>
+                                    <p>نحن نسعى جاهدين لتقديم حلول فعالة ، وتحسين أداء مشاريعك وتطبيقاتك.</p>
                                 </div>
                             </div>
                         </div>
@@ -759,14 +775,15 @@
                 </div>
             </section>
             
+            <!--=============== partners =================-->
             <section id="partners" class="mt-16 lg:mt-32 wow animate__animated animate__fadeIn">
                 <div class="container">
                     <div class="flex flex-wrap justify-center items-center xl:flex-nowrap xl:gap-x-40">
-                        <div class="intro w-full xl:w-[50%] wow animate__animated animate__fadeInLeft" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0s;">
-                            <h2 class="text-3xl font-bold lg:text-6xl">We Work With The Best Partners</h2>
-                            <p class="mt-5 mb-10">While we are at the forefront of and specialize in design-build, we are very familiar with a number of delivery methods and confident we can find the process that will best help you meet your goals.</p>
+                        <div class="intro w-full xl:w-[50%] wow animate__animated animate__fadeInRight">
+                            <h2 class="text-3xl font-bold lg:text-6xl">نحن نعمل مع أفضل العملاء</h2>
+                            <p class="mt-5 mb-10">عملاؤنا هم المحور الأساسي لكل ما نقوم به، ونحن نهتم بتلبية احتياجاتهم وتحقيق رضاهم في كل خطوة نخطوها، فنحن نقدر كل عميل لدينا ونسعى دائمًا لتقديم أفضل الخدمات لهم.</p>
                         </div>
-                        <div id="partners-carousel" class="owl-carousel owl-theme w-full xl:w-[50%!important] wow animate__animated animate__fadeInRight" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.3s;">
+                        <div id="partners-carousel" class="owl-carousel owl-theme w-full xl:w-[50%!important] wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
                             <div class="item">
                                 <div class="partner">
                                     <img src="./src/assets/images/home/partner-1.svg" alt="Partner">
@@ -796,36 +813,38 @@
                 </div>
             </section>
             
+            <!--=============== subscribe =================-->
             <section id="subscribe" class="mt-16 lg:mt-24 wow animate__animated animate__fadeIn">
                 <div class="video-container">
                     <video autoplay muted loop>
                         <source src="./src/assets/videos/subsctibe.mp4" type="video/mp4">
                         <!-- You can add additional video formats here for better browser compatibility -->
-                        Your browser does not support the video tag.
-                    </video>                      
+                        المتصفح الخاص بك لا يدعم الفيديو
+                    </video>
                 </div>
-                <div class="content flex flex-col wow animate__animated animate__fadeIn" style="animation-iteration-count: 1; animation-duration: 0.5s; animation-delay: 0.3s;">
-                    <h2 class="text-3xl font-bold lg:text-6xl lg:leading-[5.5rem!important]">Subscribe To Our Newsletter <br> To Get New Updates</h2>
-                    <p class="mt-5 mb-12">Stay in touch with our team here at Al Almiya Al Hura and learn about our latest creations and projects from our regular newsletter.</p>
+                <div class="content flex flex-col wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+                    <h2 class="text-3xl font-bold lg:text-6xl lg:leading-[5.5rem!important]">اشترك في النشرة الإخبارية لدينا <br> للحصول على التطورات الجديدة</h2>
+                    <p class="mt-5 mb-12">ابقَ على اتصال مع فريقنا هنا في العالمية الحرة وتعرف على أحدث إبداعاتنا ومشاريعنا من نشرتنا الإخبارية.</p>
                     <form class="flex items-center py-5 justify-end bg-white text-start rounded-[9px] w-[700px] h-[65px] max-h-fit max-w-full relative lg:py-0">
-                        <input type="text" name="Subscribe" id="subscribe-btn" placeholder="Your Email Address" class="absolute left-0 top-0 bottom-0 w-[70%] text-black px-8 outline-none">
-                        <button class="w-[30%] bg-primary absolute h-full rounded-[9px] border-[1px] boder-solid border-white hover:bg-[#0A6EBD] duration-300">Subscribe</button>
+                        <input type="text" name="Subscribe" id="subscribe-btn" placeholder="البريد الإلكتروني" class="absolute left-0 top-0 bottom-0 w-[70%] text-black px-8 outline-none">
+                        <button class="w-[30%] bg-primary absolute h-full rounded-[9px] border-[1px] boder-solid border-white hover:bg-[#0A6EBD] duration-300">إشترك</button>
                     </form>
                 </div>
             </section>
             
+            <!--=============== happening =================-->
             <section id="happening" class="mt-16 lg:mt-24">
                 <div class="container">
-                    <div class="intro wow animate__animated animate__fadeInLeft" data-wow-duration="1s">
-                        <h2 class="text-3xl font-bold lg:text-6xl">What's Happening!</h2>
-                        <p class="mt-3 hidden lg:block">Turning your ideas into cutting-edge technologies Turning your ideas <br> into cutting-edge technologies</p>
-                        <p class="mt-3 block lg:hidden">Turning your ideas into cutting-edge technologies Turning your ideas into cutting-edge technologies</p>
+                    <div class="intro wow animate__animated animate__fadeInRight" data-wow-duration="1s">
+                        <h2 class="text-3xl font-bold lg:text-6xl">ماذا يحدث !</h2>
+                        <p class="mt-3 hidden lg:block">تحويل أفكارك إلى تقنيات متطورة تحويل أفكارك إلى تقنيات متطورة</p>
+                        <p class="mt-3 block lg:hidden">تحويل أفكارك إلى تقنيات متطورة تحويل أفكارك إلى تقنيات متطورة</p>
                     </div>
                     <div class="cards flex flex-wrap justify-center mt-10 gap-5 xl:gap-3 xl:flex-nowrap">
                         <div class="card wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0s">
                             <div class="card-img">
                                 <img src="./src/assets/images/home/happening-1.png" alt="">
-                                <h4>Business</h4>
+                                <h4>عمل</h4>
                             </div>
                             <div class="content">
                                 <div class="date">
@@ -833,16 +852,16 @@
                                     <span class="views"><i class="fa-light fa-eye"></i>2433</span>
                                 </div>
                                 <div class="details">
-                                    <h3>The Complete Guide to Web Hosting</h3>
-                                    <p>Learn about web hosting, what it entails, and why it's necessary if you want to share any type of website on the internet.</p>
-                                    <a href="#">Read More <i class="fa-regular fa-arrow-right relative top-[2px] mx-2"></i></a>
+                                    <h3>الدليل الكامل لاستضافة المواقع</h3>
+                                    <p>تعرف على استضافة الويب وما يستلزمه ولماذا يكون ضروريًا إذا كنت ترغب في مشاركة أي نوع من مواقع الويب على الإنترنت.</p>
+                                    <a href="#">المزيد <i class="fa-regular fa-arrow-left relative top-[2px] mx-2"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="card wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
                             <div class="card-img">
                                 <img src="./src/assets/images/home/happening-2.png" alt="">
-                                <h4>Business</h4>
+                                <h4>تسويق</h4>
                             </div>
                             <div class="content">
                                 <div class="date">
@@ -850,16 +869,16 @@
                                     <span class="views"><i class="fa-light fa-eye"></i>2433</span>
                                 </div>
                                 <div class="details">
-                                    <h3>The Complete Guide to Web Hosting</h3>
-                                    <p>Learn about web hosting, what it entails, and why it's necessary if you want to share any type of website on the internet.</p>
-                                    <a href="#">Read More <i class="fa-regular fa-arrow-right relative top-[2px] mx-2"></i></a>
+                                    <h3>الدليل الكامل لاستضافة المواقع</h3>
+                                    <p>تعرف على استضافة الويب وما يستلزمه ولماذا يكون ضروريًا إذا كنت ترغب في مشاركة أي نوع من مواقع الويب على الإنترنت.</p>
+                                    <a href="#">المزيد <i class="fa-regular fa-arrow-left relative top-[2px] mx-2"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="card wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                             <div class="card-img">
                                 <img src="./src/assets/images/home/happening-3.png" alt="">
-                                <h4>Business</h4>
+                                <h4>التمصم</h4>
                             </div>
                             <div class="content">
                                 <div class="date">
@@ -867,51 +886,52 @@
                                     <span class="views"><i class="fa-light fa-eye"></i>2433</span>
                                 </div>
                                 <div class="details">
-                                    <h3>The Complete Guide to Web Hosting</h3>
-                                    <p>Learn about web hosting, what it entails, and why it's necessary if you want to share any type of website on the internet.</p>
-                                    <a href="#">Read More <i class="fa-regular fa-arrow-right relative top-[2px] mx-2"></i></a>
+                                    <h3>الدليل الكامل لاستضافة المواقع</h3>
+                                    <p>تعرف على استضافة الويب وما يستلزمه ولماذا يكون ضروريًا إذا كنت ترغب في مشاركة أي نوع من مواقع الويب على الإنترنت.</p>
+                                    <a href="#">المزيد <i class="fa-regular fa-arrow-left relative top-[2px] mx-2"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="show-more text-center mt-16 xl:mt-32 wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
                         <a href="#" class="bg-white text-primary font-semibold py-4 px-8 rounded-md border-[1px] border-primary border-solid hover:bg-primary hover:text-white duration-300">
-                            Show More
-                            <i class="fa-regular fa-arrow-right relative top-[2px] mx-2"></i>
+                            إظهار المزيد
+                            <i class="fa-regular fa-arrow-left relative top-[2px] mx-2 animate-x-right"></i>
                         </a>
                     </div>
                 </div>
             </section>
             
+            <!--=============== talk =================-->
             <section id="talk" class="relative top-[15rem] mt-[-10rem] lg:top-[18rem] lg:mt-[-13rem]">
                 <div class="talk container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
                     <div class="talk__container">
                         <div class="px-4 py-10 relative z-10 lg:px-12 lg:py-16">
-                            <h2 class="text-3xl text-white font-bold lg:text-6xl">Let's Talk.</h2>
-                            <p class="mt-5 text-base text-white lg:text-xl">Let's Build Best Digital Solutions For Your Business Now!</p>
+                            <h2 class="text-3xl text-white font-bold lg:text-6xl">شاركنا</h2>
+                            <p class="mt-5 text-base text-white lg:text-xl">دعونا نبني افضل الحلول الرقمية لعملك الان!</p>
                             <form class="talk__form flex flex-col gap-5 mt-10 w-full lg:grid lg:grid-cols-2">
                                 <div class="talk__form--input">
-                                    <input type="text" name="Full name" placeholder="Your Full Name" required>
+                                    <input type="text" name="Full name" placeholder="الاسم بالكامل" required>
                                 </div>
                                 <div class="talk__form--input">
-                                    <input type="email" name="Email" placeholder="Your Email" required>
+                                    <input type="email" name="Email" placeholder="البريد الالكتروني" required>
                                 </div>
                                 <div class="talk__form--input">
-                                    <input id="phone" name="Phone Number" type="tel" placeholder="Phone Number" required>
+                                    <input id="phone" name="Phone Number" type="tel" placeholder="رقم الهاتف" required>
                                 </div>
                                 <div class="talk__form--input">
-                                    <select class="country-code-select" id="countryCode" placeholder="select budget">
-                                        <option disabled selected>Select a Service</option>
-                                        <option>Mobile App Desgin</option>
-                                        <option>Software Testing</option>
-                                        <option>UI UX Design</option>
+                                    <select class="country-code-select" id="countryCode">
+                                        <option disabled selected>إختار خدمة</option>
+                                        <option>تصميم الهاتف</option>
+                                        <option>فرونت اند</option>
+                                        <option>باك اند</option>
                                     </select>
                                 </div>
                                 <div class="talk__form--input col-span-2">
-                                    <textarea name="description" rows="8" placeholder="Tell Us What You Need" class="w-full"></textarea>
+                                    <textarea name="description" rows="8" placeholder="كيف يمكننا تقديم المساعدة" class="w-full"></textarea>
                                 </div>
                                 <div class="send col-span-2 w-full flex justify-center lg:justify-end">
-                                    <button class="py-5 px-10 text-primary bg-white text-center text-xl font-semibold rounded-[5px] mt-3">Send Request</button>
+                                    <button class="py-5 px-10 text-primary bg-white text-center text-xl font-semibold rounded-[5px] mt-3">إرسال الطلب</button>
                                 </div>
                             </form>
                         </div>
@@ -919,12 +939,13 @@
                 </div>
             </section>
 
+            <!--=============== Footer =================-->
             <footer class="bg-footerBg pt-72 lg:pt-96">
                 <div class="container">
                     <div class="grid grid-cols-1 xl:grid-cols-3">
-                        <div class="col-1 lg:w-[80%] wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s">
+                        <div class="col-1 lg:w-[80%] wow animate__animated animate__fadeInRight" data-wow-duration="0.5s">
                             <a href="./index.html"><img src="./src/assets/images/logo-EN.svg" alt="Logo"></a>
-                            <p class="border-b-[1px] border-borderColor mt-5 mb-3 pb-3">We are Keen to Provide You with Innovative Digital Solutions; depending On Our Extensive Experience in The Field of Information Technology.</p>
+                            <p class="border-b-[1px] border-borderColor mt-5 mb-3 pb-3">نحن حريصون على تزويدك بحلول رقمية مبتكرة ؛ اعتمادًا على خبرتنا الواسعة في مجال تقنية المعلومات.</p>
                             <ul class="flex flex-wrap gap-6 mt-5">
                                 <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -936,46 +957,47 @@
                         </div>
                         <div class="col-2 hidden gap-10 my-10 sm:flex xl:my-0 xl:justify-self-end lg:w-[95%] wow animate__animated animate__fadeInUp" data-wow-duration="0.5s">
                             <div class="quick">
-                                <h4>Quick Access</h4>
+                                <h4>الروابط الفرعية
+                                </h4>
                                 <ul>
-                                    <li><a href="#">Mobile App Development</a></li>
-                                    <li><a href="#">UX/UI Designing</a></li>
-                                    <li><a href="#">Web Design</a></li>
-                                    <li><a href="#">Website Development</a></li>
-                                    <li><a href="#">Mobile Development</a></li>
-                                    <li><a href="#">Mobile App Development</a></li>
+                                    <li><a href="#">تصميم تطبيقات الجوال</a></li>
+                                    <li><a href="#">تصميم مواقع</a></li>
+                                    <li><a href="#">الامن السيبرالي</a></li>
+                                    <li><a href="#">الدعم الفني</a></li>
+                                    <li><a href="#">أنظمة الشركات</a></li>
+                                    <li><a href="#">الإعلانات الممولة</a></li>
                                 </ul>
                             </div>
                             <div class="main">
-                                <h4>Main Links</h4>
+                                <h4>الروابط الرئيسية</h4>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Alalmiya World</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">الرئيسية</a></li>
+                                    <li><a href="#">أعمالنا</a></li>
+                                    <li><a href="#">تواصل معنا</a></li>
+                                    <li><a href="#">اعمالنا</a></li>
+                                    <li><a href="#">المدونة</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-3 xl:justify-self-end mt-10 xl:mt-0 wow animate__animated animate__fadeInRight" data-wow-duration="0.5s">
-                            <h4 class="text-xl font-bold mb-5">Subscribe For Latest Updates</h4>
-                            <p class="mb-3">Make the right business move.</p>
+                        <div class="col-3 xl:justify-self-end mt-10 xl:mt-0 wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s">
+                            <h4 class="text-xl font-bold mb-5">اشترك لتكون على دراية بآخر التطورات</h4>
+                            <p class="mb-3">اتخذ الخطوات الصحيحة للعمل</p>
                             <form class="flex items-center py-5 justify-end bg-white text-start rounded-[5px] h-[65px] max-h-fit max-w-full relative lg:py-0 xl:w-[400px]">
-                                <input type="text" name="Subscribe" id="subscribe-btn" placeholder="Your Email Address" class="absolute left-0 top-0 bottom-0 w-[70%] text-black px-8 outline-none">
-                                <button class="w-[30%] bg-primary text-white absolute h-full rounded-[9px] border-[1px] boder-solid border-white hover:bg-[#0A6EBD] duration-300">Subscribe</button>
+                                <input type="text" name="Subscribe" id="subscribe-btn" placeholder="البريد الالكتروني" class="absolute left-0 top-0 bottom-0 w-[70%] text-black px-8 outline-none">
+                                <button class="w-[30%] bg-primary text-white absolute h-full rounded-[9px] border-[1px] boder-solid border-white hover:bg-[#0A6EBD] duration-300">الاإشتراك</button>
                             </form>
                             <div class="emails mt-5">
                                 <div class="email">
                                     <a id="email1" href="mailto:info@alalmiyaalhura.com"><i class="fa-solid fa-envelope"></i>info@alalmiyaalhura.com</a>
                                     <div class="copy">
-                                        <span class="bg-black text-white px-2 py-1 rounded-[5px]">Copied</span>
+                                        <span class="bg-black text-white px-2 py-1 rounded-[5px]">تم النسخ</span>
                                     </div>
                                     <button class="copy-button" data-email-id="email1" title="Copy!"><img src="./src/assets/images/icons/copy.svg" alt="Copy"></button>
                                 </div>
                                 <div class="email">
                                     <a id="email2" href="mailto:sales@alalmiyaalhura.com"><i class="fa-solid fa-envelope"></i>sales@alalmiyaalhura.com</a>
                                     <div class="copy">
-                                        <span class="bg-black text-white px-2 py-1 rounded-[5px]">Copied</span>
+                                        <span class="bg-black text-white px-2 py-1 rounded-[5px]">تم النسخ</span>
                                     </div>
                                     <button class="copy-button" data-email-id="email2" title="Copy!"><img src="./src/assets/images/icons/copy.svg" alt="Copy"></button>
                                 </div>
@@ -983,19 +1005,19 @@
                             <div class="lang relative flex items-center justify-center mt-5 md:justify-end md:mt-10">
                                 <button id="footer-lang">
                                     <i class="fa-regular fa-globe"></i>
-                                    <span>English</span>
+                                    <span>العربية</span>
                                     <i class="fa-regular fa-chevron-down text-sm"></i>
                                 </button>
                                 <ul class="fixed flex flex-col gap-3 bg-white p-5 top-[100%] mt-2 border-[1px] border-soild border-primary rounded-[10px] opacity-0 invisible transition-all duration-[300ms] md:absolute">
-                                    <li><a href="#">English</a></li>
-                                    <li><a href="#">Arabic</a></li>
+                                    <li><a href="./index.html">الانجليزية</a></li>
+                                    <li><a href="./index-ar.html">العربية</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="copyright bg-primary text-center text-white p-6 mt-10 xl:mt-40 wow animate__animated animate__fadeIn" data-wow-duration="0.5s">
-                    <p>&copy; 2022 Al Almiya Al Hura. All Rights Reserved </p>
+                    <p>جميع الحقوق محفوظة لشركة العالمية الحرة &copy; 2023</p>
                 </div>
             </footer>
 
@@ -1007,32 +1029,32 @@
                             <button><i class="fa-solid fa-xmark"></i></button>
                         </div>
                         <div class="px-4 py-10 relative z-10 lg:px-12 lg:py-16">
-                            <h2 class="text-3xl text-white font-bold lg:text-6xl">Let's Talk.</h2>
-                            <p class="mt-5 text-base text-white lg:text-xl">Let's Build Best Digital Solutions For Your Business Now!</p>
-                            <p class="mt-5 text-base text-white flex items-center gap-4 lg:text-xl"><img src="./src/assets/images/home/popup-certified.png" class="w-[100px] h-[80px]" alt="Certified">Years of experience in software services.</p>
+                              <h2 class="text-3xl text-white font-bold lg:text-6xl">شاركنا</h2>
+                            <p class="mt-5 text-base text-white lg:text-xl">دعونا نبني افضل الحلول الرقمية لعملك الان!</p>
+                            <p class="mt-5 text-base text-white flex items-center gap-4 lg:text-xl"><img src="./src/assets/images/home/popup-certified.png" class="w-[100px] h-[80px]" alt="Certified">سنوات من الخبرة في مجالات التكنولوجيا المختلفة</p>
                             <form class="modal__form flex flex-col gap-5 mt-5 w-full lg:grid lg:grid-cols-2">
                                 <div class="modal__form--input">
-                                    <input type="text" name="Full name" placeholder="Your Full Name" required>
+                                    <input type="text" name="Full name" placeholder="الاسم بالكامل" required>
                                 </div>
                                 <div class="modal__form--input">
-                                    <input type="email" name="Email" placeholder="Your Email" required>
+                                    <input type="email" name="Email" placeholder="البريد الالكتروني" required>
                                 </div>
                                 <div class="modal__form--input">
-                                    <input id="modal-phone" name="Phone Number" type="tel" placeholder="Phone Number" required>
+                                    <input id="modal-phone" name="Phone Number" type="tel" placeholder="رقم الهاتف" required>
                                 </div>
                                 <div class="modal__form--input">
-                                    <select class="country-code-select" id="countryCode" placeholder="select budget">
-                                        <option disabled selected>Select a Service</option>
-                                        <option>Mobile App Desgin</option>
-                                        <option>Software Testing</option>
-                                        <option>UI UX Design</option>
+                                    <select class="country-code-select" id="countryCode">
+                                        <option disabled selected>إختار الخدمة</option>
+                                        <option>تصميم الهاتف</option>
+                                        <option>فرونت اند</option>
+                                        <option>باك اند</option>
                                     </select>
                                 </div>
                                 <div class="modal__form--input col-span-2">
-                                    <textarea name="description" rows="8" placeholder="Tell Us What You Need" class="w-full"></textarea>
+                                    <textarea name="description" rows="8" placeholder="أخبرنا ماذا تحتاج؟" class="w-full"></textarea>
                                 </div>
                                 <div class="send col-span-2 w-full flex justify-center lg:justify-end">
-                                    <button class="py-5 px-10 text-primary bg-white text-center text-xl font-semibold rounded-[5px] mt-3">Send Request</button>
+                                    <button class="py-5 px-10 text-primary bg-white text-center text-xl font-semibold rounded-[5px] mt-3">إرسال الطلب</button>
                                 </div>
                             </form>
                         </div>
