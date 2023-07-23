@@ -1,4 +1,5 @@
 import "animate.css";
+
 document.addEventListener("DOMContentLoaded", function () {
     new WOW().init();
 
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Dropdown menus
+    // Navbr Dropdown menus
     const dropdownLinks = document.querySelectorAll(".nav__content--link");
     const dropdownMenus = document.querySelectorAll(".nav__content--dropdown");
 
